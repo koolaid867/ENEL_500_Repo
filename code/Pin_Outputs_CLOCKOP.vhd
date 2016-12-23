@@ -22,14 +22,13 @@ COMPONENT clock
 		CLKOP:  out std_logic);
 END COMPONENT;
 
-
 BEGIN 
 
 I1: CLOCK
 	PORT MAP(
 		CLKI => CLKIN,
 		CLKOP => CLKOP);
-step <= CLKI;
+step <= CLKOP;
 --process(CLKI)
 
 --variable count: integer range 0 to 10_000;
