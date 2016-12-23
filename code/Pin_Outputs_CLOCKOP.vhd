@@ -28,7 +28,7 @@ I1: CLOCK
 	PORT MAP(
 		CLKI => CLKIN,
 		CLKOP => CLKOP);
-step <= CLKI;
+step <= CLKOP;
 --process(CLKI)
 
 --variable count: integer range 0 to 10_000;
