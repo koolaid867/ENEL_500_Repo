@@ -22,7 +22,6 @@ COMPONENT clock
 		CLKOP:  out std_logic);
 END COMPONENT;
 
-
 BEGIN 
 
 I1: CLOCK
