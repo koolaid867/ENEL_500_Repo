@@ -1,0 +1,26 @@
+SCUBA, Version Diamond (64-bit) 3.8.0.115.3
+Fri Feb 24 19:47:19 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.8_x64\ispfpga\bin\nt64\scuba.exe -w -n CLK_FILL_ARRAY -lang vhdl -synth lse -arch xo2c00 -type pll -fin 10 -fclkop 10 -fclkop_tol 0.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 -wb 
+    Circuit name     : CLK_FILL_ARRAY
+    Module type      : pll
+    Module Version   : 5.7
+    Ports            : 
+	Inputs       : CLKI, PLLCLK, PLLRST, PLLSTB, PLLWE, PLLDATI[7:0], PLLADDR[4:0]
+	Outputs      : CLKOP, PLLDATO[7:0], PLLACK
+    I/O buffer       : not inserted
+    EDIF output      : CLK_FILL_ARRAY.edn
+    VHDL output      : CLK_FILL_ARRAY.vhd
+    VHDL template    : CLK_FILL_ARRAY_tmpl.vhd
+    VHDL purpose     : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : CLK_FILL_ARRAY.srp
+    Element Usage    :
+        EHXPLLJ : 1
+    Estimated Resource Usage:

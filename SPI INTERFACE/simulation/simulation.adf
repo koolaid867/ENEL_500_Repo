@@ -1,0 +1,49 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=work
+[Library]
+simulation=.\simulation\simulation.lib
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work
+LibNames=ovi_machxo2
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+simulation=.
+work=.
+[LocalVerilogDirs]
+Count=0
+[DefineMacro]
+Global=
+[Files]
+/..\..\SPI_SLAVE.vhd=-1
+/..\..\BEAGLE_TO_OUTPUTS.vhd=-1
+/..\..\test_bench_spi.vhd=-1
+[Files.Data]
+.\..\SPI_SLAVE.vhd=VHDL Source Code
+.\..\BEAGLE_TO_OUTPUTS.vhd=VHDL Source Code
+.\..\test_bench_spi.vhd=VHDL Source Code
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=test|behavioural|0 
+ShowHide=ShowTopLevel
+Selected=
