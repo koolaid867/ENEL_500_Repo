@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="SPI_SLAVE" module="SPI_SLAVE" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2017 02 24 19:45:38.764" version="1.2" type="Module" synthesis="lse" source_format="VHDL">
+  <Package>
+		<File name="SPI_SLAVE.lpc" type="lpc" modified="2017 02 24 19:45:33.697"/>
+		<File name="SPI_SLAVE.vhd" type="top_level_vhdl" modified="2017 02 24 19:45:33.813"/>
+		<File name="SPI_SLAVE_tmpl.vhd" type="template_vhdl" modified="2017 02 24 19:45:33.816"/>
+  </Package>
+</DiamondModule>

@@ -1,0 +1,3 @@
+.\..\SPI_SLAVE.vhd
+.\..\BEAGLE_TO_OUTPUTS.vhd
+.\..\test_bench_spi.vhd

@@ -1,0 +1,1 @@
+-w -erf "E:/SPI INTERFACE/simulate/compile/simulate.erf" -d "E:/SPI INTERFACE/simulate/compile" -s "E:/SPI INTERFACE/simulate/library.cfg" -j "E:/SPI INTERFACE/simulate/projlib.cfg" -work work -dbg -work work "E:/SPI INTERFACE/WISHBONE_ENABLE.vhd" 

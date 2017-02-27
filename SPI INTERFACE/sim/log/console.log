@@ -1,0 +1,94 @@
+designverincludedir -clear
+designverlibrarysim -PL -clear
+designverlibrarysim -L -clear
+designverlibrarysim -PL pmi_work
+designverlibrarysim ovi_machxo2
+designverdefinemacro -clear
+addfile {E:/SPI INTERFACE/SPI_SLAVE.vhd}
+# Adding file E:\SPI INTERFACE\SPI_SLAVE.vhd ... Done
+addfile {E:/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd}
+# Adding file E:\SPI INTERFACE\BEAGLE_TO_OUTPUTS.vhd ... Done
+addfile {E:/SPI INTERFACE/test_bench_spi.vhd}
+# Adding file E:\SPI INTERFACE\test_bench_spi.vhd ... Done
+addfile {E:/SPI INTERFACE/WISHBONE_ENABLE.vhd}
+# Adding file E:\SPI INTERFACE\WISHBONE_ENABLE.vhd ... Done
+vlib {E:/SPI INTERFACE/sim/work}
+# Warning: Library work already exists
+adel -all
+# Library contents cleared.
+vcom -dbg -work work {E:/SPI INTERFACE/SPI_SLAVE.vhd}
+# File: E:\SPI INTERFACE\SPI_SLAVE.vhd
+# Compile Entity "SPI_SLAVE"
+# Compile Architecture "Structure" of Entity "SPI_SLAVE"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+vcom -dbg -work work {E:/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd}
+# File: E:\SPI INTERFACE\BEAGLE_TO_OUTPUTS.vhd
+# Compile Entity "SPI_OUTPUT"
+# Compile Architecture "BEHAVIOURAL" of Entity "SPI_OUTPUT"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
+vcom -dbg -work work {E:/SPI INTERFACE/test_bench_spi.vhd}
+# File: E:\SPI INTERFACE\test_bench_spi.vhd
+# Compile Entity "Test"
+# Compile Architecture "behavioural" of Entity "Test"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+vcom -dbg -work work {E:/SPI INTERFACE/WISHBONE_ENABLE.vhd}
+# File: E:\SPI INTERFACE\WISHBONE_ENABLE.vhd
+# Compile Entity "WISHBONE_ENABLE"
+# Compile Architecture "Structure" of Entity "WISHBONE_ENABLE"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+entity Test
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'efb_top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'spare_gate_efb_0' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'spare_gate_efb_1' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'spare_gate_efb_2' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'spare_gate_efb_3' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.2 [s].
+vsim +access +r Test -PL pmi_work -L ovi_machxo2
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'efb_top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'spare_gate_efb_0' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'spare_gate_efb_1' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'spare_gate_efb_2' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'spare_gate_efb_3' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Program Files\diamond\3.8_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.8 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 13.4 [s]
+# SLP: Finished : 14.8 [s]
+# SLP: 375 (8.29%) primitives and 4137 (91.45%) other processes in SLP
+# SLP: 14968 (99.22%) signals in SLP and 118 (0.78%) interface signals
+# ELAB2: Elaboration final pass complete - time: 16.1 [s].
+# KERNEL: SLP loading done - time: 0.7 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 14256 kB (elbread=3333 elab2=10529 kernel=393 sdf=0)
+# KERNEL: ASDB file was created in location E:\SPI INTERFACE\sim\src\wave.asdb
+#  3:52 PM, Friday, February 24, 2017
+#  Simulation has been initialized
+add wave *
+# 6 signal(s) traced.
+run 1000ns
+# Waveform file 'untitled.awc' connected to 'E:/SPI INTERFACE/sim/src/wave.asdb'.
+# KERNEL: Configuration complete. EFB now in user mode.                 820
+# KERNEL: stopped at time: 1 us
+run 200000 ns
+# KERNEL: stopped at time: 201 us
+run 200000 ns
+# KERNEL: stopped at time: 401 us

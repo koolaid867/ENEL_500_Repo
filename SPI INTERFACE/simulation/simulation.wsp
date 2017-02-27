@@ -1,0 +1,34 @@
+[COMPILESTATUS|.\..\SPI_SLAVE.vhd]
+FileTimeLow=30576401
+Status=Compiled
+
+[COMPILESTATUS|.\..\BEAGLE_TO_OUTPUTS.vhd]
+FileTimeLow=30576406
+Status=Compiled
+
+[COMPILESTATUS|.\..\test_bench_spi.vhd]
+FileTimeLow=30576406
+Status=Compiled
+
+[General]
+CurrentVersion=103
+
+[CACHEDOC|Aldec.Project.Generic.7|.\simulation.adf|]
+Path=/Test
+
+[Gui config]
+RunFor=1 us
+
+[COMPILESTATUS|.\..\CLK_FILL_ARRAY.vhd]
+FileTimeLow=30576401
+Status=Compiled
+
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\test_bench_spi.vhd|]
+CurrentLine=0
+CurrentColumn=0
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo="LAAAAAAAAAABAAAA/////////////////////0sIAAB6AAAAgBEAAHEDAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA="
+

@@ -1,0 +1,221 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn170223222718"></A><B><U><big>pn170223222718</big></U></B>
+#Start recording tcl command: 2/23/2017 21:12:05
+#Project Location: C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE; Project name: SPI
+prj_project open "C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/SPI.ldf"
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+#Stop recording: 2/23/2017 22:27:18
+
+
+
+<A name="pn170224134948"></A><B><U><big>pn170224134948</big></U></B>
+#Start recording tcl command: 2/24/2017 11:28:09
+#Project Location: E:/SPI INTERFACE; Project name: SPI
+prj_project open "E:/SPI INTERFACE/SPI.ldf"
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_src add "E:/SPI INTERFACE/test_bench_spi.vhd"
+prj_src syn_sim -src "E:/SPI INTERFACE/test_bench_spi.vhd" SimulateOnly
+prj_src syn_sim -src "E:/SPI INTERFACE/test_bench_spi.vhd" SynthesisAndSimulate
+prj_run Synthesis -impl EUREKA_SPI
+prj_src exclude "E:/SPI INTERFACE/test_bench_spi.vhd"
+prj_src enable "E:/SPI INTERFACE/test_bench_spi.vhd"
+prj_src syn_sim -src "E:/SPI INTERFACE/test_bench_spi.vhd" SimulateOnly
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_src add "E:/SPI INTERFACE/simulation/simulation.spf"
+prj_src syn_sim -src "E:/SPI INTERFACE/test_bench_spi.vhd" SynthesisAndSimulate
+prj_src syn_sim -src "E:/SPI INTERFACE/test_bench_spi.vhd" SimulateOnly
+prj_src add "E:/SPI INTERFACE/simulation/simulation.spf"
+prj_src add "E:/SPI INTERFACE/simulation/simulation.spf"
+rvl_project new
+rvl_core rename SPI_OUTPUT_LA0 SPI_OUTPUT_LA0
+rvl_core add SPI_OUTPUT_LA1
+rvl_core delete SPI_OUTPUT_LA1
+rvl_trace trc_option SampleEnable=on
+rvl_trace trc_option SampleEnable=off
+prj_run Synthesis -impl EUREKA_SPI
+prj_src add "E:/SPI INTERFACE/simulation/simulation.spf"
+prj_src syn_sim -src "E:/SPI INTERFACE/test_bench_spi.vhd" SynthesisAndSimulate
+prj_src add "E:/SPI INTERFACE/simulation/simulation.spf"
+prj_src add "E:/SPI INTERFACE/sim/sim.spf"
+prj_src syn_sim -src "E:/SPI INTERFACE/test_bench_spi.vhd" SimulateOnly
+prj_src add "E:/SPI INTERFACE/sim/sim.spf"
+prj_run Synthesis -impl EUREKA_SPI
+prj_src add "E:/SPI INTERFACE/sim/sim.spf"
+#Stop recording: 2/24/2017 13:49:48
+
+
+
+<A name="pn170224135229"></A><B><U><big>pn170224135229</big></U></B>
+#Start recording tcl command: 2/24/2017 13:50:22
+#Project Location: E:/SPI INTERFACE; Project name: SPI
+prj_project open "E:/SPI INTERFACE/SPI.ldf"
+prj_src add "E:/SPI INTERFACE/simulation/simulation.spf"
+#Stop recording: 2/24/2017 13:52:29
+
+
+
+<A name="pn170224144331"></A><B><U><big>pn170224144331</big></U></B>
+#Start recording tcl command: 2/24/2017 13:56:58
+#Project Location: E:/SPI INTERFACE; Project name: SPI
+prj_project open "E:/SPI INTERFACE/SPI.ldf"
+prj_src add "E:/SPI INTERFACE/sim/sim.spf"
+prj_project save
+prj_project close
+#Stop recording: 2/24/2017 14:43:31
+
+
+
+<A name="pn170224145523"></A><B><U><big>pn170224145523</big></U></B>
+#Start recording tcl command: 2/24/2017 14:45:30
+#Project Location: E:/SPI INTERFACE; Project name: SPI
+prj_project open "E:/SPI INTERFACE/SPI.ldf"
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_src syn_sim -src "E:/SPI INTERFACE/test_bench_spi.vhd" SynthesisAndSimulate
+prj_run Synthesis -impl EUREKA_SPI
+#Stop recording: 2/24/2017 14:55:23
+
+
+
+<A name="pn170224145544"></A><B><U><big>pn170224145544</big></U></B>
+#Start recording tcl command: 2/24/2017 14:55:32
+#Project Location: E:/SPI INTERFACE; Project name: SPI
+prj_project open "E:/SPI INTERFACE/SPI.ldf"
+prj_run Synthesis -impl EUREKA_SPI
+#Stop recording: 2/24/2017 14:55:44
+
+
+
+<A name="pn170224153253"></A><B><U><big>pn170224153253</big></U></B>
+#Start recording tcl command: 2/24/2017 15:21:24
+#Project Location: E:/SPI INTERFACE; Project name: SPI
+prj_project open "E:/SPI INTERFACE/SPI.ldf"
+prj_run Synthesis -impl EUREKA_SPI
+#Stop recording: 2/24/2017 15:32:53
+
+
+
+<A name="pn170224153256"></A><B><U><big>pn170224153256</big></U></B>
+#Start recording tcl command: 2/24/2017 15:25:25
+#Project Location: E:/SPI INTERFACE; Project name: SPI
+prj_project open "E:/SPI INTERFACE/SPI.ldf"
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+prj_run Synthesis -impl EUREKA_SPI
+#Stop recording: 2/24/2017 15:32:56
+
+
+
+<A name="pn170224161322"></A><B><U><big>pn170224161322</big></U></B>
+#Start recording tcl command: 2/24/2017 16:13:16
+#Project Location: E:/SPI INTERFACE; Project name: SPI
+prj_project open "E:/SPI INTERFACE/SPI.ldf"
+prj_project close
+#Stop recording: 2/24/2017 16:13:22
+
+
+
+<A name="pn170224191319"></A><B><U><big>pn170224191319</big></U></B>
+#Start recording tcl command: 2/24/2017 19:12:54
+#Project Location: C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE; Project name: SPI
+prj_project open "C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/SPI.ldf"
+#Stop recording: 2/24/2017 19:13:19
+
+
+
+<A name="pn170224191407"></A><B><U><big>pn170224191407</big></U></B>
+#Start recording tcl command: 2/24/2017 19:13:51
+#Project Location: C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE; Project name: SPI
+prj_project open "C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/SPI.ldf"
+#Stop recording: 2/24/2017 19:14:07
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

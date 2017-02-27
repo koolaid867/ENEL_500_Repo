@@ -1,0 +1,5 @@
+#Start recording tcl command: 2/24/2017 13:50:22
+#Project Location: E:/SPI INTERFACE; Project name: SPI
+prj_project open "E:/SPI INTERFACE/SPI.ldf"
+prj_src add "E:/SPI INTERFACE/simulation/simulation.spf"
+#Stop recording: 2/24/2017 13:52:29
