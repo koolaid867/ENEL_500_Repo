@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DiamondModule name="CLK_FILL_ARRAY" module="PLL" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2017 02 24 19:47:21.418" version="5.8" type="Module" synthesis="lse" source_format="VHDL">
+<DiamondModule name="CLK_FILL_ARRAY" module="CLK_FILL_ARRAY" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2017 02 26 19:06:20.325" version="5.8" type="Module" synthesis="lse" source_format="VHDL">
   <Package>
-		<File name="CLK_FILL_ARRAY.lpc" type="lpc" modified="2017 02 24 19:47:19.451"/>
-		<File name="CLK_FILL_ARRAY.vhd" type="top_level_vhdl" modified="2017 02 24 19:47:19.560"/>
-		<File name="CLK_FILL_ARRAY_tmpl.vhd" type="template_vhdl" modified="2017 02 24 19:47:19.563"/>
+		<File name="CLK_FILL_ARRAY.lpc" type="lpc" modified="2017 02 26 19:06:16.625"/>
+		<File name="CLK_FILL_ARRAY.vhd" type="top_level_vhdl" modified="2017 02 26 19:06:16.710"/>
+		<File name="CLK_FILL_ARRAY_tmpl.vhd" type="template_vhdl" modified="2017 02 26 19:06:16.711"/>
   </Package>
 </DiamondModule>

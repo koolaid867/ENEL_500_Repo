@@ -9,48 +9,48 @@
             <ID>35921504</ID>
             <Severity>Info</Severity>
             <Dynamic></Dynamic>
-            <Dynamic>C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/EUREKA_SPI</Dynamic>
+            <Dynamic>C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/EUREKA_SPI</Dynamic>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/michael hosanee/documents/enel 500/spi interface/beagle_to_outputs.vhd(7): </Dynamic>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd(7): </Dynamic>
             <Dynamic>spi_output</Dynamic>
-            <Navigation>c:/users/michael hosanee/documents/enel 500/spi interface/beagle_to_outputs.vhd</Navigation>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd</Navigation>
             <Navigation>7</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/michael hosanee/documents/enel 500/spi interface/beagle_to_outputs.vhd(16): </Dynamic>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd(17): </Dynamic>
             <Dynamic>behavioural</Dynamic>
-            <Navigation>c:/users/michael hosanee/documents/enel 500/spi interface/beagle_to_outputs.vhd</Navigation>
-            <Navigation>16</Navigation>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd</Navigation>
+            <Navigation>17</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/michael hosanee/documents/enel 500/spi interface/spi_slave.vhd(14): </Dynamic>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(14): </Dynamic>
             <Dynamic>spi_slave</Dynamic>
-            <Navigation>c:/users/michael hosanee/documents/enel 500/spi interface/spi_slave.vhd</Navigation>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd</Navigation>
             <Navigation>14</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/michael hosanee/documents/enel 500/spi interface/spi_slave.vhd(33): </Dynamic>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(33): </Dynamic>
             <Dynamic>structure</Dynamic>
-            <Navigation>c:/users/michael hosanee/documents/enel 500/spi interface/spi_slave.vhd</Navigation>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd</Navigation>
             <Navigation>33</Navigation>
         </Message>
         <Message>
             <ID>35921205</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/michael hosanee/documents/enel 500/spi interface/beagle_to_outputs.vhd(14): </Dynamic>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd(15): </Dynamic>
             <Dynamic>SPI_OUTPUT</Dynamic>
             <Dynamic>BEHAVIOURAL</Dynamic>
-            <Navigation>c:/users/michael hosanee/documents/enel 500/spi interface/beagle_to_outputs.vhd</Navigation>
-            <Navigation>14</Navigation>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd</Navigation>
+            <Navigation>15</Navigation>
         </Message>
         <Message>
             <ID>35001771</ID>

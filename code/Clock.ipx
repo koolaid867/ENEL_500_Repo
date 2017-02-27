@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<DiamondModule name="clock" module="clock" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2016 12 22 13:33:53.714" version="5.8" type="Module" synthesis="lse" source_format="VHDL">
-  <Package>
-		<File name="clock.lpc" type="lpc" modified="2016 12 22 13:33:52.088"/>
-		<File name="clock.vhd" type="top_level_vhdl" modified="2016 12 22 13:33:52.167"/>
-		<File name="clock_tmpl.vhd" type="template_vhdl" modified="2016 12 22 13:33:52.167"/>
-  </Package>
-</DiamondModule>

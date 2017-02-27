@@ -3,7 +3,7 @@ Starting process: Module
 Starting process: 
 
 SCUBA, Version Diamond (64-bit) 3.8.0.115.3
-Fri Feb 24 19:47:19 2017
+Sun Feb 26 19:06:16 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -13,7 +13,7 @@ Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
 
 BEGIN SCUBA Module Synthesis
 
-    Issued command   : C:\lscc\diamond\3.8_x64\ispfpga\bin\nt64\scuba.exe -w -n CLK_FILL_ARRAY -lang vhdl -synth lse -arch xo2c00 -type pll -fin 10 -fclkop 10 -fclkop_tol 0.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 -wb 
+    Issued command   : C:\lscc\diamond\3.8_x64\ispfpga\bin\nt64\scuba.exe -w -n CLK_FILL_ARRAY -lang vhdl -synth synplify -arch xo2c00 -type pll -fin 12 -fclkop 12 -fclkop_tol 0.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 -wb 
     Circuit name     : CLK_FILL_ARRAY
     Module type      : pll
     Module Version   : 5.7
