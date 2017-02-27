@@ -9,9 +9,6 @@
         <Source name="SPI_SLAVE.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
-        <Source name="CLK_FILL_ARRAY.ipx" type="IPX_Module" type_short="IPX" excluded="TRUE">
-            <Options/>
-        </Source>
         <Source name="test_bench_spi.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
             <Options/>
         </Source>

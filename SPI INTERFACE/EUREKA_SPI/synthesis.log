@@ -5,10 +5,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Feb 24 20:20:43 2017
+Sun Feb 26 21:05:46 2017
 
 
-Command Line:  synthesis -f SPI_EUREKA_SPI_lattice.synproj -gui -msgset C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/promote.xml 
+Command Line:  synthesis -f SPI_EUREKA_SPI_lattice.synproj -gui -msgset C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/promote.xml 
 
 Synthesis options:
 The -a option is MachXO2.
@@ -61,11 +61,11 @@ RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
 -p C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data (searchpath added)
--p C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/EUREKA_SPI (searchpath added)
--p C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE (searchpath added)
+-p C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/EUREKA_SPI (searchpath added)
+-p C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE (searchpath added)
 VHDL library = work
-VHDL design file = C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd
-VHDL design file = C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/SPI_SLAVE.vhd
+VHDL design file = C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd
+VHDL design file = C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/SPI_SLAVE.vhd
 NGD file = SPI_EUREKA_SPI.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -76,19 +76,19 @@ Technology check ok...
 Analyzing Verilog file C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-INFO - synthesis: The default VHDL library search path is now "C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/EUREKA_SPI". VHDL-1504
-Analyzing VHDL file c:/users/michael hosanee/documents/enel 500/spi interface/beagle_to_outputs.vhd. VHDL-1481
-INFO - synthesis: c:/users/michael hosanee/documents/enel 500/spi interface/beagle_to_outputs.vhd(7): analyzing entity spi_output. VHDL-1012
-INFO - synthesis: c:/users/michael hosanee/documents/enel 500/spi interface/beagle_to_outputs.vhd(16): analyzing architecture behavioural. VHDL-1010
+INFO - synthesis: The default VHDL library search path is now "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/EUREKA_SPI". VHDL-1504
+Analyzing VHDL file c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd. VHDL-1481
+INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd(7): analyzing entity spi_output. VHDL-1012
+INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd(17): analyzing architecture behavioural. VHDL-1010
 unit SPI_OUTPUT is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/michael hosanee/documents/enel 500/spi interface/spi_slave.vhd. VHDL-1481
-INFO - synthesis: c:/users/michael hosanee/documents/enel 500/spi interface/spi_slave.vhd(14): analyzing entity spi_slave. VHDL-1012
-INFO - synthesis: c:/users/michael hosanee/documents/enel 500/spi interface/spi_slave.vhd(33): analyzing architecture structure. VHDL-1010
+Analyzing VHDL file c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd. VHDL-1481
+INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(14): analyzing entity spi_slave. VHDL-1012
+INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(33): analyzing architecture structure. VHDL-1010
 unit SPI_OUTPUT is not yet analyzed. VHDL-1485
 unit SPI_OUTPUT is not yet analyzed. VHDL-1485
-c:/users/michael hosanee/documents/enel 500/spi interface/beagle_to_outputs.vhd(7): executing SPI_OUTPUT(BEHAVIOURAL)
+c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd(7): executing SPI_OUTPUT(BEHAVIOURAL)
 
-WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/spi interface/beagle_to_outputs.vhd(14): replacing existing netlist SPI_OUTPUT(BEHAVIOURAL). VHDL-1205
+WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd(15): replacing existing netlist SPI_OUTPUT(BEHAVIOURAL). VHDL-1205
 Top module name (VHDL): SPI_OUTPUT
 Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -113,13 +113,6 @@ WARNING - synthesis: Initial value found on net SPI_MOSI_b will be ignored due t
 WARNING - synthesis: Skipping pad insertion on SPI_CLK_b due to black_box_pad_pin attribute.
 WARNING - synthesis: Skipping pad insertion on SPI_MISO_b due to black_box_pad_pin attribute.
 WARNING - synthesis: Skipping pad insertion on SPI_MOSI_b due to black_box_pad_pin attribute.
-Duplicate register/latch removal. ARRAY_FINAL_i1 is a one-to-one match with ARRAY_FINAL_i8.
-Duplicate register/latch removal. ARRAY_FINAL_i2 is a one-to-one match with ARRAY_FINAL_i7.
-Duplicate register/latch removal. ARRAY_FINAL_i3 is a one-to-one match with ARRAY_FINAL_i6.
-Duplicate register/latch removal. ARRAY_FINAL_i4 is a one-to-one match with ARRAY_FINAL_i5.
-Duplicate register/latch removal. ARRAY_FINAL_i1 is a one-to-one match with ARRAY_FINAL_i4.
-Duplicate register/latch removal. ARRAY_FINAL_i2 is a one-to-one match with ARRAY_FINAL_i3.
-Duplicate register/latch removal. ARRAY_FINAL_i1 is a one-to-one match with ARRAY_FINAL_i2.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 1.000000 MHz constraint to all clocks
 
@@ -133,15 +126,16 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file SPI_EUREKA_SPI.ngd.
 
 ################### Begin Area Report (SPI_OUTPUT)######################
-Number of register bits => 5 of 7209 (0 % )
+Number of register bits => 21 of 7209 (0 % )
 BB => 3
 EFB => 1
-FD1P3AX => 2
-FD1S3AX => 3
+FD1P3AX => 16
+FD1S3AX => 1
+FD1S3IX => 4
 GSR => 1
 IB => 1
-LUT4 => 2
-OB => 8
+LUT4 => 12
+OB => 9
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -151,25 +145,32 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 2
-  Net : SPI_CLK_b, loads : 5
+  Net : SPI_CLK_b, loads : 21
   Net : spi_clk_i, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 2
-Top 2 highest fanout Clock Enables:
-  Net : Switch_Array_Count, loads : 3
-  Net : Switch_Array_Count_N_26, loads : 2
+Number of Clock Enables: 9
+Top 9 highest fanout Clock Enables:
+  Net : RECEIVE_DATA_BITS, loads : 21
+  Net : SPI_CLK_b_enable_5, loads : 1
+  Net : SPI_CLK_b_enable_6, loads : 1
+  Net : SPI_CLK_b_enable_3, loads : 1
+  Net : SPI_CLK_b_enable_7, loads : 1
+  Net : SPI_CLK_b_enable_1, loads : 1
+  Net : SPI_CLK_b_enable_2, loads : 1
+  Net : SPI_CLK_b_enable_4, loads : 1
+  Net : SPI_CLK_b_enable_8, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : ARRAY_FINAL_c_0, loads : 8
-  Net : Switch_Array_Count, loads : 3
-  Net : ARRAY_INPUT_7, loads : 2
-  Net : Switch_Array_Count_N_26, loads : 2
-  Net : SPI_MOSI_b, loads : 1
+  Net : RECEIVE_DATA_BITS, loads : 21
+  Net : Fill_Array_0, loads : 12
+  Net : Fill_Array_1, loads : 11
+  Net : Fill_Array_2, loads : 10
+  Net : SPI_MOSI_b, loads : 8
   Net : SPI_SCSN_b_c, loads : 1
-  Net : ARRAY_INPUT_TO_OUTPUT_1_7, loads : 1
-  Net : ARRAY_INPUT_TO_OUTPUT_2_7, loads : 1
-  Net : ARRAY_FINAL_7_N_1_0, loads : 1
-  Net : spi_mosi_i, loads : 1
+  Net : ARRAY_FINAL_c_7, loads : 1
+  Net : ARRAY_FINAL_c_6, loads : 1
+  Net : ARRAY_FINAL_c_5, loads : 1
+  Net : ARRAY_FINAL_c_4, loads : 1
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -187,8 +188,8 @@ clk0 [get_nets SPI_CLK_b]               |            -|            -|     0
 All constraints were met.
 
 
-Peak Memory Usage: 74.273  MB
+Peak Memory Usage: 74.789  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.500  secs
+Elapsed CPU time for LSE flow : 0.547  secs
 --------------------------------------------------------------

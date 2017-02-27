@@ -20,7 +20,7 @@
 <unit name = "SPI_OUTPUT">
 
     <!--
-        Top Level Pins: 12
+        Top Level Pins: 13
     -->
 
     <pins>
@@ -36,11 +36,28 @@
         <pitem  name = "ARRAY_FINAL[2]"  direction = "inout"  />
         <pitem  name = "ARRAY_FINAL[1]"  direction = "inout"  />
         <pitem  name = "ARRAY_FINAL[0]"  direction = "inout"  />
+        <pitem  name = "SEND_DATA_BITS"  direction = "out"  />
     </pins>
 
     <!--
-        Instances in netlist: 19
+        Instances in netlist: 30
     -->
+
+    <instance  name = "I1/BBspi_miso"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "B"  direction = "inout"  />
+        <pitem  name = "T"  direction = "in"  />
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SPI_MISO_b"  />
+        <nitem  name = "I1/spi_miso_oe"  />
+        <nitem  name = "I1/spi_miso_o"  />
+        <nitem  name = "I1/spi_miso_i"  />
+        </nets>
+    </instance>
 
     <instance  name = "I1/scuba_vhi_inst"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
@@ -49,6 +66,619 @@
 
         <nets>
         <nitem  name = "I1/scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "RECEIVE_DATA_BITS_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "RECEIVE_DATA_BITS"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_37"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Decoder_4"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i[2]"  direction = "in"  />
+        <pitem  name = "i[1]"  direction = "in"  />
+        <pitem  name = "i[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Fill_Array[2]"  />
+        <nitem  name = "Fill_Array[1]"  />
+        <nitem  name = "Fill_Array[0]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[7]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[6]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[5]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[4]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[3]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[2]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[1]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ARRAY_INPUT_7__I_0_36"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ARRAY_INPUT[7]"  />
+        <nitem  name = "SPI_MOSI_b"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[7]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_20"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ARRAY_INPUT_6__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ARRAY_INPUT[6]"  />
+        <nitem  name = "SPI_MOSI_b"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[6]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_22"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ARRAY_INPUT_5__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ARRAY_INPUT[5]"  />
+        <nitem  name = "SPI_MOSI_b"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[5]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_24"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ARRAY_INPUT_4__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ARRAY_INPUT[4]"  />
+        <nitem  name = "SPI_MOSI_b"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[4]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_26"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ARRAY_INPUT_3__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ARRAY_INPUT[3]"  />
+        <nitem  name = "SPI_MOSI_b"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[3]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_28"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ARRAY_INPUT_2__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ARRAY_INPUT[2]"  />
+        <nitem  name = "SPI_MOSI_b"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[2]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_30"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ARRAY_INPUT_1__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ARRAY_INPUT[1]"  />
+        <nitem  name = "SPI_MOSI_b"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[1]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_32"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ARRAY_INPUT_0__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ARRAY_INPUT[0]"  />
+        <nitem  name = "SPI_MOSI_b"  />
+        <nitem  name = "ARRAY_INPUT_7__N_21[0]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_34"  />
+        </nets>
+    </instance>
+
+    <instance  name = "add_13"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "gnd"  />
+        <nitem  name = "Fill_Array[2]"  />
+        <nitem  name = "Fill_Array[1]"  />
+        <nitem  name = "Fill_Array[0]"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_41[2]"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_41[1]"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_41[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "RECEIVE_DATA_BITS_I_1"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "pwr"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_41[2]"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_41[1]"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_41[0]"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_40"  />
+        </nets>
+    </instance>
+
+    <instance  name = "RECEIVE_DATA_BITS_I_0_35"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "RECEIVE_DATA_BITS"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_40"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_39"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ARRAY_INPUT_7__I_0_33"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ARRAY_INPUT[7]"  />
+        <nitem  name = "ARRAY_INPUT[6]"  />
+        <nitem  name = "ARRAY_INPUT[5]"  />
+        <nitem  name = "ARRAY_INPUT[4]"  />
+        <nitem  name = "ARRAY_INPUT[3]"  />
+        <nitem  name = "ARRAY_INPUT[2]"  />
+        <nitem  name = "ARRAY_INPUT[1]"  />
+        <nitem  name = "ARRAY_INPUT[0]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_20"  />
+        <nitem  name = "ARRAY_INPUT_7__N_22"  />
+        <nitem  name = "ARRAY_INPUT_7__N_24"  />
+        <nitem  name = "ARRAY_INPUT_7__N_26"  />
+        <nitem  name = "ARRAY_INPUT_7__N_28"  />
+        <nitem  name = "ARRAY_INPUT_7__N_30"  />
+        <nitem  name = "ARRAY_INPUT_7__N_32"  />
+        <nitem  name = "ARRAY_INPUT_7__N_34"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_37"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[7]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[6]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[5]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[4]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[3]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[2]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[1]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "RECEIVE_DATA_BITS_N_41_2__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "gnd"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_41[2]"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_41[1]"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_41[0]"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_37"  />
+        <nitem  name = "Fill_Array_2__N_17[2]"  />
+        <nitem  name = "Fill_Array_2__N_17[1]"  />
+        <nitem  name = "Fill_Array_2__N_17[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "I1/BBspi_mosi"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "B"  direction = "inout"  />
+        <pitem  name = "T"  direction = "in"  />
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SPI_MOSI_b"  />
+        <nitem  name = "I1/spi_mosi_oe"  />
+        <nitem  name = "I1/spi_mosi_o"  />
+        <nitem  name = "I1/spi_mosi_i"  />
+        </nets>
+    </instance>
+
+    <instance  name = "RECEIVE_DATA_BITS_I_0_34"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "gnd"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_39"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_37"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_38"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ARRAY_INPUT_7__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ARRAY_INPUT[7]"  />
+        <nitem  name = "ARRAY_INPUT[6]"  />
+        <nitem  name = "ARRAY_INPUT[5]"  />
+        <nitem  name = "ARRAY_INPUT[4]"  />
+        <nitem  name = "ARRAY_INPUT[3]"  />
+        <nitem  name = "ARRAY_INPUT[2]"  />
+        <nitem  name = "ARRAY_INPUT[1]"  />
+        <nitem  name = "ARRAY_INPUT[0]"  />
+        <nitem  name = "ARRAY_FINAL[7]"  />
+        <nitem  name = "ARRAY_FINAL[6]"  />
+        <nitem  name = "ARRAY_FINAL[5]"  />
+        <nitem  name = "ARRAY_FINAL[4]"  />
+        <nitem  name = "ARRAY_FINAL[3]"  />
+        <nitem  name = "ARRAY_FINAL[2]"  />
+        <nitem  name = "ARRAY_FINAL[1]"  />
+        <nitem  name = "ARRAY_FINAL[0]"  />
+        <nitem  name = "RECEIVE_DATA_BITS_N_37"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[7]"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[6]"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[5]"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[4]"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[3]"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[2]"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[1]"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Fill_Array"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Fill_Array_2__N_17[2]"  />
+        <nitem  name = "Fill_Array_2__N_17[1]"  />
+        <nitem  name = "Fill_Array_2__N_17[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "SPI_CLK_b"  />
+        <nitem  name = "Fill_Array[2]"  />
+        <nitem  name = "Fill_Array[1]"  />
+        <nitem  name = "Fill_Array[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SEND_DATA_BITS_29"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "RECEIVE_DATA_BITS"  />
+        <nitem  name = "SPI_CLK_b"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "SEND_DATA_BITS"  />
+        </nets>
+    </instance>
+
+    <instance  name = "RECEIVE_DATA_BITS_30"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "RECEIVE_DATA_BITS_N_38"  />
+        <nitem  name = "SPI_CLK_b"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "RECEIVE_DATA_BITS"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ARRAY_FINAL"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ARRAY_FINAL_7__N_1[7]"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[6]"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[5]"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[4]"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[3]"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[2]"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[1]"  />
+        <nitem  name = "ARRAY_FINAL_7__N_1[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "SPI_CLK_b"  />
+        <nitem  name = "ARRAY_FINAL[7]"  />
+        <nitem  name = "ARRAY_FINAL[6]"  />
+        <nitem  name = "ARRAY_FINAL[5]"  />
+        <nitem  name = "ARRAY_FINAL[4]"  />
+        <nitem  name = "ARRAY_FINAL[3]"  />
+        <nitem  name = "ARRAY_FINAL[2]"  />
+        <nitem  name = "ARRAY_FINAL[1]"  />
+        <nitem  name = "ARRAY_FINAL[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "I1/BBspi_clk"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "B"  direction = "inout"  />
+        <pitem  name = "T"  direction = "in"  />
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SPI_CLK_b"  />
+        <nitem  name = "I1/spi_clk_oe"  />
+        <nitem  name = "I1/spi_clk_o"  />
+        <nitem  name = "I1/spi_clk_i"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ARRAY_INPUT"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ARRAY_INPUT_7__N_9[7]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[6]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[5]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[4]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[3]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[2]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[1]"  />
+        <nitem  name = "ARRAY_INPUT_7__N_9[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "SPI_CLK_b"  />
+        <nitem  name = "ARRAY_INPUT[7]"  />
+        <nitem  name = "ARRAY_INPUT[6]"  />
+        <nitem  name = "ARRAY_INPUT[5]"  />
+        <nitem  name = "ARRAY_INPUT[4]"  />
+        <nitem  name = "ARRAY_INPUT[3]"  />
+        <nitem  name = "ARRAY_INPUT[2]"  />
+        <nitem  name = "ARRAY_INPUT[1]"  />
+        <nitem  name = "ARRAY_INPUT[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "I1/scuba_vlo_inst"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "I1/scuba_vlo"  />
         </nets>
     </instance>
 
@@ -182,612 +812,6 @@
         </nets>
     </instance>
 
-    <instance  name = "I1/scuba_vlo_inst"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "Z"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "I1/scuba_vlo"  />
-        </nets>
-    </instance>
-
-    <instance  name = "I1/BBspi_miso"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "B"  direction = "inout"  />
-        <pitem  name = "T"  direction = "in"  />
-        <pitem  name = "I"  direction = "in"  />
-        <pitem  name = "O"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "SPI_MISO_b"  />
-        <nitem  name = "I1/spi_miso_oe"  />
-        <nitem  name = "I1/spi_miso_o"  />
-        <nitem  name = "I1/spi_miso_i"  />
-        </nets>
-    </instance>
-
-    <instance  name = "ARRAY_INPUT_TO_OUTPUT_1"  library = "work"  arch = "RTL"  type = "reg">
-        <pins>
-        <pitem  name = "d[7]"  direction = "in"  />
-        <pitem  name = "d[6]"  direction = "in"  />
-        <pitem  name = "d[5]"  direction = "in"  />
-        <pitem  name = "d[4]"  direction = "in"  />
-        <pitem  name = "d[3]"  direction = "in"  />
-        <pitem  name = "d[2]"  direction = "in"  />
-        <pitem  name = "d[1]"  direction = "in"  />
-        <pitem  name = "d[0]"  direction = "in"  />
-        <pitem  name = "set[7]"  direction = "in"  />
-        <pitem  name = "set[6]"  direction = "in"  />
-        <pitem  name = "set[5]"  direction = "in"  />
-        <pitem  name = "set[4]"  direction = "in"  />
-        <pitem  name = "set[3]"  direction = "in"  />
-        <pitem  name = "set[2]"  direction = "in"  />
-        <pitem  name = "set[1]"  direction = "in"  />
-        <pitem  name = "set[0]"  direction = "in"  />
-        <pitem  name = "reset[7]"  direction = "in"  />
-        <pitem  name = "reset[6]"  direction = "in"  />
-        <pitem  name = "reset[5]"  direction = "in"  />
-        <pitem  name = "reset[4]"  direction = "in"  />
-        <pitem  name = "reset[3]"  direction = "in"  />
-        <pitem  name = "reset[2]"  direction = "in"  />
-        <pitem  name = "reset[1]"  direction = "in"  />
-        <pitem  name = "reset[0]"  direction = "in"  />
-        <pitem  name = "clock"  direction = "in"  />
-        <pitem  name = "q[7]"  direction = "out"  />
-        <pitem  name = "q[6]"  direction = "out"  />
-        <pitem  name = "q[5]"  direction = "out"  />
-        <pitem  name = "q[4]"  direction = "out"  />
-        <pitem  name = "q[3]"  direction = "out"  />
-        <pitem  name = "q[2]"  direction = "out"  />
-        <pitem  name = "q[1]"  direction = "out"  />
-        <pitem  name = "q[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[7]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[6]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[5]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[4]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[3]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[2]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[1]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[0]"  />
-        <nitem  name = "gnd"  />
-        <nitem  name = "SPI_CLK_b"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[7]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[6]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[5]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[4]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[3]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[2]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[1]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[0]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "Switch_Array_Count_I_0"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "i"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "Switch_Array_Count"  />
-        <nitem  name = "Switch_Array_Count_N_26"  />
-        </nets>
-    </instance>
-
-    <instance  name = "ARRAY_INPUT_TO_OUTPUT_1_7__I_0"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "d0[7]"  direction = "in"  />
-        <pitem  name = "d0[6]"  direction = "in"  />
-        <pitem  name = "d0[5]"  direction = "in"  />
-        <pitem  name = "d0[4]"  direction = "in"  />
-        <pitem  name = "d0[3]"  direction = "in"  />
-        <pitem  name = "d0[2]"  direction = "in"  />
-        <pitem  name = "d0[1]"  direction = "in"  />
-        <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "d1[7]"  direction = "in"  />
-        <pitem  name = "d1[6]"  direction = "in"  />
-        <pitem  name = "d1[5]"  direction = "in"  />
-        <pitem  name = "d1[4]"  direction = "in"  />
-        <pitem  name = "d1[3]"  direction = "in"  />
-        <pitem  name = "d1[2]"  direction = "in"  />
-        <pitem  name = "d1[1]"  direction = "in"  />
-        <pitem  name = "d1[0]"  direction = "in"  />
-        <pitem  name = "cond"  direction = "in"  />
-        <pitem  name = "o[7]"  direction = "out"  />
-        <pitem  name = "o[6]"  direction = "out"  />
-        <pitem  name = "o[5]"  direction = "out"  />
-        <pitem  name = "o[4]"  direction = "out"  />
-        <pitem  name = "o[3]"  direction = "out"  />
-        <pitem  name = "o[2]"  direction = "out"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[7]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[6]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[5]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[4]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[3]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[2]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[1]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[0]"  />
-        <nitem  name = "ARRAY_INPUT[7]"  />
-        <nitem  name = "ARRAY_INPUT[6]"  />
-        <nitem  name = "ARRAY_INPUT[5]"  />
-        <nitem  name = "ARRAY_INPUT[4]"  />
-        <nitem  name = "ARRAY_INPUT[3]"  />
-        <nitem  name = "ARRAY_INPUT[2]"  />
-        <nitem  name = "ARRAY_INPUT[1]"  />
-        <nitem  name = "ARRAY_INPUT[0]"  />
-        <nitem  name = "Switch_Array_Count_N_26"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[7]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[6]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[5]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[4]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[3]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[2]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[1]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1_7__N_9[0]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "mux_9"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "d0[7]"  direction = "in"  />
-        <pitem  name = "d0[6]"  direction = "in"  />
-        <pitem  name = "d0[5]"  direction = "in"  />
-        <pitem  name = "d0[4]"  direction = "in"  />
-        <pitem  name = "d0[3]"  direction = "in"  />
-        <pitem  name = "d0[2]"  direction = "in"  />
-        <pitem  name = "d0[1]"  direction = "in"  />
-        <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "d1[7]"  direction = "in"  />
-        <pitem  name = "d1[6]"  direction = "in"  />
-        <pitem  name = "d1[5]"  direction = "in"  />
-        <pitem  name = "d1[4]"  direction = "in"  />
-        <pitem  name = "d1[3]"  direction = "in"  />
-        <pitem  name = "d1[2]"  direction = "in"  />
-        <pitem  name = "d1[1]"  direction = "in"  />
-        <pitem  name = "d1[0]"  direction = "in"  />
-        <pitem  name = "cond"  direction = "in"  />
-        <pitem  name = "o[7]"  direction = "out"  />
-        <pitem  name = "o[6]"  direction = "out"  />
-        <pitem  name = "o[5]"  direction = "out"  />
-        <pitem  name = "o[4]"  direction = "out"  />
-        <pitem  name = "o[3]"  direction = "out"  />
-        <pitem  name = "o[2]"  direction = "out"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "ARRAY_FINAL[7]"  />
-        <nitem  name = "ARRAY_FINAL[6]"  />
-        <nitem  name = "ARRAY_FINAL[5]"  />
-        <nitem  name = "ARRAY_FINAL[4]"  />
-        <nitem  name = "ARRAY_FINAL[3]"  />
-        <nitem  name = "ARRAY_FINAL[2]"  />
-        <nitem  name = "ARRAY_FINAL[1]"  />
-        <nitem  name = "ARRAY_FINAL[0]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[7]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[6]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[5]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[4]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[3]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[2]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[1]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_1[0]"  />
-        <nitem  name = "Switch_Array_Count"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[7]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[6]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[5]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[4]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[3]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[2]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[1]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[0]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "ARRAY_FINAL_7__I_0"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "d0[7]"  direction = "in"  />
-        <pitem  name = "d0[6]"  direction = "in"  />
-        <pitem  name = "d0[5]"  direction = "in"  />
-        <pitem  name = "d0[4]"  direction = "in"  />
-        <pitem  name = "d0[3]"  direction = "in"  />
-        <pitem  name = "d0[2]"  direction = "in"  />
-        <pitem  name = "d0[1]"  direction = "in"  />
-        <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "d1[7]"  direction = "in"  />
-        <pitem  name = "d1[6]"  direction = "in"  />
-        <pitem  name = "d1[5]"  direction = "in"  />
-        <pitem  name = "d1[4]"  direction = "in"  />
-        <pitem  name = "d1[3]"  direction = "in"  />
-        <pitem  name = "d1[2]"  direction = "in"  />
-        <pitem  name = "d1[1]"  direction = "in"  />
-        <pitem  name = "d1[0]"  direction = "in"  />
-        <pitem  name = "cond"  direction = "in"  />
-        <pitem  name = "o[7]"  direction = "out"  />
-        <pitem  name = "o[6]"  direction = "out"  />
-        <pitem  name = "o[5]"  direction = "out"  />
-        <pitem  name = "o[4]"  direction = "out"  />
-        <pitem  name = "o[3]"  direction = "out"  />
-        <pitem  name = "o[2]"  direction = "out"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "ARRAY_FINAL_7__N_27[7]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[6]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[5]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[4]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[3]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[2]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[1]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_27[0]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[7]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[6]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[5]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[4]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[3]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[2]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[1]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[0]"  />
-        <nitem  name = "Switch_Array_Count_N_26"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[7]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[6]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[5]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[4]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[3]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[2]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[1]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[0]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "I1/BBspi_clk"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "B"  direction = "inout"  />
-        <pitem  name = "T"  direction = "in"  />
-        <pitem  name = "I"  direction = "in"  />
-        <pitem  name = "O"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "SPI_CLK_b"  />
-        <nitem  name = "I1/spi_clk_oe"  />
-        <nitem  name = "I1/spi_clk_o"  />
-        <nitem  name = "I1/spi_clk_i"  />
-        </nets>
-    </instance>
-
-    <instance  name = "I1/BBspi_mosi"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "B"  direction = "inout"  />
-        <pitem  name = "T"  direction = "in"  />
-        <pitem  name = "I"  direction = "in"  />
-        <pitem  name = "O"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "SPI_MOSI_b"  />
-        <nitem  name = "I1/spi_mosi_oe"  />
-        <nitem  name = "I1/spi_mosi_o"  />
-        <nitem  name = "I1/spi_mosi_i"  />
-        </nets>
-    </instance>
-
-    <instance  name = "mux_13"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "d0[7]"  direction = "in"  />
-        <pitem  name = "d0[6]"  direction = "in"  />
-        <pitem  name = "d0[5]"  direction = "in"  />
-        <pitem  name = "d0[4]"  direction = "in"  />
-        <pitem  name = "d0[3]"  direction = "in"  />
-        <pitem  name = "d0[2]"  direction = "in"  />
-        <pitem  name = "d0[1]"  direction = "in"  />
-        <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "d1[7]"  direction = "in"  />
-        <pitem  name = "d1[6]"  direction = "in"  />
-        <pitem  name = "d1[5]"  direction = "in"  />
-        <pitem  name = "d1[4]"  direction = "in"  />
-        <pitem  name = "d1[3]"  direction = "in"  />
-        <pitem  name = "d1[2]"  direction = "in"  />
-        <pitem  name = "d1[1]"  direction = "in"  />
-        <pitem  name = "d1[0]"  direction = "in"  />
-        <pitem  name = "cond"  direction = "in"  />
-        <pitem  name = "o[7]"  direction = "out"  />
-        <pitem  name = "o[6]"  direction = "out"  />
-        <pitem  name = "o[5]"  direction = "out"  />
-        <pitem  name = "o[4]"  direction = "out"  />
-        <pitem  name = "o[3]"  direction = "out"  />
-        <pitem  name = "o[2]"  direction = "out"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[7]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[6]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[5]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[4]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[3]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[2]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[1]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[0]"  />
-        <nitem  name = "ARRAY_INPUT[7]"  />
-        <nitem  name = "ARRAY_INPUT[6]"  />
-        <nitem  name = "ARRAY_INPUT[5]"  />
-        <nitem  name = "ARRAY_INPUT[4]"  />
-        <nitem  name = "ARRAY_INPUT[3]"  />
-        <nitem  name = "ARRAY_INPUT[2]"  />
-        <nitem  name = "ARRAY_INPUT[1]"  />
-        <nitem  name = "ARRAY_INPUT[0]"  />
-        <nitem  name = "Switch_Array_Count"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[7]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[6]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[5]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[4]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[3]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[2]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[1]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[0]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "ARRAY_INPUT_TO_OUTPUT_2_7__I_0"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "d0[7]"  direction = "in"  />
-        <pitem  name = "d0[6]"  direction = "in"  />
-        <pitem  name = "d0[5]"  direction = "in"  />
-        <pitem  name = "d0[4]"  direction = "in"  />
-        <pitem  name = "d0[3]"  direction = "in"  />
-        <pitem  name = "d0[2]"  direction = "in"  />
-        <pitem  name = "d0[1]"  direction = "in"  />
-        <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "d1[7]"  direction = "in"  />
-        <pitem  name = "d1[6]"  direction = "in"  />
-        <pitem  name = "d1[5]"  direction = "in"  />
-        <pitem  name = "d1[4]"  direction = "in"  />
-        <pitem  name = "d1[3]"  direction = "in"  />
-        <pitem  name = "d1[2]"  direction = "in"  />
-        <pitem  name = "d1[1]"  direction = "in"  />
-        <pitem  name = "d1[0]"  direction = "in"  />
-        <pitem  name = "cond"  direction = "in"  />
-        <pitem  name = "o[7]"  direction = "out"  />
-        <pitem  name = "o[6]"  direction = "out"  />
-        <pitem  name = "o[5]"  direction = "out"  />
-        <pitem  name = "o[4]"  direction = "out"  />
-        <pitem  name = "o[3]"  direction = "out"  />
-        <pitem  name = "o[2]"  direction = "out"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[7]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[6]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[5]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[4]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[3]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[2]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[1]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_35[0]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[7]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[6]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[5]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[4]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[3]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[2]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[1]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[0]"  />
-        <nitem  name = "Switch_Array_Count_N_26"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[7]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[6]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[5]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[4]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[3]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[2]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[1]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[0]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "ARRAY_FINAL"  library = "work"  arch = "RTL"  type = "reg">
-        <pins>
-        <pitem  name = "d[7]"  direction = "in"  />
-        <pitem  name = "d[6]"  direction = "in"  />
-        <pitem  name = "d[5]"  direction = "in"  />
-        <pitem  name = "d[4]"  direction = "in"  />
-        <pitem  name = "d[3]"  direction = "in"  />
-        <pitem  name = "d[2]"  direction = "in"  />
-        <pitem  name = "d[1]"  direction = "in"  />
-        <pitem  name = "d[0]"  direction = "in"  />
-        <pitem  name = "set[7]"  direction = "in"  />
-        <pitem  name = "set[6]"  direction = "in"  />
-        <pitem  name = "set[5]"  direction = "in"  />
-        <pitem  name = "set[4]"  direction = "in"  />
-        <pitem  name = "set[3]"  direction = "in"  />
-        <pitem  name = "set[2]"  direction = "in"  />
-        <pitem  name = "set[1]"  direction = "in"  />
-        <pitem  name = "set[0]"  direction = "in"  />
-        <pitem  name = "reset[7]"  direction = "in"  />
-        <pitem  name = "reset[6]"  direction = "in"  />
-        <pitem  name = "reset[5]"  direction = "in"  />
-        <pitem  name = "reset[4]"  direction = "in"  />
-        <pitem  name = "reset[3]"  direction = "in"  />
-        <pitem  name = "reset[2]"  direction = "in"  />
-        <pitem  name = "reset[1]"  direction = "in"  />
-        <pitem  name = "reset[0]"  direction = "in"  />
-        <pitem  name = "clock"  direction = "in"  />
-        <pitem  name = "q[7]"  direction = "out"  />
-        <pitem  name = "q[6]"  direction = "out"  />
-        <pitem  name = "q[5]"  direction = "out"  />
-        <pitem  name = "q[4]"  direction = "out"  />
-        <pitem  name = "q[3]"  direction = "out"  />
-        <pitem  name = "q[2]"  direction = "out"  />
-        <pitem  name = "q[1]"  direction = "out"  />
-        <pitem  name = "q[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "ARRAY_FINAL_7__N_1[7]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[6]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[5]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[4]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[3]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[2]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[1]"  />
-        <nitem  name = "ARRAY_FINAL_7__N_1[0]"  />
-        <nitem  name = "gnd"  />
-        <nitem  name = "SPI_CLK_b"  />
-        <nitem  name = "ARRAY_FINAL[7]"  />
-        <nitem  name = "ARRAY_FINAL[6]"  />
-        <nitem  name = "ARRAY_FINAL[5]"  />
-        <nitem  name = "ARRAY_FINAL[4]"  />
-        <nitem  name = "ARRAY_FINAL[3]"  />
-        <nitem  name = "ARRAY_FINAL[2]"  />
-        <nitem  name = "ARRAY_FINAL[1]"  />
-        <nitem  name = "ARRAY_FINAL[0]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "Switch_Array_Count_24"  library = "work"  arch = "RTL"  type = "reg">
-        <pins>
-        <pitem  name = "d"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "Switch_Array_Count_N_26"  />
-        <nitem  name = "SPI_CLK_b"  />
-        <nitem  name = "gnd"  />
-        <nitem  name = "Switch_Array_Count"  />
-        </nets>
-    </instance>
-
-    <instance  name = "ARRAY_INPUT_TO_OUTPUT_2"  library = "work"  arch = "RTL"  type = "reg">
-        <pins>
-        <pitem  name = "d[7]"  direction = "in"  />
-        <pitem  name = "d[6]"  direction = "in"  />
-        <pitem  name = "d[5]"  direction = "in"  />
-        <pitem  name = "d[4]"  direction = "in"  />
-        <pitem  name = "d[3]"  direction = "in"  />
-        <pitem  name = "d[2]"  direction = "in"  />
-        <pitem  name = "d[1]"  direction = "in"  />
-        <pitem  name = "d[0]"  direction = "in"  />
-        <pitem  name = "set[7]"  direction = "in"  />
-        <pitem  name = "set[6]"  direction = "in"  />
-        <pitem  name = "set[5]"  direction = "in"  />
-        <pitem  name = "set[4]"  direction = "in"  />
-        <pitem  name = "set[3]"  direction = "in"  />
-        <pitem  name = "set[2]"  direction = "in"  />
-        <pitem  name = "set[1]"  direction = "in"  />
-        <pitem  name = "set[0]"  direction = "in"  />
-        <pitem  name = "reset[7]"  direction = "in"  />
-        <pitem  name = "reset[6]"  direction = "in"  />
-        <pitem  name = "reset[5]"  direction = "in"  />
-        <pitem  name = "reset[4]"  direction = "in"  />
-        <pitem  name = "reset[3]"  direction = "in"  />
-        <pitem  name = "reset[2]"  direction = "in"  />
-        <pitem  name = "reset[1]"  direction = "in"  />
-        <pitem  name = "reset[0]"  direction = "in"  />
-        <pitem  name = "clock"  direction = "in"  />
-        <pitem  name = "q[7]"  direction = "out"  />
-        <pitem  name = "q[6]"  direction = "out"  />
-        <pitem  name = "q[5]"  direction = "out"  />
-        <pitem  name = "q[4]"  direction = "out"  />
-        <pitem  name = "q[3]"  direction = "out"  />
-        <pitem  name = "q[2]"  direction = "out"  />
-        <pitem  name = "q[1]"  direction = "out"  />
-        <pitem  name = "q[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[7]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[6]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[5]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[4]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[3]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[2]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[1]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2_7__N_17[0]"  />
-        <nitem  name = "gnd"  />
-        <nitem  name = "SPI_CLK_b"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[7]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[6]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[5]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[4]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[3]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[2]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[1]"  />
-        <nitem  name = "ARRAY_INPUT_TO_OUTPUT_2[0]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "ARRAY_INPUT"  library = "work"  arch = "RTL"  type = "reg">
-        <pins>
-        <pitem  name = "d[7]"  direction = "in"  />
-        <pitem  name = "d[6]"  direction = "in"  />
-        <pitem  name = "d[5]"  direction = "in"  />
-        <pitem  name = "d[4]"  direction = "in"  />
-        <pitem  name = "d[3]"  direction = "in"  />
-        <pitem  name = "d[2]"  direction = "in"  />
-        <pitem  name = "d[1]"  direction = "in"  />
-        <pitem  name = "d[0]"  direction = "in"  />
-        <pitem  name = "set[7]"  direction = "in"  />
-        <pitem  name = "set[6]"  direction = "in"  />
-        <pitem  name = "set[5]"  direction = "in"  />
-        <pitem  name = "set[4]"  direction = "in"  />
-        <pitem  name = "set[3]"  direction = "in"  />
-        <pitem  name = "set[2]"  direction = "in"  />
-        <pitem  name = "set[1]"  direction = "in"  />
-        <pitem  name = "set[0]"  direction = "in"  />
-        <pitem  name = "reset[7]"  direction = "in"  />
-        <pitem  name = "reset[6]"  direction = "in"  />
-        <pitem  name = "reset[5]"  direction = "in"  />
-        <pitem  name = "reset[4]"  direction = "in"  />
-        <pitem  name = "reset[3]"  direction = "in"  />
-        <pitem  name = "reset[2]"  direction = "in"  />
-        <pitem  name = "reset[1]"  direction = "in"  />
-        <pitem  name = "reset[0]"  direction = "in"  />
-        <pitem  name = "clock"  direction = "in"  />
-        <pitem  name = "q[7]"  direction = "out"  />
-        <pitem  name = "q[6]"  direction = "out"  />
-        <pitem  name = "q[5]"  direction = "out"  />
-        <pitem  name = "q[4]"  direction = "out"  />
-        <pitem  name = "q[3]"  direction = "out"  />
-        <pitem  name = "q[2]"  direction = "out"  />
-        <pitem  name = "q[1]"  direction = "out"  />
-        <pitem  name = "q[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "SPI_MOSI_b"  />
-        <nitem  name = "gnd"  />
-        <nitem  name = "SPI_CLK_b"  />
-        <nitem  name = "ARRAY_INPUT[7]"  />
-        <nitem  name = "ARRAY_INPUT[6]"  />
-        <nitem  name = "ARRAY_INPUT[5]"  />
-        <nitem  name = "ARRAY_INPUT[4]"  />
-        <nitem  name = "ARRAY_INPUT[3]"  />
-        <nitem  name = "ARRAY_INPUT[2]"  />
-        <nitem  name = "ARRAY_INPUT[1]"  />
-        <nitem  name = "ARRAY_INPUT[0]"  />
-        </nets>
-    </instance>
-
     <instance  name = "EFBInst_0"  />
     <instance  name = "I1"  />
     <!--
@@ -795,10 +819,10 @@
     -->
 
     <regs>
-        <reg  name = "ARRAY_INPUT_TO_OUTPUT_1"  />
+        <reg  name = "Fill_Array"  />
+        <reg  name = "SEND_DATA_BITS_29"  />
+        <reg  name = "RECEIVE_DATA_BITS_30"  />
         <reg  name = "ARRAY_FINAL"  />
-        <reg  name = "Switch_Array_Count_24"  />
-        <reg  name = "ARRAY_INPUT_TO_OUTPUT_2"  />
         <reg  name = "ARRAY_INPUT"  />
     </regs>
 

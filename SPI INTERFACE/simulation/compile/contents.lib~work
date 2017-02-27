@@ -1,6 +1,6 @@
 3
 ~E 1 "./../../BEAGLE_TO_OUTPUTS.vhd" 7 SPI_OUTPUT
-~A 1 "./../../BEAGLE_TO_OUTPUTS.vhd" 16 BEHAVIOURAL
+~A 1 "./../../BEAGLE_TO_OUTPUTS.vhd" 17 BEHAVIOURAL
 ~E 1 "./../../SPI_SLAVE.vhd" 14 SPI_SLAVE
 ~A 1 "./../../SPI_SLAVE.vhd" 33 Structure
 ~E 1 "./../../test_bench_spi.vhd" 7 Test

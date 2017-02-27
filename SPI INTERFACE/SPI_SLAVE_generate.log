@@ -3,7 +3,7 @@ Starting process: Module
 Starting process: 
 
 SCUBA, Version Diamond (64-bit) 3.8.0.115.3
-Fri Feb 24 19:45:33 2017
+Sun Feb 26 21:09:00 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -13,7 +13,7 @@ Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
 
 BEGIN SCUBA Module Synthesis
 
-    Issued command   : C:\lscc\diamond\3.8_x64\ispfpga\bin\nt64\scuba.exe -w -n SPI_SLAVE -lang vhdl -synth synplify -bus_exp 7 -bb -type efb -arch xo2c00 -freq .5 -spi -spi_mode Slave -spi_lsb -spi_rxr -spi_txr -pll1 -wb -dev 7000 
+    Issued command   : C:\lscc\diamond\3.8_x64\ispfpga\bin\nt64\scuba.exe -w -n SPI_SLAVE -lang vhdl -synth synplify -bus_exp 7 -bb -type efb -arch xo2c00 -freq .5 -spi -spi_mode Slave -spi_rxr -spi_txr -pll1 -wb -dev 7000 
     Circuit name     : SPI_SLAVE
     Module type      : efb
     Module Version   : 1.2

@@ -10,16 +10,15 @@ ENTITY SPI_OUTPUT is
 		SPI_MISO_b: inout std_logic := '0';
 		SPI_MOSI_b: inout std_logic := '0';
 		SPI_SCSN_b: in std_logic; 
-		ARRAY_FINAL: inout std_logic_vector(7 downto 0) := "00000000");	
+		ARRAY_FINAL: inout std_logic_vector(7 downto 0) := "00000000";	
+		SEND_DATA_BITS: out std_logic);
 END SPI_OUTPUT;
 
 ARCHITECTURE BEHAVIOURAL OF SPI_OUTPUT IS
-	signal ARRAY_INPUT_TO_OUTPUT_1: std_logic_vector(7 downto 0) := "00000000";
-	signal ARRAY_INPUT_TO_OUTPUT_2: std_logic_vector(7 downto 0) := "00000000";
 	signal ARRAY_INPUT: std_logic_vector(7 downto 0) := "00000000";
 	signal CLK_GEN: std_logic; -- internal clock for Array sorting
 	signal CLK_GEN_ARRAY: std_logic; -- output clock that will take care of 8 bit sorting
-	signal SEND_DATA_BITS: std_logic := '0'; -- must be 1 to send to motors
+	signal RECEIVE_DATA_BITS: std_logic := '0'; -- must be 1 to send to motors
 	
 	COMPONENT SPI_SLAVE
 		PORT( 
@@ -40,19 +39,6 @@ ARCHITECTURE BEHAVIOURAL OF SPI_OUTPUT IS
 			pll0_bus_o: out  std_logic_vector(16 downto 0));
 	END COMPONENT;
 	
---	COMPONENT CLK_FILL_ARRAY
---		PORT(
---			CLKI: in  std_logic; 
---			CLKOP: out  std_logic; 
---			PLLCLK: in  std_logic := '0'; 
---			PLLRST: in  std_logic := '0'; 
---			PLLSTB: in  std_logic := '0'; 
---			PLLWE: in  std_logic := '0'; 
---			PLLDATI: in  std_logic_vector(7 downto 0) := "00000000"; 
---			PLLADDR: in  std_logic_vector(4 downto 0) := "00000"; 
---			PLLDATO: out  std_logic_vector(7 downto 0) := "00000000"; 
---			PLLACK: out  std_logic);
---		END COMPONENT;
 
 BEGIN
 
@@ -63,42 +49,44 @@ BEGIN
 			SPI_MOSI => SPI_MOSI_b,
 			SPI_SCSN => SPI_SCSN_b);
 	
---	I2: CLK_FILL_ARRAY
---		PORT MAP(
---			CLKI => CLK_GEN,
---			CLKOP => CLK_GEN_ARRAY);
-		
 ------CREATE SECOND CLOCK FROM PLL MODULE TO READ IN VALUES TO ARRAY 8* AS FAST BEFORE OUTPUTTING TO PINS	
-	PROCESS(SPI_CLK_b)
-	variable Fill_Array: integer range 0 to 7;
-	BEGIN
-	if(SPI_CLK_B'EVENT and SPI_CLK_B = '1') then
-		for Fill_Array in 0 to 7 loop
-		ARRAY_INPUT(Fill_Array) <= SPI_MOSI_b;
-		end loop;
+--	PROCESS(SPI_CLK_b)
+--	variable Fill_Array: integer range 0 to 7;
+--	BEGIN
+--	if(SPI_CLK_B'EVENT and SPI_CLK_B = '1') then
+	
+--		for Fill_Array in 0 to 7 loop
+--		ARRAY_INPUT(Fill_Array) <= SPI_MOSI_b;
+--		if(Fill_Array = 7) then
+--			RECEIVE_DATA_BITS <= '1';
+--		else
+--			RECEIVE_DATA_BITS <= '0';
+--		end if;
+--		end loop;
 		
-		
-		if(Fill_Array = 8) then
-			Fill_Array := 0;
-		end if;
-		
-	end if;
-	END PROCESS;
+--	end if;
+--	END PROCESS;
 	
 	PROCESS(SPI_CLK_b)
-		VARIABLE Switch_Array_Count: INTEGER RANGE 0 TO 1 := 0;	
-		
+		variable Fill_Array: integer range 0 to 7 := 0;
 	BEGIN
-		if(SPI_CLK_B'EVENT and SPI_CLK_B = '1') then
-			if(Switch_Array_Count = 0) then
-				ARRAY_INPUT_TO_OUTPUT_1 <= ARRAY_INPUT;
-				ARRAY_FINAL <= ARRAY_INPUT_TO_OUTPUT_2;
-				Switch_Array_Count := 1;	
-			elsif(Switch_Array_Count = 1) then
-				ARRAY_INPUT_TO_OUTPUT_2 <= ARRAY_INPUT;
-				ARRAY_FINAL <= ARRAY_INPUT_TO_OUTPUT_1;
-				Switch_Array_Count := 0;	
-			end if;	
+		
+		if(SPI_CLK_b'EVENT and SPI_CLK_B = '1') then
+			
+			if(RECEIVE_DATA_BITS = '0') then
+				ARRAY_INPUT(Fill_Array) <= SPI_MOSI_b;
+				Fill_Array := Fill_Array + 1;
+				SEND_DATA_BITS <= RECEIVE_DATA_BITS;
+				if(Fill_Array = 7) then
+				RECEIVE_DATA_BITS <= '1';
+				SEND_DATA_BITS <= RECEIVE_DATA_BITS;
+			end if;
+			else
+				RECEIVE_DATA_BITS <= '0';
+				Fill_Array := 0;
+				ARRAY_FINAL <= ARRAY_INPUT;
+				SEND_DATA_BITS <= RECEIVE_DATA_BITS;
+			end if;
 		end if;
 	END PROCESS;
 		

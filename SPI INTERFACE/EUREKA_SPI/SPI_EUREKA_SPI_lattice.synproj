@@ -30,12 +30,12 @@
 
 
 -lpf 1
--lib "work" -vhd "C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd"
-"C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/SPI_SLAVE.vhd"
+-lib "work" -vhd "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd"
+"C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/SPI_SLAVE.vhd"
 -top SPI_OUTPUT
 
 
--p "C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data" "C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/EUREKA_SPI" "C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE"
+-p "C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data" "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/EUREKA_SPI" "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE"
 
 -ngd "SPI_EUREKA_SPI.ngd"
 

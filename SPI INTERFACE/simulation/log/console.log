@@ -4,31 +4,31 @@ designverlibrarysim -L -clear
 designverlibrarysim -PL pmi_work
 designverlibrarysim ovi_machxo2
 designverdefinemacro -clear
-addfile {C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/SPI_SLAVE.vhd}
-# Adding file C:\Users\Michael Hosanee\Documents\ENEL 500\SPI INTERFACE\SPI_SLAVE.vhd ... Done
-addfile {C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd}
-# Adding file C:\Users\Michael Hosanee\Documents\ENEL 500\SPI INTERFACE\BEAGLE_TO_OUTPUTS.vhd ... Done
-addfile {C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/test_bench_spi.vhd}
-# Adding file C:\Users\Michael Hosanee\Documents\ENEL 500\SPI INTERFACE\test_bench_spi.vhd ... Done
-vlib {C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/simulation/work}
+addfile {C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/SPI_SLAVE.vhd}
+# Adding file C:\Users\Michael Hosanee\Documents\ENEL 500\Git\ENEL_500_Repo\SPI INTERFACE\SPI_SLAVE.vhd ... Done
+addfile {C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd}
+# Adding file C:\Users\Michael Hosanee\Documents\ENEL 500\Git\ENEL_500_Repo\SPI INTERFACE\BEAGLE_TO_OUTPUTS.vhd ... Done
+addfile {C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/test_bench_spi.vhd}
+# Adding file C:\Users\Michael Hosanee\Documents\ENEL 500\Git\ENEL_500_Repo\SPI INTERFACE\test_bench_spi.vhd ... Done
+vlib {C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/simulation/work}
 # Warning: Library work already exists
 adel -all
 # Library contents cleared.
-vcom -dbg -work work {C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/SPI_SLAVE.vhd}
-# File: C:\Users\Michael Hosanee\Documents\ENEL 500\SPI INTERFACE\SPI_SLAVE.vhd
+vcom -dbg -work work {C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/SPI_SLAVE.vhd}
+# File: C:\Users\Michael Hosanee\Documents\ENEL 500\Git\ENEL_500_Repo\SPI INTERFACE\SPI_SLAVE.vhd
 # Compile Entity "SPI_SLAVE"
 # Compile Architecture "Structure" of Entity "SPI_SLAVE"
-# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
-vcom -dbg -work work {C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd}
-# File: C:\Users\Michael Hosanee\Documents\ENEL 500\SPI INTERFACE\BEAGLE_TO_OUTPUTS.vhd
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+vcom -dbg -work work {C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd}
+# File: C:\Users\Michael Hosanee\Documents\ENEL 500\Git\ENEL_500_Repo\SPI INTERFACE\BEAGLE_TO_OUTPUTS.vhd
 # Compile Entity "SPI_OUTPUT"
 # Compile Architecture "BEHAVIOURAL" of Entity "SPI_OUTPUT"
-# Compile success 0 Errors 0 Warnings  Analysis time :  79.0 [ms]
-vcom -dbg -work work {C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/test_bench_spi.vhd}
-# File: C:\Users\Michael Hosanee\Documents\ENEL 500\SPI INTERFACE\test_bench_spi.vhd
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+vcom -dbg -work work {C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/test_bench_spi.vhd}
+# File: C:\Users\Michael Hosanee\Documents\ENEL 500\Git\ENEL_500_Repo\SPI INTERFACE\test_bench_spi.vhd
 # Compile Entity "Test"
 # Compile Architecture "behavioural" of Entity "Test"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
 entity Test
 # ELBREAD: Elaboration process.
 # ELBREAD: Warning: Module 'efb_top' does not have a `timescale directive, but previous modules do.
@@ -60,215 +60,49 @@ vsim +access +r Test -PL pmi_work -L ovi_machxo2
 # SLP: Elaboration phase ...
 # SLP: Elaboration phase ... done : 0.6 [s]
 # SLP: Generation phase ...
-# SLP: Generation phase ... done : 1.9 [s]
-# SLP: Finished : 2.5 [s]
-# SLP: 375 (8.29%) primitives and 4137 (91.45%) other processes in SLP
+# SLP: Generation phase ... done : 1.8 [s]
+# SLP: Finished : 2.4 [s]
+# SLP: 375 (8.29%) primitives and 4137 (91.47%) other processes in SLP
 # SLP: 14968 (99.22%) signals in SLP and 118 (0.78%) interface signals
-# ELAB2: Elaboration final pass complete - time: 2.8 [s].
-# KERNEL: SLP loading done - time: 0.2 [s].
+# ELAB2: Elaboration final pass complete - time: 2.7 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
 # KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: SLP simulation initialization done - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 14257 kB (elbread=3333 elab2=10529 kernel=393 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Michael Hosanee\Documents\ENEL 500\SPI INTERFACE\simulation\src\wave.asdb
-#  8:23 PM, February 24, 2017
+# Allocation: Simulator allocated 14253 kB (elbread=3333 elab2=10526 kernel=392 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Michael Hosanee\Documents\ENEL 500\Git\ENEL_500_Repo\SPI INTERFACE\simulation\src\wave.asdb
+#  9:25 PM, February 26, 2017
 #  Simulation has been initialized
 add wave *
-# 5 signal(s) traced.
+# 6 signal(s) traced.
 run 1000ns
-# Waveform file 'untitled.awc' connected to 'C:/Users/Michael Hosanee/Documents/ENEL 500/SPI INTERFACE/simulation/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/simulation/src/wave.asdb'.
 # KERNEL: Configuration complete. EFB now in user mode.                 820
 # KERNEL: stopped at time: 1 us
-run 1 us
-# KERNEL: stopped at time: 2 us
-run 1 us
-# KERNEL: stopped at time: 3 us
-run 1 us
-# KERNEL: stopped at time: 4 us
-run 1 us
-# KERNEL: stopped at time: 5 us
-run 1 us
-# KERNEL: stopped at time: 6 us
-run 1 us
-# KERNEL: stopped at time: 7 us
-run 1 us
-# KERNEL: stopped at time: 8 us
-run 1 us
-# KERNEL: stopped at time: 9 us
-run 1 us
-# KERNEL: stopped at time: 10 us
-run 1 us
-# KERNEL: stopped at time: 11 us
-run 1 us
-# KERNEL: stopped at time: 12 us
-run 1 us
-# KERNEL: stopped at time: 13 us
-run 1 us
-# KERNEL: stopped at time: 14 us
-run 1 us
-# KERNEL: stopped at time: 15 us
-run 1 us
-# KERNEL: stopped at time: 16 us
-run 1 us
+run 16 us
 # KERNEL: stopped at time: 17 us
-run 1 us
-# KERNEL: stopped at time: 18 us
-run 1 us
-# KERNEL: stopped at time: 19 us
-run 1 us
-# KERNEL: stopped at time: 20 us
-run 1 us
-# KERNEL: stopped at time: 21 us
-run 1 us
-# KERNEL: stopped at time: 22 us
-run 1 us
-# KERNEL: stopped at time: 23 us
-run 1 us
-# KERNEL: stopped at time: 24 us
-run 1 us
-# KERNEL: stopped at time: 25 us
-run 1 us
-# KERNEL: stopped at time: 26 us
-run 1 us
-# KERNEL: stopped at time: 27 us
-run 1 us
-# KERNEL: stopped at time: 28 us
-run 1 us
-# KERNEL: stopped at time: 29 us
-run 1 us
-# KERNEL: stopped at time: 30 us
-run 1 us
-# KERNEL: stopped at time: 31 us
-run 1 us
-# KERNEL: stopped at time: 32 us
-run 1 us
+run 16 us
 # KERNEL: stopped at time: 33 us
-run 1 us
-# KERNEL: stopped at time: 34 us
-run 1 us
-# KERNEL: stopped at time: 35 us
-run 1 us
-# KERNEL: stopped at time: 36 us
-run 1 us
-# KERNEL: stopped at time: 37 us
-run 1 us
-# KERNEL: stopped at time: 38 us
-run 1 us
-# KERNEL: stopped at time: 39 us
-run 1 us
-# KERNEL: stopped at time: 40 us
-run 1 us
-# KERNEL: stopped at time: 41 us
-run 1 us
-# KERNEL: stopped at time: 42 us
-run 1 us
-# KERNEL: stopped at time: 43 us
-run 1 us
-# KERNEL: stopped at time: 44 us
-run 1 us
-# KERNEL: stopped at time: 45 us
-run 1 us
-# KERNEL: stopped at time: 46 us
-run 1 us
-# KERNEL: stopped at time: 47 us
-run 1 us
-# KERNEL: stopped at time: 48 us
-run 1 us
+run 16 us
 # KERNEL: stopped at time: 49 us
-run 1 us
-# KERNEL: stopped at time: 50 us
-run 1 us
-# KERNEL: stopped at time: 51 us
-run 1 us
-# KERNEL: stopped at time: 52 us
-run 1 us
-# KERNEL: stopped at time: 53 us
-run 1 us
-# KERNEL: stopped at time: 54 us
-run 1 us
-# KERNEL: stopped at time: 55 us
-run 1 us
-# KERNEL: stopped at time: 56 us
-run 1 us
-# KERNEL: stopped at time: 57 us
-run 1 us
-# KERNEL: stopped at time: 58 us
-run 1 us
-# KERNEL: stopped at time: 59 us
-run 1 us
-# KERNEL: stopped at time: 60 us
-run 1 us
-# KERNEL: stopped at time: 61 us
-run 1 us
-# KERNEL: stopped at time: 62 us
-run 1 us
-# KERNEL: stopped at time: 63 us
-run 1 us
-# KERNEL: stopped at time: 64 us
-run 1 us
+run 16 us
 # KERNEL: stopped at time: 65 us
-run 1 us
-# KERNEL: stopped at time: 66 us
-run 1 us
-# KERNEL: stopped at time: 67 us
-run 1 us
-# KERNEL: stopped at time: 68 us
-run 1 us
-# KERNEL: stopped at time: 69 us
-run 1 us
-# KERNEL: stopped at time: 70 us
-run 1 us
-# KERNEL: stopped at time: 71 us
-run 1 us
-# KERNEL: stopped at time: 72 us
-run 1 us
-# KERNEL: stopped at time: 73 us
-run 1 us
-# KERNEL: stopped at time: 74 us
-run 1 us
-# KERNEL: stopped at time: 75 us
-run 1 us
-# KERNEL: stopped at time: 76 us
-run 1 us
-# KERNEL: stopped at time: 77 us
-run 1 us
-# KERNEL: stopped at time: 78 us
-run 1 us
-# KERNEL: stopped at time: 79 us
-run 1 us
-# KERNEL: stopped at time: 80 us
-run 1 us
+run 16 us
 # KERNEL: stopped at time: 81 us
-run 1 us
-# KERNEL: stopped at time: 82 us
-run 1 us
-# KERNEL: stopped at time: 83 us
-run 1 us
-# KERNEL: stopped at time: 84 us
-run 1 us
-# KERNEL: stopped at time: 85 us
-run 1 us
-# KERNEL: stopped at time: 86 us
-run 1 us
-# KERNEL: stopped at time: 87 us
-run 1 us
-# KERNEL: stopped at time: 88 us
-run 1 us
-# KERNEL: stopped at time: 89 us
-run 1 us
-# KERNEL: stopped at time: 90 us
-run 1 us
-# KERNEL: stopped at time: 91 us
-run 1 us
-# KERNEL: stopped at time: 92 us
-run 1 us
-# KERNEL: stopped at time: 93 us
-run 1 us
-# KERNEL: stopped at time: 94 us
-run 1 us
-# KERNEL: stopped at time: 95 us
-run 1 us
-# KERNEL: stopped at time: 96 us
-run 1 us
+run 16 us
 # KERNEL: stopped at time: 97 us
+run 16 us
+# KERNEL: stopped at time: 113 us
+run 16 us
+# KERNEL: stopped at time: 129 us
+run 16 us
+# KERNEL: stopped at time: 145 us
+run 16 us
+# KERNEL: stopped at time: 161 us
+run 16 us
+# KERNEL: stopped at time: 177 us
+run 16 us
+# KERNEL: stopped at time: 193 us
+run 16 us
+# KERNEL: stopped at time: 209 us
