@@ -1,12 +1,12 @@
-V 000050 55 24377         1488169535124 Structure
+V 000050 55 24377         1488170692872 Structure
 (_unit VHDL (spi_slave 0 14(structure 0 33))
 	(_version vd0)
-	(_time 1488169535125 2017.02.26 21:25:35)
+	(_time 1488170692873 2017.02.26 21:44:52)
 	(_source (\./../../SPI_SLAVE.vhd\))
 	(_parameters dbg tan)
-	(_code 99c8ce9790cec48c9a9a8ac39b9f989e9f9f9c9e9a)
+	(_code 00560b0700575d150303135a020601070606050703)
 	(_ent
-		(_time 1488169535120)
+		(_time 1488170692862)
 	)
 	(_comp
 		(vhi
@@ -661,15 +661,15 @@ V 000050 55 24377         1488169535124 Structure
 	)
 	(_use (ieee(std_logic_1164))(std(standard))(machxo2(components)))
 )
-V 000052 55 3293          1488169535422 BEHAVIOURAL
+V 000052 55 3293          1488170693096 BEHAVIOURAL
 (_unit VHDL (spi_output 0 7(behavioural 0 17))
 	(_version vd0)
-	(_time 1488169535423 2017.02.26 21:25:35)
+	(_time 1488170693097 2017.02.26 21:44:53)
 	(_source (\./../../BEAGLE_TO_OUTPUTS.vhd\))
 	(_parameters dbg tan)
-	(_code c2939496c0959fd792c4849996c5c6c5c2c5c7c5c6)
+	(_code eabce1b8bbbdb7ffbaedacb1beedeeedeaedefedee)
 	(_ent
-		(_time 1488169535415)
+		(_time 1488170693089)
 	)
 	(_comp
 		(SPI_SLAVE
@@ -731,7 +731,7 @@ V 000052 55 3293          1488169535422 BEHAVIOURAL
 		(_sig (_int ARRAY_INPUT 1 0 18(_arch(_uni(_string \"00000000"\)))))
 		(_sig (_int CLK_GEN -1 0 19(_arch(_uni))))
 		(_sig (_int CLK_GEN_ARRAY -1 0 20(_arch(_uni))))
-		(_sig (_int RECEIVE_DATA_BITS -1 0 21(_arch(_uni((i 2))))))
+		(_sig (_int RECEIVE_DATA_BITS -1 0 21(_arch(_uni((i 3))))))
 		(_type (_int ~STD_LOGIC_VECTOR{7~downto~0}~132 0 30(_array -1 ((_dto i 7 i 0)))))
 		(_type (_int ~STD_LOGIC_VECTOR{8~downto~0}~13 0 38(_array -1 ((_dto i 8 i 0)))))
 		(_type (_int ~STD_LOGIC_VECTOR{16~downto~0}~13 0 39(_array -1 ((_dto i 16 i 0)))))
@@ -748,15 +748,15 @@ V 000052 55 3293          1488169535422 BEHAVIOURAL
 	(_use (ieee(std_logic_1164))(std(standard)))
 	(_model . BEHAVIOURAL 1 -1)
 )
-V 000052 55 2171          1488169535670 behavioural
+V 000052 55 2171          1488170693295 behavioural
 (_unit VHDL (test 0 7(behavioural 0 10))
 	(_version vd0)
-	(_time 1488169535671 2017.02.26 21:25:35)
+	(_time 1488170693296 2017.02.26 21:44:53)
 	(_source (\./../../test_bench_spi.vhd\))
 	(_parameters dbg tan)
-	(_code adfcfffafcfbfabaa0f9b9f7f9aaaeaaa9aaa9aba8)
+	(_code a6f0abf1a5f0f1b1abf2b2fcf2a1a5a1a2a1a2a0a3)
 	(_ent
-		(_time 1488169535668)
+		(_time 1488170693293)
 	)
 	(_comp
 		(SPI_OUTPUT

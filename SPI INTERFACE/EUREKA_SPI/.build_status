@@ -19,18 +19,18 @@
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="0" build_time="1488168346">
-            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1488168346"/>
-            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1488168346"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1488170680">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1488170680"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1488170680"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1488168542"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1488170676"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Report name="SPI_EUREKA_SPI.lsedata" last_build_time="1488168346" last_build_size="34962"/>
-        <Report name="SPI_EUREKA_SPI.ngd" last_build_time="1488168346" last_build_size="33517"/>
+        <Report name="SPI_EUREKA_SPI.lsedata" last_build_time="1488170680" last_build_size="34937"/>
+        <Report name="SPI_EUREKA_SPI.ngd" last_build_time="1488170680" last_build_size="33434"/>
     </Strategy>
 </BuildStatus>

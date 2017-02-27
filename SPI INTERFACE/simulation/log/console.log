@@ -18,17 +18,17 @@ vcom -dbg -work work {C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_R
 # File: C:\Users\Michael Hosanee\Documents\ENEL 500\Git\ENEL_500_Repo\SPI INTERFACE\SPI_SLAVE.vhd
 # Compile Entity "SPI_SLAVE"
 # Compile Architecture "Structure" of Entity "SPI_SLAVE"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
 vcom -dbg -work work {C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd}
 # File: C:\Users\Michael Hosanee\Documents\ENEL 500\Git\ENEL_500_Repo\SPI INTERFACE\BEAGLE_TO_OUTPUTS.vhd
 # Compile Entity "SPI_OUTPUT"
 # Compile Architecture "BEHAVIOURAL" of Entity "SPI_OUTPUT"
-# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
 vcom -dbg -work work {C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/test_bench_spi.vhd}
 # File: C:\Users\Michael Hosanee\Documents\ENEL 500\Git\ENEL_500_Repo\SPI INTERFACE\test_bench_spi.vhd
 # Compile Entity "Test"
 # Compile Architecture "behavioural" of Entity "Test"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
 entity Test
 # ELBREAD: Elaboration process.
 # ELBREAD: Warning: Module 'efb_top' does not have a `timescale directive, but previous modules do.
@@ -64,15 +64,15 @@ vsim +access +r Test -PL pmi_work -L ovi_machxo2
 # SLP: Finished : 2.4 [s]
 # SLP: 375 (8.29%) primitives and 4137 (91.47%) other processes in SLP
 # SLP: 14968 (99.22%) signals in SLP and 118 (0.78%) interface signals
-# ELAB2: Elaboration final pass complete - time: 2.7 [s].
-# KERNEL: SLP loading done - time: 0.1 [s].
+# ELAB2: Elaboration final pass complete - time: 2.6 [s].
+# KERNEL: SLP loading done - time: 0.4 [s].
 # KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: SLP simulation initialization done - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 14253 kB (elbread=3333 elab2=10526 kernel=392 sdf=0)
+# Allocation: Simulator allocated 14253 kB (elbread=3333 elab2=10527 kernel=392 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\Michael Hosanee\Documents\ENEL 500\Git\ENEL_500_Repo\SPI INTERFACE\simulation\src\wave.asdb
-#  9:25 PM, February 26, 2017
+#  9:44 PM, February 26, 2017
 #  Simulation has been initialized
 add wave *
 # 6 signal(s) traced.
@@ -90,19 +90,3 @@ run 16 us
 # KERNEL: stopped at time: 65 us
 run 16 us
 # KERNEL: stopped at time: 81 us
-run 16 us
-# KERNEL: stopped at time: 97 us
-run 16 us
-# KERNEL: stopped at time: 113 us
-run 16 us
-# KERNEL: stopped at time: 129 us
-run 16 us
-# KERNEL: stopped at time: 145 us
-run 16 us
-# KERNEL: stopped at time: 161 us
-run 16 us
-# KERNEL: stopped at time: 177 us
-run 16 us
-# KERNEL: stopped at time: 193 us
-run 16 us
-# KERNEL: stopped at time: 209 us

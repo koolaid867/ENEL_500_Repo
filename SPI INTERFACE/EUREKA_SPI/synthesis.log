@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Feb 26 21:05:46 2017
+Sun Feb 26 21:44:39 2017
 
 
 Command Line:  synthesis -f SPI_EUREKA_SPI_lattice.synproj -gui -msgset C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/promote.xml 
@@ -151,13 +151,13 @@ Clock Enable Nets
 Number of Clock Enables: 9
 Top 9 highest fanout Clock Enables:
   Net : RECEIVE_DATA_BITS, loads : 21
-  Net : SPI_CLK_b_enable_5, loads : 1
-  Net : SPI_CLK_b_enable_6, loads : 1
-  Net : SPI_CLK_b_enable_3, loads : 1
-  Net : SPI_CLK_b_enable_7, loads : 1
-  Net : SPI_CLK_b_enable_1, loads : 1
-  Net : SPI_CLK_b_enable_2, loads : 1
   Net : SPI_CLK_b_enable_4, loads : 1
+  Net : SPI_CLK_b_enable_5, loads : 1
+  Net : SPI_CLK_b_enable_3, loads : 1
+  Net : SPI_CLK_b_enable_6, loads : 1
+  Net : SPI_CLK_b_enable_1, loads : 1
+  Net : SPI_CLK_b_enable_7, loads : 1
+  Net : SPI_CLK_b_enable_2, loads : 1
   Net : SPI_CLK_b_enable_8, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
@@ -188,8 +188,8 @@ clk0 [get_nets SPI_CLK_b]               |            -|            -|     0
 All constraints were met.
 
 
-Peak Memory Usage: 74.789  MB
+Peak Memory Usage: 74.754  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.547  secs
+Elapsed CPU time for LSE flow : 0.516  secs
 --------------------------------------------------------------
