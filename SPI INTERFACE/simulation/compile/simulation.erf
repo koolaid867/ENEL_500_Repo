@@ -1,4 +1,4 @@
 MESSAGE "File: C:\Users\Michael Hosanee\Documents\ENEL 500\Git\ENEL_500_Repo\SPI INTERFACE\test_bench_spi.vhd" 
 MESSAGE "Compile Entity "Test"" 
 MESSAGE "Compile Architecture "behavioural" of Entity "Test"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]" 
