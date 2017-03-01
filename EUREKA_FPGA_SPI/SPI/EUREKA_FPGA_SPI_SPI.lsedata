@@ -1,0 +1,256 @@
+<top name = "EFB_SPI"  library = "work"  arch = "RTL"  entry = "VHDL">
+
+<clocks>
+    <clockitem name = "wb_clk_i"  type = "port" />
+    <clockitem name = "spi_clk_i"  type = "net" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 2
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "EFB_SPI">
+
+    <!--
+        Top Level Pins: 36
+    -->
+
+    <pins>
+        <pitem  name = "wb_clk_i"  direction = "in"  />
+        <pitem  name = "wb_rst_i"  direction = "in"  />
+        <pitem  name = "wb_cyc_i"  direction = "in"  />
+        <pitem  name = "wb_stb_i"  direction = "in"  />
+        <pitem  name = "wb_we_i"  direction = "in"  />
+        <pitem  name = "wb_adr_i[7]"  direction = "in"  />
+        <pitem  name = "wb_adr_i[6]"  direction = "in"  />
+        <pitem  name = "wb_adr_i[5]"  direction = "in"  />
+        <pitem  name = "wb_adr_i[4]"  direction = "in"  />
+        <pitem  name = "wb_adr_i[3]"  direction = "in"  />
+        <pitem  name = "wb_adr_i[2]"  direction = "in"  />
+        <pitem  name = "wb_adr_i[1]"  direction = "in"  />
+        <pitem  name = "wb_adr_i[0]"  direction = "in"  />
+        <pitem  name = "wb_dat_i[7]"  direction = "in"  />
+        <pitem  name = "wb_dat_i[6]"  direction = "in"  />
+        <pitem  name = "wb_dat_i[5]"  direction = "in"  />
+        <pitem  name = "wb_dat_i[4]"  direction = "in"  />
+        <pitem  name = "wb_dat_i[3]"  direction = "in"  />
+        <pitem  name = "wb_dat_i[2]"  direction = "in"  />
+        <pitem  name = "wb_dat_i[1]"  direction = "in"  />
+        <pitem  name = "wb_dat_i[0]"  direction = "in"  />
+        <pitem  name = "wb_dat_o[7]"  direction = "out"  />
+        <pitem  name = "wb_dat_o[6]"  direction = "out"  />
+        <pitem  name = "wb_dat_o[5]"  direction = "out"  />
+        <pitem  name = "wb_dat_o[4]"  direction = "out"  />
+        <pitem  name = "wb_dat_o[3]"  direction = "out"  />
+        <pitem  name = "wb_dat_o[2]"  direction = "out"  />
+        <pitem  name = "wb_dat_o[1]"  direction = "out"  />
+        <pitem  name = "wb_dat_o[0]"  direction = "out"  />
+        <pitem  name = "wb_ack_o"  direction = "out"  />
+        <pitem  name = "spi_clk"  direction = "inout"  />
+        <pitem  name = "spi_miso"  direction = "inout"  />
+        <pitem  name = "spi_mosi"  direction = "inout"  />
+        <pitem  name = "spi_scsn"  direction = "in"  />
+        <pitem  name = "ufm_sn"  direction = "in"  />
+        <pitem  name = "wbc_ufm_irq"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 5
+    -->
+
+    <instance  name = "BBspi_mosi"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "T"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        <pitem  name = "B"  direction = "inout"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "spi_mosi_o"  />
+        <nitem  name = "spi_mosi_oe"  />
+        <nitem  name = "spi_mosi_i"  />
+        <nitem  name = "spi_mosi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "BBspi_miso"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "T"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        <pitem  name = "B"  direction = "inout"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "spi_miso_o"  />
+        <nitem  name = "spi_miso_oe"  />
+        <nitem  name = "spi_miso_i"  />
+        <nitem  name = "spi_miso"  />
+        </nets>
+    </instance>
+
+    <instance  name = "BBspi_clk"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "T"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        <pitem  name = "B"  direction = "inout"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "spi_clk_o"  />
+        <nitem  name = "spi_clk_oe"  />
+        <nitem  name = "spi_clk_i"  />
+        <nitem  name = "spi_clk"  />
+        </nets>
+    </instance>
+
+    <instance  name = "scuba_vlo_inst"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "EFBInst_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "WBCLKI"  direction = "in"  />
+        <pitem  name = "WBRSTI"  direction = "in"  />
+        <pitem  name = "WBCYCI"  direction = "in"  />
+        <pitem  name = "WBSTBI"  direction = "in"  />
+        <pitem  name = "WBWEI"  direction = "in"  />
+        <pitem  name = "WBADRI7"  direction = "in"  />
+        <pitem  name = "WBADRI6"  direction = "in"  />
+        <pitem  name = "WBADRI5"  direction = "in"  />
+        <pitem  name = "WBADRI4"  direction = "in"  />
+        <pitem  name = "WBADRI3"  direction = "in"  />
+        <pitem  name = "WBADRI2"  direction = "in"  />
+        <pitem  name = "WBADRI1"  direction = "in"  />
+        <pitem  name = "WBADRI0"  direction = "in"  />
+        <pitem  name = "WBDATI7"  direction = "in"  />
+        <pitem  name = "WBDATI6"  direction = "in"  />
+        <pitem  name = "WBDATI5"  direction = "in"  />
+        <pitem  name = "WBDATI4"  direction = "in"  />
+        <pitem  name = "WBDATI3"  direction = "in"  />
+        <pitem  name = "WBDATI2"  direction = "in"  />
+        <pitem  name = "WBDATI1"  direction = "in"  />
+        <pitem  name = "WBDATI0"  direction = "in"  />
+        <pitem  name = "PLL0DATI7"  direction = "in"  />
+        <pitem  name = "PLL0DATI6"  direction = "in"  />
+        <pitem  name = "PLL0DATI5"  direction = "in"  />
+        <pitem  name = "PLL0DATI4"  direction = "in"  />
+        <pitem  name = "PLL0DATI3"  direction = "in"  />
+        <pitem  name = "PLL0DATI2"  direction = "in"  />
+        <pitem  name = "PLL0DATI1"  direction = "in"  />
+        <pitem  name = "PLL0DATI0"  direction = "in"  />
+        <pitem  name = "PLL0ACKI"  direction = "in"  />
+        <pitem  name = "PLL1DATI7"  direction = "in"  />
+        <pitem  name = "PLL1DATI6"  direction = "in"  />
+        <pitem  name = "PLL1DATI5"  direction = "in"  />
+        <pitem  name = "PLL1DATI4"  direction = "in"  />
+        <pitem  name = "PLL1DATI3"  direction = "in"  />
+        <pitem  name = "PLL1DATI2"  direction = "in"  />
+        <pitem  name = "PLL1DATI1"  direction = "in"  />
+        <pitem  name = "PLL1DATI0"  direction = "in"  />
+        <pitem  name = "PLL1ACKI"  direction = "in"  />
+        <pitem  name = "I2C1SCLI"  direction = "in"  />
+        <pitem  name = "I2C1SDAI"  direction = "in"  />
+        <pitem  name = "I2C2SCLI"  direction = "in"  />
+        <pitem  name = "I2C2SDAI"  direction = "in"  />
+        <pitem  name = "SPISCKI"  direction = "in"  />
+        <pitem  name = "SPIMISOI"  direction = "in"  />
+        <pitem  name = "SPIMOSII"  direction = "in"  />
+        <pitem  name = "SPISCSN"  direction = "in"  />
+        <pitem  name = "TCCLKI"  direction = "in"  />
+        <pitem  name = "TCRSTN"  direction = "in"  />
+        <pitem  name = "TCIC"  direction = "in"  />
+        <pitem  name = "UFMSN"  direction = "in"  />
+        <pitem  name = "WBDATO7"  direction = "out"  />
+        <pitem  name = "WBDATO6"  direction = "out"  />
+        <pitem  name = "WBDATO5"  direction = "out"  />
+        <pitem  name = "WBDATO4"  direction = "out"  />
+        <pitem  name = "WBDATO3"  direction = "out"  />
+        <pitem  name = "WBDATO2"  direction = "out"  />
+        <pitem  name = "WBDATO1"  direction = "out"  />
+        <pitem  name = "WBDATO0"  direction = "out"  />
+        <pitem  name = "WBACKO"  direction = "out"  />
+        <pitem  name = "SPISCKO"  direction = "out"  />
+        <pitem  name = "SPISCKEN"  direction = "out"  />
+        <pitem  name = "SPIMISOO"  direction = "out"  />
+        <pitem  name = "SPIMISOEN"  direction = "out"  />
+        <pitem  name = "SPIMOSIO"  direction = "out"  />
+        <pitem  name = "SPIMOSIEN"  direction = "out"  />
+        <pitem  name = "WBCUFMIRQ"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "wb_clk_i"  />
+        <nitem  name = "wb_rst_i"  />
+        <nitem  name = "wb_cyc_i"  />
+        <nitem  name = "wb_stb_i"  />
+        <nitem  name = "wb_we_i"  />
+        <nitem  name = "wb_adr_i[7]"  />
+        <nitem  name = "wb_adr_i[6]"  />
+        <nitem  name = "wb_adr_i[5]"  />
+        <nitem  name = "wb_adr_i[4]"  />
+        <nitem  name = "wb_adr_i[3]"  />
+        <nitem  name = "wb_adr_i[2]"  />
+        <nitem  name = "wb_adr_i[1]"  />
+        <nitem  name = "wb_adr_i[0]"  />
+        <nitem  name = "wb_dat_i[7]"  />
+        <nitem  name = "wb_dat_i[6]"  />
+        <nitem  name = "wb_dat_i[5]"  />
+        <nitem  name = "wb_dat_i[4]"  />
+        <nitem  name = "wb_dat_i[3]"  />
+        <nitem  name = "wb_dat_i[2]"  />
+        <nitem  name = "wb_dat_i[1]"  />
+        <nitem  name = "wb_dat_i[0]"  />
+        <nitem  name = "scuba_vlo"  />
+        <nitem  name = "spi_clk_i"  />
+        <nitem  name = "spi_miso_i"  />
+        <nitem  name = "spi_mosi_i"  />
+        <nitem  name = "spi_scsn"  />
+        <nitem  name = "ufm_sn"  />
+        <nitem  name = "wb_dat_o[7]"  />
+        <nitem  name = "wb_dat_o[6]"  />
+        <nitem  name = "wb_dat_o[5]"  />
+        <nitem  name = "wb_dat_o[4]"  />
+        <nitem  name = "wb_dat_o[3]"  />
+        <nitem  name = "wb_dat_o[2]"  />
+        <nitem  name = "wb_dat_o[1]"  />
+        <nitem  name = "wb_dat_o[0]"  />
+        <nitem  name = "wb_ack_o"  />
+        <nitem  name = "spi_clk_o"  />
+        <nitem  name = "spi_clk_oe"  />
+        <nitem  name = "spi_miso_o"  />
+        <nitem  name = "spi_miso_oe"  />
+        <nitem  name = "spi_mosi_o"  />
+        <nitem  name = "spi_mosi_oe"  />
+        <nitem  name = "wbc_ufm_irq"  />
+        </nets>
+    </instance>
+
+    <!--
+        Views in design "EFB_SPI": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

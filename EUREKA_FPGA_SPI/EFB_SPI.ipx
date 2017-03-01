@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="EFB_SPI" module="EFB_SPI" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2017 02 28 20:16:35.897" version="1.2" type="Module" synthesis="lse" source_format="VHDL">
+  <Package>
+		<File name="EFB_SPI.lpc" type="lpc" modified="2017 02 28 20:16:34.012"/>
+		<File name="EFB_SPI.vhd" type="top_level_vhdl" modified="2017 02 28 20:16:34.092"/>
+		<File name="EFB_SPI_tmpl.vhd" type="template_vhdl" modified="2017 02 28 20:16:34.093"/>
+  </Package>
+</DiamondModule>

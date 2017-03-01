@@ -2,3 +2,7 @@ i<>.\..\SPI_SLAVE.vhd
 i<>.\..\BEAGLE_TO_OUTPUTS.vhd
 i<>.\..\test_bench_spi.vhd
 i<>.\..\CLK_FILL_ARRAY.vhd
+i<>.\..\..\..\..\..\..\Downloads\ENEL_500_Repo-master (1)\ENEL_500_Repo-master\code\SPI_SLAVE.vhd
+i<>.\..\..\..\..\..\..\Downloads\ENEL_500_Repo-master (1)\ENEL_500_Repo-master\code\BEAGLE_TO_OUTPUTS.vhd
+i<>.\..\..\..\..\..\..\Downloads\ENEL_500_Repo-master (1)\ENEL_500_Repo-master\code\test_bench_spi.vhd
+i<>.\..\test_bench_spi_slave.vhd

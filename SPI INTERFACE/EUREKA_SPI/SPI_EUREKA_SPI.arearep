@@ -1,25 +1,11 @@
 ----------------------------------------------------------------------
-Report for cell SPI_OUTPUT.TECH
-Register bits:  21 of 7209 (0.291%)
-I/O cells:      13
+Report for cell SPI_TO_USER.TECH
+Register bits:  0 of 7209 (0.000%)
+I/O cells:      28
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                 BB         3          100.0
-                                EFB         1          100.0
-                            FD1P3AX        16          100.0
-                            FD1S3AX         1          100.0
-                            FD1S3IX         4          100.0
+                            EHXPLLJ         1          100.0
                                 GSR         1          100.0
-                                 IB         1          100.0
-                               LUT4        12          100.0
-                                 OB         9          100.0
-SUB MODULES
-                          SPI_SLAVE         1
-                              TOTAL        49
-----------------------------------------------------------------------
-Report for cell SPI_SLAVE.v1
-Instance Path : I1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                EFB         1          100.0
-                              TOTAL         1
+                                 IB        18          100.0
+                                 OB        10          100.0
+                              TOTAL        30

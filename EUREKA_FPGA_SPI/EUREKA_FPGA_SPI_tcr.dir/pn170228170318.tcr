@@ -1,0 +1,25 @@
+#Start recording tcl command: 2/28/2017 16:04:04
+#Project Location: C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI; Project name: EUREKA_FPGA_SPI
+prj_project new -name "EUREKA_FPGA_SPI" -impl "SPI" -dev LCMXO2-7000HE-4TG144C -synthesis "lse"
+prj_project save
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/EFB.ipx"
+prj_run Synthesis -impl SPI
+prj_src remove "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/EFB.ipx"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/EFB_SPI.ipx"
+prj_run Synthesis -impl SPI
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/Test_Bench_EFB_SPI.vhd"
+prj_run Synthesis -impl SPI
+prj_src syn_sim -src "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/Test_Bench_EFB_SPI.vhd" SimulateOnly
+prj_run Synthesis -impl SPI
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/simulation/simulation.spf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/simulation/simulation.spf"
+prj_run Synthesis -impl SPI
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/simulation/simulation.spf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/simulation/simulation.spf"
+prj_src syn_sim -src "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/Test_Bench_EFB_SPI.vhd" SynthesisAndSimulate
+prj_src syn_sim -src "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/Test_Bench_EFB_SPI.vhd" SimulateOnly
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/simulation/simulation.spf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/simulation/simulation.spf"
+prj_project save
+prj_project close
+#Stop recording: 2/28/2017 17:03:18

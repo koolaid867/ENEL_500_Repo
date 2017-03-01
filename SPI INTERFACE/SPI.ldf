@@ -6,10 +6,13 @@
         <Source name="BEAGLE_TO_OUTPUTS.vhd" type="VHDL" type_short="VHDL">
             <Options top_module="SPI_OUTPUT"/>
         </Source>
-        <Source name="SPI_SLAVE.ipx" type="IPX_Module" type_short="IPX">
+        <Source name="test_bench_spi.vhd" type="VHDL" type_short="VHDL" excluded="TRUE" syn_sim="SimOnly">
             <Options/>
         </Source>
-        <Source name="test_bench_spi.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+        <Source name="test_bench_spi_slave.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="EFB.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
         <Source name="sim/sim.spf" type="Simulation Project File" type_short="SPF">

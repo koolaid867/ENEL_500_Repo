@@ -1,0 +1,42 @@
+Results of NGD DRC are available in spi_slave_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'st_load_en' has no load.
+WARNING - synthesis: input pad net 'st_load_en' has no legal load.
+WARNING - synthesis: logical net 'st_load_trdy' has no load.
+WARNING - synthesis: input pad net 'st_load_trdy' has no legal load.
+WARNING - synthesis: logical net 'st_load_rrdy' has no load.
+WARNING - synthesis: input pad net 'st_load_rrdy' has no legal load.
+WARNING - synthesis: logical net 'st_load_roe' has no load.
+WARNING - synthesis: input pad net 'st_load_roe' has no legal load.
+WARNING - synthesis: logical net 'tx_load_en' has no load.
+WARNING - synthesis: input pad net 'tx_load_en' has no legal load.
+WARNING - synthesis: logical net 'tx_load_data[7]' has no load.
+WARNING - synthesis: input pad net 'tx_load_data[7]' has no legal load.
+WARNING - synthesis: logical net 'tx_load_data[6]' has no load.
+WARNING - synthesis: input pad net 'tx_load_data[6]' has no legal load.
+WARNING - synthesis: logical net 'tx_load_data[5]' has no load.
+WARNING - synthesis: input pad net 'tx_load_data[5]' has no legal load.
+WARNING - synthesis: logical net 'tx_load_data[4]' has no load.
+WARNING - synthesis: input pad net 'tx_load_data[4]' has no legal load.
+WARNING - synthesis: logical net 'tx_load_data[3]' has no load.
+WARNING - synthesis: input pad net 'tx_load_data[3]' has no legal load.
+WARNING - synthesis: logical net 'tx_load_data[2]' has no load.
+WARNING - synthesis: input pad net 'tx_load_data[2]' has no legal load.
+WARNING - synthesis: logical net 'tx_load_data[1]' has no load.
+WARNING - synthesis: input pad net 'tx_load_data[1]' has no legal load.
+WARNING - synthesis: logical net 'tx_load_data[0]' has no load.
+WARNING - synthesis: input pad net 'tx_load_data[0]' has no legal load.
+WARNING - synthesis: DRC complete with 26 warnings.
+
+Design Results:
+     68 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file SPI_SLAVE_SPI_SLAVE.ngd.

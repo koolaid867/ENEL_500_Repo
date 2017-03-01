@@ -1,30 +1,30 @@
 // Verilog netlist produced by program LSE :  version Diamond (64-bit) 3.8.0.115.3
-// Netlist written on Fri Feb 24 15:02:23 2017
+// Netlist written on Mon Feb 27 22:51:56 2017
 //
 // Verilog Description of module SPI_SLAVE
 //
 
 module SPI_SLAVE (wb_clk_i, wb_rst_i, wb_cyc_i, wb_stb_i, wb_we_i, 
             wb_adr_i, wb_dat_i, wb_dat_o, wb_ack_o, spi_clk, spi_miso, 
-            spi_mosi, spi_scsn, pll0_bus_i, pll0_bus_o) /* synthesis NGD_DRC_MASK=1 */ ;   // e:/spi interface/spi_slave.vhd(14[8:17])
-    input wb_clk_i;   // e:/spi interface/spi_slave.vhd(16[9:17])
-    input wb_rst_i;   // e:/spi interface/spi_slave.vhd(17[9:17])
-    input wb_cyc_i;   // e:/spi interface/spi_slave.vhd(18[9:17])
-    input wb_stb_i;   // e:/spi interface/spi_slave.vhd(19[9:17])
-    input wb_we_i;   // e:/spi interface/spi_slave.vhd(20[9:16])
-    input [7:0]wb_adr_i;   // e:/spi interface/spi_slave.vhd(21[9:17])
-    input [7:0]wb_dat_i;   // e:/spi interface/spi_slave.vhd(22[9:17])
-    output [7:0]wb_dat_o;   // e:/spi interface/spi_slave.vhd(23[9:17])
-    output wb_ack_o;   // e:/spi interface/spi_slave.vhd(24[9:17])
-    inout spi_clk /* synthesis black_box_pad_pin=1 */ ;   // e:/spi interface/spi_slave.vhd(25[9:16])
-    inout spi_miso /* synthesis black_box_pad_pin=1 */ ;   // e:/spi interface/spi_slave.vhd(26[9:17])
-    inout spi_mosi /* synthesis black_box_pad_pin=1 */ ;   // e:/spi interface/spi_slave.vhd(27[9:17])
-    input spi_scsn;   // e:/spi interface/spi_slave.vhd(28[9:17])
-    input [8:0]pll0_bus_i;   // e:/spi interface/spi_slave.vhd(29[9:19])
-    output [16:0]pll0_bus_o;   // e:/spi interface/spi_slave.vhd(30[9:19])
+            spi_mosi, spi_scsn, pll0_bus_i, pll0_bus_o) /* synthesis NGD_DRC_MASK=1 */ ;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(14[8:17])
+    input wb_clk_i;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(16[9:17])
+    input wb_rst_i;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(17[9:17])
+    input wb_cyc_i;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(18[9:17])
+    input wb_stb_i;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(19[9:17])
+    input wb_we_i;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(20[9:16])
+    input [7:0]wb_adr_i;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(21[9:17])
+    input [7:0]wb_dat_i;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(22[9:17])
+    output [7:0]wb_dat_o;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(23[9:17])
+    output wb_ack_o;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(24[9:17])
+    inout spi_clk /* synthesis black_box_pad_pin=1 */ ;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(25[9:16])
+    inout spi_miso /* synthesis black_box_pad_pin=1 */ ;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(26[9:17])
+    inout spi_mosi /* synthesis black_box_pad_pin=1 */ ;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(27[9:17])
+    input spi_scsn;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(28[9:17])
+    input [8:0]pll0_bus_i;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(29[9:19])
+    output [16:0]pll0_bus_o;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
     
-    wire wb_clk_i_c /* synthesis is_clock=1 */ ;   // e:/spi interface/spi_slave.vhd(16[9:17])
-    wire spi_clk_i /* synthesis is_clock=1 */ ;   // e:/spi interface/spi_slave.vhd(45[12:21])
+    wire wb_clk_i_c /* synthesis is_clock=1 */ ;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(16[9:17])
+    wire spi_clk_i /* synthesis is_clock=1 */ ;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(45[12:21])
     
     wire wb_rst_i_c, wb_cyc_i_c, wb_stb_i_c, wb_we_i_c, wb_adr_i_c_7, 
         wb_adr_i_c_6, wb_adr_i_c_5, wb_adr_i_c_4, wb_adr_i_c_3, wb_adr_i_c_2, 
@@ -42,10 +42,10 @@ module SPI_SLAVE (wb_clk_i, wb_rst_i, wb_cyc_i, wb_stb_i, wb_we_i,
         spi_miso_o, spi_clk_oe, spi_clk_o, spi_mosi_i, spi_miso_i, 
         GND_net, VCC_net;
     
-    BB BBspi_mosi (.I(spi_mosi_o), .T(spi_mosi_oe), .B(spi_mosi), .O(spi_mosi_i)) /* synthesis syn_instantiated=1 */ ;   // e:/spi interface/spi_slave.vhd(153[17:19])
-    OB wb_dat_o_pad_3 (.I(wb_dat_o_c_3), .O(wb_dat_o[3]));   // e:/spi interface/spi_slave.vhd(23[9:17])
-    OB wb_dat_o_pad_4 (.I(wb_dat_o_c_4), .O(wb_dat_o[4]));   // e:/spi interface/spi_slave.vhd(23[9:17])
-    OB wb_dat_o_pad_5 (.I(wb_dat_o_c_5), .O(wb_dat_o[5]));   // e:/spi interface/spi_slave.vhd(23[9:17])
+    BB BBspi_mosi (.I(spi_mosi_o), .T(spi_mosi_oe), .B(spi_mosi), .O(spi_mosi_i)) /* synthesis syn_instantiated=1 */ ;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(153[17:19])
+    OB wb_dat_o_pad_3 (.I(wb_dat_o_c_3), .O(wb_dat_o[3]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(23[9:17])
+    OB wb_dat_o_pad_4 (.I(wb_dat_o_c_4), .O(wb_dat_o[4]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(23[9:17])
+    OB wb_dat_o_pad_5 (.I(wb_dat_o_c_5), .O(wb_dat_o[5]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(23[9:17])
     EFB EFBInst_0 (.WBCLKI(wb_clk_i_c), .WBRSTI(wb_rst_i_c), .WBCYCI(wb_cyc_i_c), 
         .WBSTBI(wb_stb_i_c), .WBWEI(wb_we_i_c), .WBADRI0(wb_adr_i_c_0), 
         .WBADRI1(wb_adr_i_c_1), .WBADRI2(wb_adr_i_c_2), .WBADRI3(wb_adr_i_c_3), 
@@ -100,12 +100,12 @@ module SPI_SLAVE (wb_clk_i, wb_rst_i, wb_cyc_i, wb_stb_i, wb_we_i,
     defparam EFBInst_0.I2C2_WAKEUP = "DISABLED";
     defparam EFBInst_0.SPI_MODE = "SLAVE";
     defparam EFBInst_0.SPI_CLK_DIVIDER = 1;
-    defparam EFBInst_0.SPI_LSB_FIRST = "ENABLED";
+    defparam EFBInst_0.SPI_LSB_FIRST = "DISABLED";
     defparam EFBInst_0.SPI_CLK_INV = "DISABLED";
     defparam EFBInst_0.SPI_PHASE_ADJ = "DISABLED";
     defparam EFBInst_0.SPI_SLAVE_HANDSHAKE = "DISABLED";
-    defparam EFBInst_0.SPI_INTR_TXRDY = "DISABLED";
-    defparam EFBInst_0.SPI_INTR_RXRDY = "DISABLED";
+    defparam EFBInst_0.SPI_INTR_TXRDY = "ENABLED";
+    defparam EFBInst_0.SPI_INTR_RXRDY = "ENABLED";
     defparam EFBInst_0.SPI_INTR_TXOVR = "DISABLED";
     defparam EFBInst_0.SPI_INTR_RXOVR = "DISABLED";
     defparam EFBInst_0.SPI_WAKEUP = "DISABLED";
@@ -123,63 +123,63 @@ module SPI_SLAVE (wb_clk_i, wb_rst_i, wb_cyc_i, wb_stb_i, wb_we_i,
     defparam EFBInst_0.TC_ICR_INT = "OFF";
     defparam EFBInst_0.TC_OVERFLOW = "DISABLED";
     defparam EFBInst_0.TC_ICAPTURE = "DISABLED";
-    OB wb_dat_o_pad_2 (.I(wb_dat_o_c_2), .O(wb_dat_o[2]));   // e:/spi interface/spi_slave.vhd(23[9:17])
+    OB wb_dat_o_pad_2 (.I(wb_dat_o_c_2), .O(wb_dat_o[2]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(23[9:17])
     VHI i5 (.Z(VCC_net));
-    OB wb_dat_o_pad_6 (.I(wb_dat_o_c_6), .O(wb_dat_o[6]));   // e:/spi interface/spi_slave.vhd(23[9:17])
-    BB BBspi_miso (.I(spi_miso_o), .T(spi_miso_oe), .B(spi_miso), .O(spi_miso_i)) /* synthesis syn_instantiated=1 */ ;   // e:/spi interface/spi_slave.vhd(157[17:19])
-    BB BBspi_clk (.I(spi_clk_o), .T(spi_clk_oe), .B(spi_clk), .O(spi_clk_i)) /* synthesis syn_instantiated=1 */ ;   // e:/spi interface/spi_slave.vhd(161[16:18])
-    OB wb_dat_o_pad_7 (.I(wb_dat_o_c_7), .O(wb_dat_o[7]));   // e:/spi interface/spi_slave.vhd(23[9:17])
-    OB wb_dat_o_pad_1 (.I(wb_dat_o_c_1), .O(wb_dat_o[1]));   // e:/spi interface/spi_slave.vhd(23[9:17])
-    OB wb_dat_o_pad_0 (.I(wb_dat_o_c_0), .O(wb_dat_o[0]));   // e:/spi interface/spi_slave.vhd(23[9:17])
-    OB wb_ack_o_pad (.I(wb_ack_o_c), .O(wb_ack_o));   // e:/spi interface/spi_slave.vhd(24[9:17])
-    OB pll0_bus_o_pad_16 (.I(pll0_bus_o_c_16), .O(pll0_bus_o[16]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_15 (.I(pll0_bus_o_c_15), .O(pll0_bus_o[15]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_14 (.I(pll0_bus_o_c_14), .O(pll0_bus_o[14]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_13 (.I(pll0_bus_o_c_13), .O(pll0_bus_o[13]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_12 (.I(pll0_bus_o_c_12), .O(pll0_bus_o[12]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_11 (.I(pll0_bus_o_c_11), .O(pll0_bus_o[11]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_10 (.I(pll0_bus_o_c_10), .O(pll0_bus_o[10]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_9 (.I(pll0_bus_o_c_9), .O(pll0_bus_o[9]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_8 (.I(pll0_bus_o_c_8), .O(pll0_bus_o[8]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_7 (.I(pll0_bus_o_c_7), .O(pll0_bus_o[7]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_6 (.I(pll0_bus_o_c_6), .O(pll0_bus_o[6]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_5 (.I(pll0_bus_o_c_5), .O(pll0_bus_o[5]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_4 (.I(pll0_bus_o_c_4), .O(pll0_bus_o[4]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_3 (.I(pll0_bus_o_c_3), .O(pll0_bus_o[3]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_2 (.I(pll0_bus_o_c_2), .O(pll0_bus_o[2]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_1 (.I(pll0_bus_o_c_1), .O(pll0_bus_o[1]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    OB pll0_bus_o_pad_0 (.I(pll0_bus_o_c_0), .O(pll0_bus_o[0]));   // e:/spi interface/spi_slave.vhd(30[9:19])
-    IB wb_clk_i_pad (.I(wb_clk_i), .O(wb_clk_i_c));   // e:/spi interface/spi_slave.vhd(16[9:17])
-    IB wb_rst_i_pad (.I(wb_rst_i), .O(wb_rst_i_c));   // e:/spi interface/spi_slave.vhd(17[9:17])
-    IB wb_cyc_i_pad (.I(wb_cyc_i), .O(wb_cyc_i_c));   // e:/spi interface/spi_slave.vhd(18[9:17])
-    IB wb_stb_i_pad (.I(wb_stb_i), .O(wb_stb_i_c));   // e:/spi interface/spi_slave.vhd(19[9:17])
-    IB wb_we_i_pad (.I(wb_we_i), .O(wb_we_i_c));   // e:/spi interface/spi_slave.vhd(20[9:16])
-    IB wb_adr_i_pad_7 (.I(wb_adr_i[7]), .O(wb_adr_i_c_7));   // e:/spi interface/spi_slave.vhd(21[9:17])
-    IB wb_adr_i_pad_6 (.I(wb_adr_i[6]), .O(wb_adr_i_c_6));   // e:/spi interface/spi_slave.vhd(21[9:17])
-    IB wb_adr_i_pad_5 (.I(wb_adr_i[5]), .O(wb_adr_i_c_5));   // e:/spi interface/spi_slave.vhd(21[9:17])
-    IB wb_adr_i_pad_4 (.I(wb_adr_i[4]), .O(wb_adr_i_c_4));   // e:/spi interface/spi_slave.vhd(21[9:17])
-    IB wb_adr_i_pad_3 (.I(wb_adr_i[3]), .O(wb_adr_i_c_3));   // e:/spi interface/spi_slave.vhd(21[9:17])
-    IB wb_adr_i_pad_2 (.I(wb_adr_i[2]), .O(wb_adr_i_c_2));   // e:/spi interface/spi_slave.vhd(21[9:17])
-    IB wb_adr_i_pad_1 (.I(wb_adr_i[1]), .O(wb_adr_i_c_1));   // e:/spi interface/spi_slave.vhd(21[9:17])
-    IB wb_adr_i_pad_0 (.I(wb_adr_i[0]), .O(wb_adr_i_c_0));   // e:/spi interface/spi_slave.vhd(21[9:17])
-    IB wb_dat_i_pad_7 (.I(wb_dat_i[7]), .O(wb_dat_i_c_7));   // e:/spi interface/spi_slave.vhd(22[9:17])
-    IB wb_dat_i_pad_6 (.I(wb_dat_i[6]), .O(wb_dat_i_c_6));   // e:/spi interface/spi_slave.vhd(22[9:17])
-    IB wb_dat_i_pad_5 (.I(wb_dat_i[5]), .O(wb_dat_i_c_5));   // e:/spi interface/spi_slave.vhd(22[9:17])
-    IB wb_dat_i_pad_4 (.I(wb_dat_i[4]), .O(wb_dat_i_c_4));   // e:/spi interface/spi_slave.vhd(22[9:17])
-    IB wb_dat_i_pad_3 (.I(wb_dat_i[3]), .O(wb_dat_i_c_3));   // e:/spi interface/spi_slave.vhd(22[9:17])
-    IB wb_dat_i_pad_2 (.I(wb_dat_i[2]), .O(wb_dat_i_c_2));   // e:/spi interface/spi_slave.vhd(22[9:17])
-    IB wb_dat_i_pad_1 (.I(wb_dat_i[1]), .O(wb_dat_i_c_1));   // e:/spi interface/spi_slave.vhd(22[9:17])
-    IB wb_dat_i_pad_0 (.I(wb_dat_i[0]), .O(wb_dat_i_c_0));   // e:/spi interface/spi_slave.vhd(22[9:17])
-    IB spi_scsn_pad (.I(spi_scsn), .O(spi_scsn_c));   // e:/spi interface/spi_slave.vhd(28[9:17])
-    IB pll0_bus_i_pad_8 (.I(pll0_bus_i[8]), .O(pll0_bus_i_c_8));   // e:/spi interface/spi_slave.vhd(29[9:19])
-    IB pll0_bus_i_pad_7 (.I(pll0_bus_i[7]), .O(pll0_bus_i_c_7));   // e:/spi interface/spi_slave.vhd(29[9:19])
-    IB pll0_bus_i_pad_6 (.I(pll0_bus_i[6]), .O(pll0_bus_i_c_6));   // e:/spi interface/spi_slave.vhd(29[9:19])
-    IB pll0_bus_i_pad_5 (.I(pll0_bus_i[5]), .O(pll0_bus_i_c_5));   // e:/spi interface/spi_slave.vhd(29[9:19])
-    IB pll0_bus_i_pad_4 (.I(pll0_bus_i[4]), .O(pll0_bus_i_c_4));   // e:/spi interface/spi_slave.vhd(29[9:19])
-    IB pll0_bus_i_pad_3 (.I(pll0_bus_i[3]), .O(pll0_bus_i_c_3));   // e:/spi interface/spi_slave.vhd(29[9:19])
-    IB pll0_bus_i_pad_2 (.I(pll0_bus_i[2]), .O(pll0_bus_i_c_2));   // e:/spi interface/spi_slave.vhd(29[9:19])
-    IB pll0_bus_i_pad_1 (.I(pll0_bus_i[1]), .O(pll0_bus_i_c_1));   // e:/spi interface/spi_slave.vhd(29[9:19])
-    IB pll0_bus_i_pad_0 (.I(pll0_bus_i[0]), .O(pll0_bus_i_c_0));   // e:/spi interface/spi_slave.vhd(29[9:19])
+    OB wb_dat_o_pad_6 (.I(wb_dat_o_c_6), .O(wb_dat_o[6]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(23[9:17])
+    BB BBspi_miso (.I(spi_miso_o), .T(spi_miso_oe), .B(spi_miso), .O(spi_miso_i)) /* synthesis syn_instantiated=1 */ ;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(157[17:19])
+    BB BBspi_clk (.I(spi_clk_o), .T(spi_clk_oe), .B(spi_clk), .O(spi_clk_i)) /* synthesis syn_instantiated=1 */ ;   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(161[16:18])
+    OB wb_dat_o_pad_7 (.I(wb_dat_o_c_7), .O(wb_dat_o[7]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(23[9:17])
+    OB wb_dat_o_pad_1 (.I(wb_dat_o_c_1), .O(wb_dat_o[1]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(23[9:17])
+    OB wb_dat_o_pad_0 (.I(wb_dat_o_c_0), .O(wb_dat_o[0]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(23[9:17])
+    OB wb_ack_o_pad (.I(wb_ack_o_c), .O(wb_ack_o));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(24[9:17])
+    OB pll0_bus_o_pad_16 (.I(pll0_bus_o_c_16), .O(pll0_bus_o[16]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_15 (.I(pll0_bus_o_c_15), .O(pll0_bus_o[15]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_14 (.I(pll0_bus_o_c_14), .O(pll0_bus_o[14]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_13 (.I(pll0_bus_o_c_13), .O(pll0_bus_o[13]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_12 (.I(pll0_bus_o_c_12), .O(pll0_bus_o[12]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_11 (.I(pll0_bus_o_c_11), .O(pll0_bus_o[11]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_10 (.I(pll0_bus_o_c_10), .O(pll0_bus_o[10]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_9 (.I(pll0_bus_o_c_9), .O(pll0_bus_o[9]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_8 (.I(pll0_bus_o_c_8), .O(pll0_bus_o[8]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_7 (.I(pll0_bus_o_c_7), .O(pll0_bus_o[7]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_6 (.I(pll0_bus_o_c_6), .O(pll0_bus_o[6]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_5 (.I(pll0_bus_o_c_5), .O(pll0_bus_o[5]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_4 (.I(pll0_bus_o_c_4), .O(pll0_bus_o[4]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_3 (.I(pll0_bus_o_c_3), .O(pll0_bus_o[3]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_2 (.I(pll0_bus_o_c_2), .O(pll0_bus_o[2]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_1 (.I(pll0_bus_o_c_1), .O(pll0_bus_o[1]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    OB pll0_bus_o_pad_0 (.I(pll0_bus_o_c_0), .O(pll0_bus_o[0]));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(30[9:19])
+    IB wb_clk_i_pad (.I(wb_clk_i), .O(wb_clk_i_c));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(16[9:17])
+    IB wb_rst_i_pad (.I(wb_rst_i), .O(wb_rst_i_c));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(17[9:17])
+    IB wb_cyc_i_pad (.I(wb_cyc_i), .O(wb_cyc_i_c));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(18[9:17])
+    IB wb_stb_i_pad (.I(wb_stb_i), .O(wb_stb_i_c));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(19[9:17])
+    IB wb_we_i_pad (.I(wb_we_i), .O(wb_we_i_c));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(20[9:16])
+    IB wb_adr_i_pad_7 (.I(wb_adr_i[7]), .O(wb_adr_i_c_7));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(21[9:17])
+    IB wb_adr_i_pad_6 (.I(wb_adr_i[6]), .O(wb_adr_i_c_6));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(21[9:17])
+    IB wb_adr_i_pad_5 (.I(wb_adr_i[5]), .O(wb_adr_i_c_5));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(21[9:17])
+    IB wb_adr_i_pad_4 (.I(wb_adr_i[4]), .O(wb_adr_i_c_4));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(21[9:17])
+    IB wb_adr_i_pad_3 (.I(wb_adr_i[3]), .O(wb_adr_i_c_3));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(21[9:17])
+    IB wb_adr_i_pad_2 (.I(wb_adr_i[2]), .O(wb_adr_i_c_2));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(21[9:17])
+    IB wb_adr_i_pad_1 (.I(wb_adr_i[1]), .O(wb_adr_i_c_1));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(21[9:17])
+    IB wb_adr_i_pad_0 (.I(wb_adr_i[0]), .O(wb_adr_i_c_0));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(21[9:17])
+    IB wb_dat_i_pad_7 (.I(wb_dat_i[7]), .O(wb_dat_i_c_7));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(22[9:17])
+    IB wb_dat_i_pad_6 (.I(wb_dat_i[6]), .O(wb_dat_i_c_6));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(22[9:17])
+    IB wb_dat_i_pad_5 (.I(wb_dat_i[5]), .O(wb_dat_i_c_5));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(22[9:17])
+    IB wb_dat_i_pad_4 (.I(wb_dat_i[4]), .O(wb_dat_i_c_4));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(22[9:17])
+    IB wb_dat_i_pad_3 (.I(wb_dat_i[3]), .O(wb_dat_i_c_3));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(22[9:17])
+    IB wb_dat_i_pad_2 (.I(wb_dat_i[2]), .O(wb_dat_i_c_2));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(22[9:17])
+    IB wb_dat_i_pad_1 (.I(wb_dat_i[1]), .O(wb_dat_i_c_1));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(22[9:17])
+    IB wb_dat_i_pad_0 (.I(wb_dat_i[0]), .O(wb_dat_i_c_0));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(22[9:17])
+    IB spi_scsn_pad (.I(spi_scsn), .O(spi_scsn_c));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(28[9:17])
+    IB pll0_bus_i_pad_8 (.I(pll0_bus_i[8]), .O(pll0_bus_i_c_8));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(29[9:19])
+    IB pll0_bus_i_pad_7 (.I(pll0_bus_i[7]), .O(pll0_bus_i_c_7));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(29[9:19])
+    IB pll0_bus_i_pad_6 (.I(pll0_bus_i[6]), .O(pll0_bus_i_c_6));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(29[9:19])
+    IB pll0_bus_i_pad_5 (.I(pll0_bus_i[5]), .O(pll0_bus_i_c_5));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(29[9:19])
+    IB pll0_bus_i_pad_4 (.I(pll0_bus_i[4]), .O(pll0_bus_i_c_4));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(29[9:19])
+    IB pll0_bus_i_pad_3 (.I(pll0_bus_i[3]), .O(pll0_bus_i_c_3));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(29[9:19])
+    IB pll0_bus_i_pad_2 (.I(pll0_bus_i[2]), .O(pll0_bus_i_c_2));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(29[9:19])
+    IB pll0_bus_i_pad_1 (.I(pll0_bus_i[1]), .O(pll0_bus_i_c_1));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(29[9:19])
+    IB pll0_bus_i_pad_0 (.I(pll0_bus_i[0]), .O(pll0_bus_i_c_0));   // c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(29[9:19])
     GSR GSR_INST (.GSR(VCC_net));
     TSALL TSALL_INST (.TSALL(GND_net));
     PUR PUR_INST (.PUR(VCC_net));
