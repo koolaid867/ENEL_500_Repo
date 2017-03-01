@@ -1,0 +1,108 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn170228170318"></A><B><U><big>pn170228170318</big></U></B>
+#Start recording tcl command: 2/28/2017 16:04:04
+#Project Location: C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI; Project name: EUREKA_FPGA_SPI
+prj_project new -name "EUREKA_FPGA_SPI" -impl "SPI" -dev LCMXO2-7000HE-4TG144C -synthesis "lse"
+prj_project save
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/EFB.ipx"
+prj_run Synthesis -impl SPI
+prj_src remove "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/EFB.ipx"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/EFB_SPI.ipx"
+prj_run Synthesis -impl SPI
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/Test_Bench_EFB_SPI.vhd"
+prj_run Synthesis -impl SPI
+prj_src syn_sim -src "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/Test_Bench_EFB_SPI.vhd" SimulateOnly
+prj_run Synthesis -impl SPI
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/simulation/simulation.spf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/simulation/simulation.spf"
+prj_run Synthesis -impl SPI
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/simulation/simulation.spf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/simulation/simulation.spf"
+prj_src syn_sim -src "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/Test_Bench_EFB_SPI.vhd" SynthesisAndSimulate
+prj_src syn_sim -src "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/Test_Bench_EFB_SPI.vhd" SimulateOnly
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/simulation/simulation.spf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/simulation/simulation.spf"
+prj_project save
+prj_project close
+#Stop recording: 2/28/2017 17:03:18
+
+
+
+<A name="pn170228173220"></A><B><U><big>pn170228173220</big></U></B>
+#Start recording tcl command: 2/28/2017 17:14:34
+#Project Location: C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI; Project name: EUREKA_FPGA_SPI
+prj_project open "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/EUREKA_FPGA_SPI.ldf"
+#Stop recording: 2/28/2017 17:32:20
+
+
+
+<A name="pn170228204510"></A><B><U><big>pn170228204510</big></U></B>
+#Start recording tcl command: 2/28/2017 19:18:56
+#Project Location: C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI; Project name: EUREKA_FPGA_SPI
+prj_project open "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/EUREKA_FPGA_SPI.ldf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/EUREKA_FPGA_SPI/simulation/simulation.spf"
+prj_run Synthesis -impl SPI
+#Stop recording: 2/28/2017 20:45:10
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

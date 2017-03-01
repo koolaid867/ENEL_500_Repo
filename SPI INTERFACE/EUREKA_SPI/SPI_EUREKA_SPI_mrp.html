@@ -1,0 +1,257 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+          Lattice Mapping Report File for Design Module 'SPI_OUTPUT'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
+     SPI_EUREKA_SPI.ngd -o SPI_EUREKA_SPI_map.ncd -pr SPI_EUREKA_SPI.prf -mp
+     SPI_EUREKA_SPI.mrp -lpf C:/Users/Michael Hosanee/Documents/ENEL
+     500/Git/ENEL_500_Repo/SPI INTERFACE/EUREKA_SPI/SPI_EUREKA_SPI.lpf -lpf
+     C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI
+     INTERFACE/SPI.lpf -c 0 -gui -msgset C:/Users/Michael Hosanee/Documents/ENEL
+     500/Git/ENEL_500_Repo/SPI INTERFACE/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.8.0.115.3
+Mapped on:  02/27/17  23:07:29
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    23
+     
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+ERROR - map: PAD signal SPI_MOSI has illegal connections to block
+     temp_holder_29.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block ARRAY_INPUT_i5.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block
+     ARRAY_FINAL_i0_i8.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block
+     ARRAY_FINAL_i0_i7.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block
+     ARRAY_FINAL_i0_i6.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block
+     ARRAY_FINAL_i0_i5.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block
+     ARRAY_FINAL_i0_i4.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block
+     ARRAY_FINAL_i0_i3.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block ARRAY_INPUT_i4.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block ARRAY_INPUT_i3.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block
+     ARRAY_FINAL_i0_i2.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block ARRAY_INPUT_i0.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block ARRAY_INPUT_i2.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block
+     ARRAY_FINAL_i0_i1.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block ARRAY_INPUT_i7.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block
+     Fill_Array_52__i1.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block ARRAY_INPUT_i1.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block
+     Fill_Array_52__i2.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block
+     SEND_DATA_BITS_31.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block
+
+     Fill_Array_52__i0.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block temp_holder_29.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block
+     RECEIVE_DATA_BITS_32.
+ERROR - map: PAD signal SPI_CLK has illegal connections to block ARRAY_INPUT_i6.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
+   IO attributes information not available.
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Block i1 was optimized away.
+Block i2 was optimized away.
+
+Embedded Functional Block Connection Summary:
+---------------------------------------------
+
+   Desired WISHBONE clock frequency: 50.0 MHz
+   Clock source:                     NONE
+   Reset source:                     NONE
+   Functions mode:
+      I2C #1 (Primary) Function:     DISABLED
+      I2C #2 (Secondary) Function:   DISABLED
+      SPI Function:                  ENABLED
+      Timer/Counter Function:        DISABLED
+      Timer/Counter Mode:            WB
+      UFM Connection:                DISABLED
+      PLL0 Connection:               DISABLED
+      PLL1 Connection:               DISABLED
+   I2C Function Summary:
+   --------------------
+      None
+   SPI Function Summary:
+   --------------------
+      SPI Mode:               SLAVE
+      SPI Data Order:         MSB to LSB
+      SPI Clock Inversion:    DISABLED
+      SPI Phase Adjust:       DISABLED
+      SPI Wakeup:             DISABLED
+   Timer/Counter Function Summary:
+   ------------------------------
+      None
+   UFM Function Summary:
+   --------------------
+      UFM Utilization:        General Purpose Flash Memory
+      Available General
+      Purpose Flash Memory:   2046 Pages (2046*128 Bits)
+
+           EBR Blocks with Unique
+      Initialization Data:    0
+
+
+           WID		EBR Instance
+      ---		------------
+
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: I1/EFBInst_0
+         Type: EFB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+        Copyright (c) 1995 AT&T Corp.   All rights reserved.
+        Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+        Copyright (c) 2001 Agere Systems   All rights reserved.
+        Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights
+        reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,35 @@
+timestamp=1488337731413
+
+[~A]
+ModifyID=2
+Version=74
+
+[efb_spi]
+A/structure=A/Structure 21|./../../EFB_SPI.vhd|31|1*0
+I=0*917
+I/structure=I/Structure 0*9885
+M=11|0|vd0|1488337731066|./../../EFB_SPI.vhd|0*260*0x8da927b67a3af3c58bd0850d58e297ef9e07de24|0*837*0x23b75c12e3e89f2ef000564498faa8c2
+M/structure=M/Structure 21|0|vd0|1488337731073|./../../EFB_SPI.vhd|0*1193*0xb3227a4a71bb7447534d9a20c5abac05d82040ce|0*9792*0x9065d32a2e40e13794b29a2731812845
+R=./../../EFB_SPI.vhd|14
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|f5870ab944bc03ef5f85b71cc7808c2926527262ddaa47cb266f3a3c4d9b973a856b5e68a48817c6b65af06f66e58c5d
+Version/structure=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa6805cc78f7fe1227ebcc0bf5bed27a24f71
+
+[test]
+A/behavioural=21|./../../Test_Bench_EFB_SPI.vhd|10|1*23926
+BinI32/behavioural=3*0
+I=0*10642
+I/behavioural=0*13566
+M=11|0|vd0|1488337731280|./../../Test_Bench_EFB_SPI.vhd|0*10371*0x7a946edace152cc440696cadccb235d7b5ebceea|0*10554*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioural=21|0|vd0|1488337731343|./../../Test_Bench_EFB_SPI.vhd|0*10838*0xa35b4888b2b1eeba362cd740a9d05a220f2e0538|0*13463*0x9065d32a2e40e13794b29a2731812845
+R=./../../Test_Bench_EFB_SPI.vhd|7
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|e1f76c805e2c0a9a3d36a8be8882f206974195cedcdd4cfe8bca5a71872212b4
+Version/behavioural=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|b3d6d97a5e65c156a74f4b2a9df7fbaaf49739d495db4351233fcd81c6054e4b1a5fa13e633cb4639d8de52bec1b5281
+
+[~MFT]
+0=7|0work.mgf|13566|0
+1=1|1work.mgf|23926|0
+3=1|3work.mgf|0|0
+
+[~U]
+efb_spi=EFB_SPI 11|0*0|
+test=Test 11|0*10257|

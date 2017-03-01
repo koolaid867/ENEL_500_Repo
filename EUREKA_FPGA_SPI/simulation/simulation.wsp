@@ -1,0 +1,17 @@
+[COMPILESTATUS|.\..\EFB_SPI.vhd]
+FileTimeLow=30577211
+Status=Modified
+
+[COMPILESTATUS|.\..\Test_Bench_EFB_SPI.vhd]
+FileTimeLow=30577211
+Status=Modified
+
+[General]
+CurrentVersion=103
+
+[CACHEDOC|Aldec.Project.Generic.7|.\simulation.adf|]
+Path=/Test
+
+[Gui config]
+RunFor=16 us
+

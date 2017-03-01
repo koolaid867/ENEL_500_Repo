@@ -1,9 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_MOSI</Dynamic>
+            <Dynamic>temp_holder_29</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_INPUT_i5</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_FINAL_i0_i8</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_FINAL_i0_i7</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_FINAL_i0_i6</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_FINAL_i0_i5</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_FINAL_i0_i4</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_FINAL_i0_i3</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_INPUT_i4</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_INPUT_i3</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_FINAL_i0_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_INPUT_i0</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_INPUT_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_FINAL_i0_i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_INPUT_i7</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>Fill_Array_52__i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_INPUT_i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>Fill_Array_52__i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>SEND_DATA_BITS_31</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>Fill_Array_52__i0</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>temp_holder_29</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>RECEIVE_DATA_BITS_32</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001034</ID>
+            <Severity>Error</Severity>
+            <Dynamic>SPI_CLK</Dynamic>
+            <Dynamic>ARRAY_INPUT_i6</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001088</ID>
+            <Severity>Info</Severity>
+        </Message>
+    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>35002000</ID>
             <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001200</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>jtagconn16</Dynamic>
         </Message>
         <Message>
             <ID>35921504</ID>
@@ -14,72 +163,42 @@
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd(7): </Dynamic>
-            <Dynamic>spi_output</Dynamic>
-            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd</Navigation>
-            <Navigation>7</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd(17): </Dynamic>
-            <Dynamic>behavioural</Dynamic>
-            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd</Navigation>
-            <Navigation>17</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(14): </Dynamic>
-            <Dynamic>spi_slave</Dynamic>
-            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd</Navigation>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd(14): </Dynamic>
+            <Dynamic>efb</Dynamic>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd</Navigation>
             <Navigation>14</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(33): </Dynamic>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd(31): </Dynamic>
             <Dynamic>structure</Dynamic>
-            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd</Navigation>
-            <Navigation>33</Navigation>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd</Navigation>
+            <Navigation>31</Navigation>
         </Message>
         <Message>
-            <ID>35921205</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd(15): </Dynamic>
-            <Dynamic>SPI_OUTPUT</Dynamic>
-            <Dynamic>BEHAVIOURAL</Dynamic>
-            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd</Navigation>
-            <Navigation>15</Navigation>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd(14): </Dynamic>
+            <Dynamic>efb</Dynamic>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd</Navigation>
+            <Navigation>14</Navigation>
         </Message>
         <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>SPI_MISO_b</Dynamic>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd(31): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd</Navigation>
+            <Navigation>31</Navigation>
         </Message>
         <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>SPI_MOSI_b</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001263</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>SPI_CLK_b</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001263</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>SPI_MISO_b</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001263</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>SPI_MOSI_b</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001611</ID>
-            <Severity>Warning</Severity>
+            <ID>35935037</ID>
+            <Severity>Error</Severity>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd(14): </Dynamic>
+            <Dynamic>1000</Dynamic>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd</Navigation>
+            <Navigation>14</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

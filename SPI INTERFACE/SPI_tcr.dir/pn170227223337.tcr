@@ -1,0 +1,9 @@
+#Start recording tcl command: 2/27/2017 22:31:55
+#Project Location: C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE; Project name: SPI
+prj_project open "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/SPI.ldf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/simulation/simulation.spf"
+prj_run Synthesis -impl EUREKA_SPI
+prj_src remove "C:/Users/Michael Hosanee/Downloads/ENEL_500_Repo-master (1)/ENEL_500_Repo-master/code/BEAGLE_TO_OUTPUTS.vhd"
+prj_src remove "C:/Users/Michael Hosanee/Downloads/ENEL_500_Repo-master (1)/ENEL_500_Repo-master/code/test_bench_spi.vhd"
+prj_src remove "C:/Users/Michael Hosanee/Downloads/ENEL_500_Repo-master (1)/ENEL_500_Repo-master/code/SPI_SLAVE.vhd"
+#Stop recording: 2/27/2017 22:33:37

@@ -1,15 +1,3 @@
-synthesis:  version Diamond (64-bit) 3.8.0.115.3
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Feb 26 21:44:39 2017
-
-
-Command Line:  synthesis -f SPI_EUREKA_SPI_lattice.synproj -gui -msgset C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/promote.xml 
-
 Synthesis options:
 The -a option is MachXO2.
 The -s option is 4.
@@ -34,7 +22,7 @@ Using performance grade 4.
                                                           
 
 Optimization goal = Balanced
-Top-level module name = SPI_OUTPUT.
+The -top option is not used.
 Target frequency = 1.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -64,8 +52,7 @@ The -syn option is FALSE.
 -p C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/EUREKA_SPI (searchpath added)
 -p C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE (searchpath added)
 VHDL library = work
-VHDL design file = C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd
-VHDL design file = C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/SPI_SLAVE.vhd
+VHDL design file = C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/EFB.vhd
 NGD file = SPI_EUREKA_SPI.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -76,120 +63,22 @@ Technology check ok...
 Analyzing Verilog file C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
+WARNING - synthesis: Setting jtagconn16 as the top-level module. To specify the top-level module explicitly, use the -top option.
 INFO - synthesis: The default VHDL library search path is now "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/EUREKA_SPI". VHDL-1504
-Analyzing VHDL file c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd. VHDL-1481
-INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd(7): analyzing entity spi_output. VHDL-1012
-INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd(17): analyzing architecture behavioural. VHDL-1010
-unit SPI_OUTPUT is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd. VHDL-1481
-INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(14): analyzing entity spi_slave. VHDL-1012
-INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/spi_slave.vhd(33): analyzing architecture structure. VHDL-1010
-unit SPI_OUTPUT is not yet analyzed. VHDL-1485
-unit SPI_OUTPUT is not yet analyzed. VHDL-1485
-c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd(7): executing SPI_OUTPUT(BEHAVIOURAL)
-
-WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/beagle_to_outputs.vhd(15): replacing existing netlist SPI_OUTPUT(BEHAVIOURAL). VHDL-1205
-Top module name (VHDL): SPI_OUTPUT
-Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.8_x64/ispfpga.
-Package Status:                     Final          Version 1.39.
-Top-level module name = SPI_OUTPUT.
-WARNING - synthesis: Initial value found on net SPI_MISO_b will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net SPI_MOSI_b will be ignored due to unrecognized driver type
-######## Converting I/O port ARRAY_FINAL[7] to output.
-######## Converting I/O port ARRAY_FINAL[6] to output.
-######## Converting I/O port ARRAY_FINAL[5] to output.
-######## Converting I/O port ARRAY_FINAL[4] to output.
-######## Converting I/O port ARRAY_FINAL[3] to output.
-######## Converting I/O port ARRAY_FINAL[2] to output.
-######## Converting I/O port ARRAY_FINAL[1] to output.
-######## Converting I/O port ARRAY_FINAL[0] to output.
-
-
-
-WARNING - synthesis: Skipping pad insertion on SPI_CLK_b due to black_box_pad_pin attribute.
-WARNING - synthesis: Skipping pad insertion on SPI_MISO_b due to black_box_pad_pin attribute.
-WARNING - synthesis: Skipping pad insertion on SPI_MOSI_b due to black_box_pad_pin attribute.
-GSR will not be inferred because no asynchronous signal was found in the netlist.
-Applying 1.000000 MHz constraint to all clocks
-
-WARNING - synthesis: No user .sdc file.
-Results of NGD DRC are available in SPI_OUTPUT_drc.log.
-Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-All blocks are expanded and NGD expansion is successful.
-Writing NGD file SPI_EUREKA_SPI.ngd.
-
-################### Begin Area Report (SPI_OUTPUT)######################
-Number of register bits => 21 of 7209 (0 % )
-BB => 3
-EFB => 1
-FD1P3AX => 16
-FD1S3AX => 1
-FD1S3IX => 4
-GSR => 1
-IB => 1
-LUT4 => 12
-OB => 9
-################### End Area Report ##################
-
-################### Begin BlackBox Report ######################
-TSALL => 1
-################### End BlackBox Report ##################
-
-################### Begin Clock Report ######################
-Clock Nets
-Number of Clocks: 2
-  Net : SPI_CLK_b, loads : 21
-  Net : spi_clk_i, loads : 1
-Clock Enable Nets
-Number of Clock Enables: 9
-Top 9 highest fanout Clock Enables:
-  Net : RECEIVE_DATA_BITS, loads : 21
-  Net : SPI_CLK_b_enable_4, loads : 1
-  Net : SPI_CLK_b_enable_5, loads : 1
-  Net : SPI_CLK_b_enable_3, loads : 1
-  Net : SPI_CLK_b_enable_6, loads : 1
-  Net : SPI_CLK_b_enable_1, loads : 1
-  Net : SPI_CLK_b_enable_7, loads : 1
-  Net : SPI_CLK_b_enable_2, loads : 1
-  Net : SPI_CLK_b_enable_8, loads : 1
-Highest fanout non-clock nets
-Top 10 highest fanout non-clock nets:
-  Net : RECEIVE_DATA_BITS, loads : 21
-  Net : Fill_Array_0, loads : 12
-  Net : Fill_Array_1, loads : 11
-  Net : Fill_Array_2, loads : 10
-  Net : SPI_MOSI_b, loads : 8
-  Net : SPI_SCSN_b_c, loads : 1
-  Net : ARRAY_FINAL_c_7, loads : 1
-  Net : ARRAY_FINAL_c_6, loads : 1
-  Net : ARRAY_FINAL_c_5, loads : 1
-  Net : ARRAY_FINAL_c_4, loads : 1
-################### End Clock Report ##################
-
-Timing Report Summary
---------------
---------------------------------------------------------------------------------
-Constraint                              |   Constraint|       Actual|Levels
---------------------------------------------------------------------------------
-                                        |             |             |
-create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets SPI_CLK_b]               |            -|            -|     0  
-                                        |             |             |
---------------------------------------------------------------------------------
-
-
-All constraints were met.
-
-
-Peak Memory Usage: 74.754  MB
-
---------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.516  secs
---------------------------------------------------------------
+Analyzing VHDL file c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd. VHDL-1481
+INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd(14): analyzing entity efb. VHDL-1012
+INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd(31): analyzing architecture structure. VHDL-1010
+unit jtagconn16 is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd. VHDL-1481
+INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd(14): analyzing entity efb. VHDL-1012
+INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd(31): analyzing architecture structure. VHDL-1010
+unit jtagconn16 is not yet analyzed. VHDL-1485
+unit jtagconn16 is not yet analyzed. VHDL-1485
+unit jtagconn16 is not yet analyzed. VHDL-1485
+unit jtagconn16 is not yet analyzed. VHDL-1485
+unit jtagconn16 is not yet analyzed. VHDL-1485
+unit jtagconn16 is not yet analyzed. VHDL-1485
+unit jtagconn16 is not yet analyzed. VHDL-1485
+unit jtagconn16 is not yet analyzed. VHDL-1485
+Top module name (VHDL): jtagconn16
+ERROR - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/spi interface/efb.vhd(14): Design Hierarchy depth exceeded limit of 1000. VDB-5037

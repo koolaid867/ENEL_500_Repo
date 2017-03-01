@@ -1,4 +1,4 @@
-Active-HDL 10.3.3558.6081  2017-02-26 21:44:53
+Active-HDL 10.3.3558.6081  2017-02-28 15:57:13
 
 Elaboration top modules:
 Architecture                  behavioural(Test)
@@ -8,7 +8,6 @@ Architecture                  behavioural(Test)
 Entity         | Architecture | Library | Info | Compiler Version          | Compilation Options
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Test           | behavioural  | work    |      | 10.3.3558.6081  (Windows) | -dbg
-SPI_OUTPUT     | BEHAVIOURAL  | work    |      | 10.3.3558.6081  (Windows) | -dbg
 SPI_SLAVE      | Structure    | work    |      | 10.3.3558.6081  (Windows) | -dbg
 vhi            | v            | machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice
 bb             | v            | machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice

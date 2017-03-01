@@ -1,0 +1,9 @@
+---------------------------------------------------
+Report for cell SPI_OUTPUT
+   Instance path: SPI_OUTPUT
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      20.00        100.0
+                                  LUT4	      12.00        100.0
+                                 IOBUF	         19        100.0
+                                PFUREG	         29        100.0

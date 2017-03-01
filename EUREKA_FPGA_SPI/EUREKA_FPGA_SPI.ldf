@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="EUREKA_FPGA_SPI" device="LCMXO2-7000HE-4TG144C" default_implementation="SPI">
+    <Options/>
+    <Implementation title="SPI" dir="SPI" description="SPI" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="EFB_SPI"/>
+        <Source name="EFB_SPI.ipx" type="IPX_Module" type_short="IPX">
+            <Options top_module="EFB_SPI"/>
+        </Source>
+        <Source name="Test_Bench_EFB_SPI.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="EUREKA_FPGA_SPI.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="simulation/simulation.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="EUREKA_FPGA_SPI1.sty"/>
+</BaliProject>

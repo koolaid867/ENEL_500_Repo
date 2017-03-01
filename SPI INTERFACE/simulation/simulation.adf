@@ -35,12 +35,10 @@ Count=0
 Global=
 [Files]
 /..\..\SPI_SLAVE.vhd=-1
-/..\..\BEAGLE_TO_OUTPUTS.vhd=-1
-/..\..\test_bench_spi.vhd=-1
+/..\..\test_bench_spi_slave.vhd=-1
 [Files.Data]
 .\..\SPI_SLAVE.vhd=VHDL Source Code
-.\..\BEAGLE_TO_OUTPUTS.vhd=VHDL Source Code
-.\..\test_bench_spi.vhd=VHDL Source Code
+.\..\test_bench_spi_slave.vhd=VHDL Source Code
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]

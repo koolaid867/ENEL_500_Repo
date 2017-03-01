@@ -2,11 +2,11 @@ lappend auto_path "C:/lscc/diamond/3.8_x64/data/script"
 package require simulation_generation
 set ::bali::simulation::Para(PROJECT) {simulation}
 set ::bali::simulation::Para(PROJECTPATH) {C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE}
-set ::bali::simulation::Para(FILELIST) {"C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/SPI_SLAVE.vhd" "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd" "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/test_bench_spi.vhd" }
+set ::bali::simulation::Para(FILELIST) {"C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/SPI_SLAVE.vhd" "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/test_bench_spi_slave.vhd" }
 set ::bali::simulation::Para(GLBINCLIST) {}
-set ::bali::simulation::Para(INCLIST) {"none" "none" "none"}
-set ::bali::simulation::Para(WORKLIBLIST) {"work" "work" "work" }
-set ::bali::simulation::Para(COMPLIST) {"VHDL" "VHDL" "VHDL" }
+set ::bali::simulation::Para(INCLIST) {"none" "none"}
+set ::bali::simulation::Para(WORKLIBLIST) {"work" "work" }
+set ::bali::simulation::Para(COMPLIST) {"VHDL" "VHDL" }
 set ::bali::simulation::Para(SIMLIBLIST) {pmi_work ovi_machxo2}
 set ::bali::simulation::Para(MACROLIST) {}
 set ::bali::simulation::Para(SIMULATIONTOPMODULE) {Test}

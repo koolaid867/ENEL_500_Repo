@@ -15,15 +15,12 @@ signal SPI_MOSI: std_logic := '0';
 signal SPI_SCSN: std_logic := '0';
 signal ARRAY_OUT: std_logic_vector(7 downto 0) := "00000000";
 signal SEND_DATA_BITS: std_logic;
+signal wb_dat_o: std_logic_vector(7 downto 0) := "00000000";
 
 constant clk_period: time := 2us;
 
 COMPONENT SPI_OUTPUT
 	PORT(
-		SPI_CLK_b: inout std_logic;
-		SPI_MISO_b: inout std_logic := '0';
-		SPI_MOSI_b: inout std_logic := '0';
-		SPI_SCSN_b: in std_logic; 
 		ARRAY_FINAL: inout std_logic_vector(7 downto 0) := "00000000";	
 		SEND_DATA_BITS: out std_logic);
 	END COMPONENT;
@@ -42,9 +39,7 @@ COMPONENT SPI_SLAVE
 		spi_clk: inout  std_logic; 
 		spi_miso: inout  std_logic; 
 		spi_mosi: inout  std_logic; 
-		spi_scsn: in  std_logic; 
-		pll0_bus_i: in  std_logic_vector(8 downto 0) := "000000000"; 
-		pll0_bus_o: out  std_logic_vector(16 downto 0));
+		spi_scsn: in  std_logic); 
 	END COMPONENT;
 	
 
@@ -53,17 +48,17 @@ BEGIN
 
 uut: SPI_OUTPUT
 	PORT MAP(
-		SPI_CLK_b => SPI_CLK,
-		SPI_MISO_b => SPI_MISO,
-		SPI_MOSI_b => SPI_MOSI,
-		SPI_SCSN_b => SPI_SCSN,
 		ARRAY_FINAL => ARRAY_OUT,
 		SEND_DATA_BITS => SEND_DATA_BITS
 		);
 		
---uut_2: SPI_SLAVE
---	PORT MAP(
---		wb_dat_o => wb_dat_o);
+uut_2: SPI_SLAVE
+	PORT MAP(
+		SPI_CLK => SPI_CLK,
+		SPI_MISO => SPI_MISO,
+		SPI_MOSI => SPI_MOSI,
+		SPI_SCSN => SPI_SCSN,
+		wb_dat_o => wb_dat_o);
 
 clk_proces: PROCESS
 	BEGIN

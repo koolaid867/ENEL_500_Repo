@@ -16,14 +16,12 @@ if {$newDesign == 0} {
   removefile -Y -D *
 }
 addfile "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/SPI_SLAVE.vhd"
-addfile "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd"
-addfile "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/test_bench_spi.vhd"
+addfile "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/test_bench_spi_slave.vhd"
 vlib "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/simulation/work"
 set worklib work
 adel -all
 vcom -dbg -work work "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/SPI_SLAVE.vhd"
-vcom -dbg -work work "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/BEAGLE_TO_OUTPUTS.vhd"
-vcom -dbg -work work "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/test_bench_spi.vhd"
+vcom -dbg -work work "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI INTERFACE/test_bench_spi_slave.vhd"
 entity Test
 vsim  +access +r Test   -PL pmi_work -L ovi_machxo2
 add wave *
