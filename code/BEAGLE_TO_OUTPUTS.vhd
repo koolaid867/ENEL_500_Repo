@@ -18,7 +18,7 @@ ARCHITECTURE BEHAVIOURAL OF SPI_OUTPUT IS
 	signal ARRAY_INPUT: std_logic_vector(7 downto 0) := "00000000";
 	signal CLK_GEN: std_logic; -- internal clock for Array sorting
 	signal CLK_GEN_ARRAY: std_logic; -- output clock that will take care of 8 bit sorting
-	signal RECEIVE_DATA_BITS: std_logic := '1'; -- must be 1 to send to motors
+	signal RECEIVE_DATA_BITS: std_logic := '0'; -- must be 1 to send to motors
 	
 	COMPONENT SPI_SLAVE
 		PORT( 
@@ -74,8 +74,8 @@ BEGIN
 		if(SPI_CLK_b'EVENT and SPI_CLK_B = '1') then
 			
 			if(RECEIVE_DATA_BITS = '0') then
-				Fill_Array := Fill_Array + 1;
 				ARRAY_INPUT(Fill_Array) <= SPI_MOSI_b;
+				Fill_Array := Fill_Array + 1;
 				SEND_DATA_BITS <= RECEIVE_DATA_BITS;
 				if(Fill_Array = 7) then
 				RECEIVE_DATA_BITS <= '1';
@@ -84,7 +84,6 @@ BEGIN
 			else
 				RECEIVE_DATA_BITS <= '0';
 				Fill_Array := 0;
-				ARRAY_INPUT(Fill_Array) <= SPI_MOSI_b;
 				ARRAY_FINAL <= ARRAY_INPUT;
 				SEND_DATA_BITS <= RECEIVE_DATA_BITS;
 			end if;
