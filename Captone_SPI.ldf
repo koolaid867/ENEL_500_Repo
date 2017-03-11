@@ -2,8 +2,20 @@
 <BaliProject version="3.2" title="Captone_SPI" device="LCMXO2-7000HE-4TG144C" default_implementation="SPI_Capstone">
     <Options/>
     <Implementation title="SPI_Capstone" dir="SPI_Capstone" description="SPI_Capstone" synthesis="lse" default_strategy="Strategy1">
-        <Options/>
+        <Options def_top="SPI_OUTPUT"/>
+        <Source name="BEAGLE_TO_OUTPUTS.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="SPI_OUTPUT"/>
+        </Source>
+        <Source name="testbench_BEAGLE_YO_OUTPUTS.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
         <Source name="Captone_SPI.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="simulation/simulation.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="SPI_Capstone/SPI_Capstone.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>
     </Implementation>

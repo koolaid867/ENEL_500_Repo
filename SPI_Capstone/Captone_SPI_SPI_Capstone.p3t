@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Captone_SPI_SPI_Capstone.log"
+-o "Captone_SPI_SPI_Capstone.csv"
+-pr "Captone_SPI_SPI_Capstone.prf"

@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Mar 10 20:25:00 2017
+Fri Mar 10 21:07:23 2017
 
 
 Command Line:  synthesis -f Captone_SPI_SPI_Capstone_lattice.synproj -gui 
@@ -87,14 +87,14 @@ Compile Design Begin
 INFO - synthesis: The default VHDL library search path is now "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI_Capstone". VHDL-1504
 Analyzing VHDL file c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd. VHDL-1481
 INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(7): analyzing entity spi_output. VHDL-1012
-INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(17): analyzing architecture behavioural. VHDL-1010
+INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(18): analyzing architecture behavioural. VHDL-1010
 unit SPI_OUTPUT is not yet analyzed. VHDL-1485
 unit SPI_OUTPUT is not yet analyzed. VHDL-1485
 c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(7): executing SPI_OUTPUT(BEHAVIOURAL)
 
-WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(49): spi_scsn_b should be on the sensitivity list of the process. VHDL-1251
-WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(68): incomplete sensitivity list specified, assuming completeness. VHDL-1613
-WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(15): replacing existing netlist SPI_OUTPUT(BEHAVIOURAL). VHDL-1205
+WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(50): spi_scsn_b should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(69): incomplete sensitivity list specified, assuming completeness. VHDL-1613
+WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(16): replacing existing netlist SPI_OUTPUT(BEHAVIOURAL). VHDL-1205
 Top module name (VHDL): SPI_OUTPUT
 Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -112,6 +112,14 @@ Top-level module name = SPI_OUTPUT.
 ######## Converting I/O port ARRAY_FINAL[1] to output.
 ######## Converting I/O port ARRAY_FINAL[0] to output.
 ######## Missing driver on net SPI_MISO_b. Patching with GND.
+######## Missing driver on net LEDS[7]. Patching with GND.
+######## Missing driver on net LEDS[6]. Patching with GND.
+######## Missing driver on net LEDS[5]. Patching with GND.
+######## Missing driver on net LEDS[4]. Patching with GND.
+######## Missing driver on net LEDS[3]. Patching with GND.
+######## Missing driver on net LEDS[2]. Patching with GND.
+######## Missing driver on net LEDS[1]. Patching with GND.
+######## Missing driver on net LEDS[0]. Patching with GND.
 
 
 
@@ -136,7 +144,7 @@ FD1S3AX => 1
 GSR => 1
 IB => 3
 LUT4 => 18
-OB => 9
+OB => 17
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -157,7 +165,7 @@ Top 10 highest fanout Clock Enables:
   Net : SPI_CLK_b_c_enable_7, loads : 1
   Net : SPI_CLK_b_c_enable_3, loads : 1
   Net : SPI_CLK_b_c_enable_10, loads : 1
-  Net : SPI_CLK_b_c_enable_16, loads : 1
+  Net : SPI_CLK_b_c_enable_17, loads : 1
   Net : SPI_CLK_b_c_enable_1, loads : 1
   Net : SPI_CLK_b_c_enable_19, loads : 1
 Highest fanout non-clock nets
@@ -189,10 +197,10 @@ clk0 [get_nets SPI_CLK_b_c]             |    1.000 MHz|  177.683 MHz|     3
 All constraints were met.
 
 
-Peak Memory Usage: 74.668  MB
+Peak Memory Usage: 74.324  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.547  secs
+Elapsed CPU time for LSE flow : 0.484  secs
 --------------------------------------------------------------
 
 

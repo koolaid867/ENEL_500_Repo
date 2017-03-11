@@ -10,7 +10,8 @@ ENTITY SPI_OUTPUT is
 		SPI_MISO_b: out std_logic := '0';
 		SPI_MOSI_b: in std_logic := '0';
 		SPI_SCSN_b: in std_logic; 
-		ARRAY_FINAL: inout std_logic_vector(7 downto 0) := "11111111");	
+		ARRAY_FINAL: inout std_logic_vector(7 downto 0) := "11111111";	
+		LEDS: out std_logic_vector(7 downto 0) := "11111111");
 --		SEND_DATA_BITS: out std_logic);
 END SPI_OUTPUT;
 

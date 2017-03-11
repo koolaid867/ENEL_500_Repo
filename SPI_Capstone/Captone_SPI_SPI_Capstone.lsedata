@@ -19,7 +19,7 @@
 <unit name = "SPI_OUTPUT">
 
     <!--
-        Top Level Pins: 12
+        Top Level Pins: 20
     -->
 
     <pins>
@@ -35,6 +35,14 @@
         <pitem  name = "ARRAY_FINAL[2]"  direction = "inout"  />
         <pitem  name = "ARRAY_FINAL[1]"  direction = "inout"  />
         <pitem  name = "ARRAY_FINAL[0]"  direction = "inout"  />
+        <pitem  name = "LEDS[7]"  direction = "out"  />
+        <pitem  name = "LEDS[6]"  direction = "out"  />
+        <pitem  name = "LEDS[5]"  direction = "out"  />
+        <pitem  name = "LEDS[4]"  direction = "out"  />
+        <pitem  name = "LEDS[3]"  direction = "out"  />
+        <pitem  name = "LEDS[2]"  direction = "out"  />
+        <pitem  name = "LEDS[1]"  direction = "out"  />
+        <pitem  name = "LEDS[0]"  direction = "out"  />
     </pins>
 
     <!--
