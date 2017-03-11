@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI_Capstone</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(7): </Dynamic>
+            <Dynamic>spi_output</Dynamic>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(17): </Dynamic>
+            <Dynamic>behavioural</Dynamic>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(49): </Dynamic>
+            <Dynamic>spi_scsn_b</Dynamic>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd</Navigation>
+            <Navigation>49</Navigation>
+        </Message>
+        <Message>
+            <ID>35921613</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(68): </Dynamic>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd</Navigation>
+            <Navigation>68</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(15): </Dynamic>
+            <Dynamic>SPI_OUTPUT</Dynamic>
+            <Dynamic>BEHAVIOURAL</Dynamic>
+            <Navigation>c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

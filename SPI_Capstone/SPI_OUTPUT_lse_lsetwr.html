@@ -1,0 +1,202 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Fri Mar 10 20:25:02 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     SPI_OUTPUT
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk0 [get_nets SPI_CLK_b_c]
+            61 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 994.372ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             RECEIVE_DATA_BITS_32  (from SPI_CLK_b_c +)
+   Destination:    FD1P3AX    SP             ARRAY_INPUT_i0_i5  (to SPI_CLK_b_c +)
+
+   Delay:                   5.343ns  (26.8% logic, 73.2% route), 3 logic levels.
+
+ Constraint Details:
+
+      5.343ns data_path RECEIVE_DATA_BITS_32 to ARRAY_INPUT_i0_i5 meets
+    1000.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 999.715ns) by 994.372ns
+
+ Path Details: RECEIVE_DATA_BITS_32 to ARRAY_INPUT_i0_i5
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              RECEIVE_DATA_BITS_32 (from SPI_CLK_b_c)
+Route         6   e 1.515                                  RECEIVE_DATA_BITS
+LUT4        ---     0.493              A to Z              i1_2_lut_rep_5
+Route         6   e 1.457                                  n351
+LUT4        ---     0.493              B to Z              i253_2_lut_3_lut_4_lut
+Route         1   e 0.941                                  SPI_CLK_b_c_enable_19
+                  --------
+                    5.343  (26.8% logic, 73.2% route), 3 logic levels.
+
+
+Passed:  The following path meets requirements by 994.372ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             RECEIVE_DATA_BITS_32  (from SPI_CLK_b_c +)
+   Destination:    FD1P3AX    SP             ARRAY_INPUT_i0_i1  (to SPI_CLK_b_c +)
+
+   Delay:                   5.343ns  (26.8% logic, 73.2% route), 3 logic levels.
+
+ Constraint Details:
+
+      5.343ns data_path RECEIVE_DATA_BITS_32 to ARRAY_INPUT_i0_i1 meets
+    1000.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 999.715ns) by 994.372ns
+
+ Path Details: RECEIVE_DATA_BITS_32 to ARRAY_INPUT_i0_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              RECEIVE_DATA_BITS_32 (from SPI_CLK_b_c)
+Route         6   e 1.515                                  RECEIVE_DATA_BITS
+LUT4        ---     0.493              A to Z              i1_2_lut_rep_5
+Route         6   e 1.457                                  n351
+LUT4        ---     0.493              B to Z              i244_2_lut_3_lut_4_lut
+Route         1   e 0.941                                  SPI_CLK_b_c_enable_10
+                  --------
+                    5.343  (26.8% logic, 73.2% route), 3 logic levels.
+
+
+Passed:  The following path meets requirements by 994.372ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             RECEIVE_DATA_BITS_32  (from SPI_CLK_b_c +)
+   Destination:    FD1P3AX    SP             ARRAY_INPUT_i0_i2  (to SPI_CLK_b_c +)
+
+   Delay:                   5.343ns  (26.8% logic, 73.2% route), 3 logic levels.
+
+ Constraint Details:
+
+      5.343ns data_path RECEIVE_DATA_BITS_32 to ARRAY_INPUT_i0_i2 meets
+    1000.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 999.715ns) by 994.372ns
+
+ Path Details: RECEIVE_DATA_BITS_32 to ARRAY_INPUT_i0_i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              RECEIVE_DATA_BITS_32 (from SPI_CLK_b_c)
+Route         6   e 1.515                                  RECEIVE_DATA_BITS
+LUT4        ---     0.493              A to Z              i1_2_lut_rep_5
+Route         6   e 1.457                                  n351
+LUT4        ---     0.493              B to Z              i246_3_lut_4_lut
+Route         1   e 0.941                                  SPI_CLK_b_c_enable_8
+                  --------
+                    5.343  (26.8% logic, 73.2% route), 3 logic levels.
+
+Report: 5.628 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets SPI_CLK_b_c]             |  1000.000 ns|     5.628 ns|     3  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  61 paths, 30 nets, and 96 connections (78.7% coverage)
+
+
+Peak memory: 78192640 bytes, TRCE: 1556480 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

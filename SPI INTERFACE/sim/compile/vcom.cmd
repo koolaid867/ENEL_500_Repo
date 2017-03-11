@@ -1,1 +1,0 @@
--w -erf "E:/SPI INTERFACE/sim/compile/sim.erf" -d "E:/SPI INTERFACE/sim/compile" -s "E:/SPI INTERFACE/sim/library.cfg" -j "E:/SPI INTERFACE/sim/projlib.cfg" -work work -dbg -work work "E:/SPI INTERFACE/WISHBONE_ENABLE.vhd" 

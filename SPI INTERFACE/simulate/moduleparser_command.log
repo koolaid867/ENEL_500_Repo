@@ -1,1 +1,0 @@
-C:/Program Files/diamond/3.8_x64/bin/nt64/moduleparser.exe -PROJ simulate -pf C:/Program Files/diamond/3.8_x64/cae_library/synthesis/vhdl/machxo2.vhd -lib machxo2 -pkg C:/Program Files/diamond/3.8_x64/cae_library/vhdl_packages/vdbs -lst E:/SPI INTERFACE/simulate/source_files.lst

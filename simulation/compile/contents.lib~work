@@ -1,0 +1,5 @@
+2
+~E 1 "./../../BEAGLE_TO_OUTPUTS.vhd" 7 SPI_OUTPUT
+~A 1 "./../../BEAGLE_TO_OUTPUTS.vhd" 17 BEHAVIOURAL
+~E 1 "./../../testbench_BEAGLE_YO_OUTPUTS.vhd" 7 Test
+~A 1 "./../../testbench_BEAGLE_YO_OUTPUTS.vhd" 10 behavioural

@@ -1,0 +1,200 @@
+
+synthesis -f "Captone_SPI_SPI_Capstone_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.8.0.115.3
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Mar 10 20:25:00 2017
+
+
+Command Line:  synthesis -f Captone_SPI_SPI_Capstone_lattice.synproj -gui 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is TQFP144.
+The -d option is LCMXO2-7000HE.
+Using package TQFP144.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-7000HE
+
+### Package : TQFP144
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+Optimization goal = Balanced
+Top-level module name = SPI_OUTPUT.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI_Capstone (searchpath added)
+-p C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo (searchpath added)
+VHDL library = work
+VHDL design file = C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/BEAGLE_TO_OUTPUTS.vhd
+NGD file = Captone_SPI_SPI_Capstone.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI_Capstone"  />
+Analyzing VHDL file c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(7): " arg1="spi_output" arg2="c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd" arg3="7"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(17): " arg1="behavioural" arg2="c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd" arg3="17"  />
+unit SPI_OUTPUT is not yet analyzed. VHDL-1485
+unit SPI_OUTPUT is not yet analyzed. VHDL-1485
+c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(7): executing SPI_OUTPUT(BEHAVIOURAL)
+
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(49): " arg1="spi_scsn_b" arg2="c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd" arg3="49"  />
+    <postMsg mid="35921613" type="Warning" dynamic="1" navigation="2" arg0="c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(68): " arg1="c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd" arg2="68"  />
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(15): " arg1="SPI_OUTPUT" arg2="BEHAVIOURAL" arg3="c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd" arg4="15"  />
+Top module name (VHDL): SPI_OUTPUT
+Last elaborated design is SPI_OUTPUT(BEHAVIOURAL)
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.8_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Top-level module name = SPI_OUTPUT.
+######## Converting I/O port ARRAY_FINAL[7] to output.
+######## Converting I/O port ARRAY_FINAL[6] to output.
+######## Converting I/O port ARRAY_FINAL[5] to output.
+######## Converting I/O port ARRAY_FINAL[4] to output.
+######## Converting I/O port ARRAY_FINAL[3] to output.
+######## Converting I/O port ARRAY_FINAL[2] to output.
+######## Converting I/O port ARRAY_FINAL[1] to output.
+######## Converting I/O port ARRAY_FINAL[0] to output.
+######## Missing driver on net SPI_MISO_b. Patching with GND.
+
+
+
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 1.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in SPI_OUTPUT_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+     54 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Captone_SPI_SPI_Capstone.ngd.
+
+################### Begin Area Report (SPI_OUTPUT)######################
+Number of register bits => 20 of 7209 (0 % )
+FD1P3AX => 8
+FD1P3AY => 8
+FD1P3IX => 3
+FD1S3AX => 1
+GSR => 1
+IB => 3
+LUT4 => 18
+OB => 9
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : SPI_CLK_b_c, loads : 20
+Clock Enable Nets
+Number of Clock Enables: 10
+Top 10 highest fanout Clock Enables:
+  Net : SPI_CLK_b_c_enable_13, loads : 8
+  Net : SPI_CLK_b_c_enable_18, loads : 3
+  Net : SPI_CLK_b_c_enable_8, loads : 1
+  Net : SPI_CLK_b_c_enable_14, loads : 1
+  Net : SPI_CLK_b_c_enable_7, loads : 1
+  Net : SPI_CLK_b_c_enable_3, loads : 1
+  Net : SPI_CLK_b_c_enable_10, loads : 1
+  Net : SPI_CLK_b_c_enable_16, loads : 1
+  Net : SPI_CLK_b_c_enable_1, loads : 1
+  Net : SPI_CLK_b_c_enable_19, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : Fill_Array_0, loads : 11
+  Net : Fill_Array_1, loads : 10
+  Net : Fill_Array_2, loads : 9
+  Net : SPI_MOSI_b_c, loads : 8
+  Net : SPI_CLK_b_c_enable_13, loads : 8
+  Net : SPI_SCSN_b_c, loads : 7
+  Net : RECEIVE_DATA_BITS, loads : 6
+  Net : n351, loads : 6
+  Net : SPI_CLK_b_c_enable_18, loads : 3
+  Net : n257, loads : 3
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets SPI_CLK_b_c]             |    1.000 MHz|  177.683 MHz|     3  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 74.668  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.547  secs
+--------------------------------------------------------------

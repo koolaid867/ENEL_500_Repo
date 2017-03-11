@@ -1,4 +1,0 @@
-i<>.\..\SPI_SLAVE.vhd
-i<>.\..\BEAGLE_TO_OUTPUTS.vhd
-i<>.\..\test_bench_spi.vhd
-i<>.\..\WISHBONE_ENABLE.vhd
