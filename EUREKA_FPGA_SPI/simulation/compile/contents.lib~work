@@ -1,5 +1,0 @@
-2
-~E 1 "./../../EFB_SPI.vhd" 14 EFB_SPI
-~A 1 "./../../EFB_SPI.vhd" 31 Structure
-~E 1 "./../../Test_Bench_EFB_SPI.vhd" 7 Test
-~A 1 "./../../Test_Bench_EFB_SPI.vhd" 10 behavioural
