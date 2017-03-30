@@ -20,15 +20,17 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI_Capstone/Captone_SPI_SPI_Capstone.jed</File>
-			<FileTime>03/10/17 21:08:12</FileTime>
-			<JedecChecksum>0x0006</JedecChecksum>
+			<FileTime>03/30/17 15:25:05</FileTime>
+			<JedecChecksum>0xF931</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<IOState>HighZ</IOState>
 				<PreloadLength>664</PreloadLength>
 				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
+				<Reinitialize value="TRUE"/>
 				<TCKFrequency>1.000000 MHz</TCKFrequency>
+				<SVFProcessor>SVF Processor</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
 				<AccessMode>FLASH</AccessMode>
 			</Option>
@@ -45,8 +47,8 @@
 	</ProjectOptions>
 	<CableOptions>
 		<CableName>USB2</CableName>
-		<PortAdd>FTUSB-0</PortAdd>
-		<USBID>Lattice FTUSB Interface Cable A Location 0000 Serial A</USBID>
+		<PortAdd>FTUSB-1</PortAdd>
+		<USBID>Lattice FTUSB Interface Cable B Location 0002 Serial B</USBID>
 		<JTAGPinSetting>
 			TRST	ABSENT;
 			ISPEN	ABSENT;

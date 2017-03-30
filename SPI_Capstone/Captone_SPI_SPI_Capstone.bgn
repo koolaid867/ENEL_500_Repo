@@ -5,7 +5,7 @@ Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
 
-Command: bitgen -g RamCfg:Reset -path C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo -w -jedec -gui Captone_SPI_SPI_Capstone.ncd Captone_SPI_SPI_Capstone.prf 
+Command: bitgen -g RamCfg:Reset -path C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo -w -jedec -gui -msgset C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/promote.xml Captone_SPI_SPI_Capstone.ncd Captone_SPI_SPI_Capstone.prf 
 
 Loading design for application Bitgen from file Captone_SPI_SPI_Capstone.ncd.
 Design name: SPI_OUTPUT

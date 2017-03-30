@@ -4,12 +4,12 @@ Register bits:  20 of 7209 (0.277%)
 I/O cells:      20
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3AX         8          100.0
-                            FD1P3AY         8          100.0
+                            FD1P3AX        16          100.0
                             FD1P3IX         3          100.0
-                            FD1S3AX         1          100.0
+                             FD1S1A         1          100.0
                                 GSR         1          100.0
                                  IB         3          100.0
-                               LUT4        18          100.0
+                                INV         1          100.0
+                               LUT4        11          100.0
                                  OB        17          100.0
-                              TOTAL        59
+                              TOTAL        53

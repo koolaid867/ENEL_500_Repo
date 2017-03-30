@@ -1,0 +1,13 @@
+#Start recording tcl command: 3/29/2017 10:05:46
+#Project Location: C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo; Project name: Captone_SPI
+prj_project open "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/Captone_SPI.ldf"
+prj_run Synthesis -impl SPI_Capstone
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/simulation/simulation.spf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/simulation/simulation.spf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/simulation/simulation.spf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/simulation/simulation.spf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/simulation/simulation.spf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/simulation/simulation.spf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/simulation/simulation.spf"
+prj_src add "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/simulation/simulation.spf"
+#Stop recording: 3/29/2017 11:31:32

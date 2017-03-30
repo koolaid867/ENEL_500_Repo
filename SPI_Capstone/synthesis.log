@@ -5,10 +5,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Mar 10 21:07:23 2017
+Thu Mar 30 15:24:37 2017
 
 
-Command Line:  synthesis -f Captone_SPI_SPI_Capstone_lattice.synproj -gui 
+Command Line:  synthesis -f Captone_SPI_SPI_Capstone_lattice.synproj -gui -msgset C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/promote.xml 
 
 Synthesis options:
 The -a option is MachXO2.
@@ -78,14 +78,14 @@ Compile Design Begin
 INFO - synthesis: The default VHDL library search path is now "C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/SPI_Capstone". VHDL-1504
 Analyzing VHDL file c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd. VHDL-1481
 INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(7): analyzing entity spi_output. VHDL-1012
-INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(18): analyzing architecture behavioural. VHDL-1010
+INFO - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(19): analyzing architecture behavioural. VHDL-1010
 unit SPI_OUTPUT is not yet analyzed. VHDL-1485
 unit SPI_OUTPUT is not yet analyzed. VHDL-1485
 c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(7): executing SPI_OUTPUT(BEHAVIOURAL)
 
-WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(50): spi_scsn_b should be on the sensitivity list of the process. VHDL-1251
-WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(69): incomplete sensitivity list specified, assuming completeness. VHDL-1613
-WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(16): replacing existing netlist SPI_OUTPUT(BEHAVIOURAL). VHDL-1205
+WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(34): spi_mosi_b should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(45): incomplete sensitivity list specified, assuming completeness. VHDL-1613
+WARNING - synthesis: c:/users/michael hosanee/documents/enel 500/git/enel_500_repo/beagle_to_outputs.vhd(17): replacing existing netlist SPI_OUTPUT(BEHAVIOURAL). VHDL-1205
 Top module name (VHDL): SPI_OUTPUT
 Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -94,25 +94,19 @@ Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'..
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.8_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = SPI_OUTPUT.
-######## Converting I/O port ARRAY_FINAL[7] to output.
-######## Converting I/O port ARRAY_FINAL[6] to output.
-######## Converting I/O port ARRAY_FINAL[5] to output.
-######## Converting I/O port ARRAY_FINAL[4] to output.
-######## Converting I/O port ARRAY_FINAL[3] to output.
-######## Converting I/O port ARRAY_FINAL[2] to output.
-######## Converting I/O port ARRAY_FINAL[1] to output.
-######## Converting I/O port ARRAY_FINAL[0] to output.
+######## Converting I/O port LEDS[7] to output.
+######## Converting I/O port LEDS[6] to output.
+######## Converting I/O port LEDS[5] to output.
+######## Converting I/O port LEDS[4] to output.
+######## Converting I/O port LEDS[3] to output.
+######## Converting I/O port LEDS[2] to output.
+######## Converting I/O port LEDS[1] to output.
+######## Converting I/O port LEDS[0] to output.
 ######## Missing driver on net SPI_MISO_b. Patching with GND.
-######## Missing driver on net LEDS[7]. Patching with GND.
-######## Missing driver on net LEDS[6]. Patching with GND.
-######## Missing driver on net LEDS[5]. Patching with GND.
-######## Missing driver on net LEDS[4]. Patching with GND.
-######## Missing driver on net LEDS[3]. Patching with GND.
-######## Missing driver on net LEDS[2]. Patching with GND.
-######## Missing driver on net LEDS[1]. Patching with GND.
-######## Missing driver on net LEDS[0]. Patching with GND.
 
 
+
+Removed duplicate sequential element LEDS(8 bit), because it is equivalent to ARRAY_FINAL
 
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 1.000000 MHz constraint to all clocks
@@ -128,13 +122,13 @@ Writing NGD file Captone_SPI_SPI_Capstone.ngd.
 
 ################### Begin Area Report (SPI_OUTPUT)######################
 Number of register bits => 20 of 7209 (0 % )
-FD1P3AX => 8
-FD1P3AY => 8
+FD1P3AX => 16
 FD1P3IX => 3
-FD1S3AX => 1
+FD1S1A => 1
 GSR => 1
 IB => 3
-LUT4 => 18
+INV => 1
+LUT4 => 11
 OB => 17
 ################### End Area Report ##################
 
@@ -144,33 +138,33 @@ TSALL => 1
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 1
-  Net : SPI_CLK_b_c, loads : 20
+Number of Clocks: 2
+  Net : SPI_CLK_b_c, loads : 19
+  Net : SPI_SCSN_b_c, loads : 9
 Clock Enable Nets
-Number of Clock Enables: 10
-Top 10 highest fanout Clock Enables:
-  Net : SPI_CLK_b_c_enable_13, loads : 8
-  Net : SPI_CLK_b_c_enable_18, loads : 3
-  Net : SPI_CLK_b_c_enable_8, loads : 1
-  Net : SPI_CLK_b_c_enable_14, loads : 1
+Number of Clock Enables: 9
+Top 9 highest fanout Clock Enables:
+  Net : SPI_CLK_b_c_enable_16, loads : 12
+  Net : SPI_SCSN_b_N_45, loads : 4
+  Net : SPI_CLK_b_c_enable_6, loads : 1
   Net : SPI_CLK_b_c_enable_7, loads : 1
   Net : SPI_CLK_b_c_enable_3, loads : 1
-  Net : SPI_CLK_b_c_enable_10, loads : 1
-  Net : SPI_CLK_b_c_enable_17, loads : 1
   Net : SPI_CLK_b_c_enable_1, loads : 1
-  Net : SPI_CLK_b_c_enable_19, loads : 1
+  Net : SPI_CLK_b_c_enable_9, loads : 1
+  Net : SPI_CLK_b_c_enable_4, loads : 1
+  Net : SPI_CLK_b_c_enable_10, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : Fill_Array_0, loads : 11
-  Net : Fill_Array_1, loads : 10
-  Net : Fill_Array_2, loads : 9
-  Net : SPI_MOSI_b_c, loads : 8
-  Net : SPI_CLK_b_c_enable_13, loads : 8
-  Net : SPI_SCSN_b_c, loads : 7
-  Net : RECEIVE_DATA_BITS, loads : 6
-  Net : n351, loads : 6
-  Net : SPI_CLK_b_c_enable_18, loads : 3
-  Net : n257, loads : 3
+  Net : SPI_CLK_b_c_enable_16, loads : 12
+  Net : Read_in_0, loads : 11
+  Net : Read_in_1, loads : 10
+  Net : Read_in_2, loads : 9
+  Net : mosi_latch, loads : 8
+  Net : SPI_SCSN_b_N_45, loads : 4
+  Net : LEDS_c, loads : 2
+  Net : n187, loads : 2
+  Net : n188, loads : 2
+  Net : n189, loads : 2
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -180,7 +174,10 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets SPI_CLK_b_c]             |    1.000 MHz|  177.683 MHz|     3  
+clk1 [get_nets SPI_SCSN_b_c]            |            -|            -|     0  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets SPI_CLK_b_c]             |    1.000 MHz|  218.914 MHz|     2  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -188,8 +185,8 @@ clk0 [get_nets SPI_CLK_b_c]             |    1.000 MHz|  177.683 MHz|     3
 All constraints were met.
 
 
-Peak Memory Usage: 74.324  MB
+Peak Memory Usage: 74.566  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.484  secs
+Elapsed CPU time for LSE flow : 0.516  secs
 --------------------------------------------------------------

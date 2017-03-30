@@ -10,8 +10,9 @@ ENTITY SPI_OUTPUT is
 		SPI_MISO_b: out std_logic := '0';
 		SPI_MOSI_b: in std_logic := '0';
 		SPI_SCSN_b: in std_logic; 
-		ARRAY_FINAL: inout std_logic_vector(7 downto 0) := "11111111";	
-		LEDS: out std_logic_vector(7 downto 0) := "11111111");
+		
+		ARRAY_FINAL: out std_logic_vector(7 downto 0) := "00000000";	
+		LEDS: inout std_logic_vector(7 downto 0) := "00000000");
 --		SEND_DATA_BITS: out std_logic);
 END SPI_OUTPUT;
 
@@ -20,10 +21,29 @@ ARCHITECTURE BEHAVIOURAL OF SPI_OUTPUT IS
 	signal CLK_GEN: std_logic; -- internal clock for Array sorting
 	signal CLK_GEN_ARRAY: std_logic; -- output clock that will take care of 8 bit sorting
 	signal RECEIVE_DATA_BITS: std_logic := '1'; -- must be 1 to send to motors
+	signal index: natural range 0 to 7;
+	signal mosi_latch: std_logic := '0';
+	signal RX_Data: std_logic_vector(7 downto 0) := "00000000";
 
-	
+BEGIN
 
-BEGIN--spi_scsn_b <= '0'; 
+process(spi_clk_b, spi_scsn_b) 
+	variable Read_in: integer range 0 to 7 := 0;
+	begin
+	if(spi_scsn_b = '0') then
+	MOSI_latch <= SPI_MOSI_b;
+		if(rising_edge(spi_clk_b)) then
+		 Rx_Data(Read_in) <= MOSI_latch;
+		 Read_In := Read_in + 1;
+		 if(Read_in = 7) then
+			Array_final <= Rx_Data;
+			LEDS <= Rx_Data;
+			Read_in := 0;
+		end if;
+		end if;
+		end if;
+		end process;
+		--spi_scsn_b <= '0'; 
 	
 ------CREATE SECOND CLOCK FROM PLL MODULE TO READ IN VALUES TO ARRAY 8* AS FAST BEFORE OUTPUTTING TO PINS	
 --	PROCESS(SPI_CLK_b)
@@ -42,31 +62,33 @@ BEGIN--spi_scsn_b <= '0';
 		
 --	end if;
 --	END PROCESS;
-	
-	PROCESS(SPI_CLK_b)
-		variable Fill_Array: integer range 0 to 7 := 0;
-	BEGIN
+--	PROCESS(SPI_SCSN_b)
+--	PROCESS(SPI_CLK_b, SPI_SCSN_b)
+--		variable Fill_Array: integer range 0 to 7 := 0;
+--	BEGIN
 		
-		if(SPI_SCSN_b = '0') then
-			if(SPI_CLK_b'EVENT and SPI_CLK_B = '1') then
-				if(RECEIVE_DATA_BITS = '0') then
-					Fill_Array := Fill_Array + 1;
-					ARRAY_INPUT(Fill_Array) <= SPI_MOSI_b;
+--		if(SPI_SCSN_b = '0') then
+--			if(SPI_CLK_b'EVENT and SPI_CLK_B = '1') then
+--				if(RECEIVE_DATA_BITS = '0') then
+--					Fill_Array := Fill_Array + 1;
+--					ARRAY_INPUT(Fill_Array) <= SPI_MOSI_b;
+--					LEDS(Fill_Array) <= SPI_MOSI_b;
 --					SEND_DATA_BITS <= RECEIVE_DATA_BITS;
-					if(Fill_Array = 7) then
-						RECEIVE_DATA_BITS <= '1';
+--					if(Fill_Array = 7) then
+--						RECEIVE_DATA_BITS <= '1';
 --						SEND_DATA_BITS <= RECEIVE_DATA_BITS;
-					end if;
-				else
-					RECEIVE_DATA_BITS <= '0';
-					Fill_Array := 0;
-					ARRAY_INPUT(Fill_Array) <= SPI_MOSI_b;
-					ARRAY_FINAL <= ARRAY_INPUT;
+--					end if;
+--				else
+--					RECEIVE_DATA_BITS <= '0';
+--					Fill_Array := 0;
+--					ARRAY_INPUT(Fill_Array) <= SPI_MOSI_b;
+--					ARRAY_FINAL <= ARRAY_INPUT;
+--					LEDS(Fill_Array) <= SPI_MOSI_b;
 --					SEND_DATA_BITS <= RECEIVE_DATA_BITS;
-				end if;
-			end if;
-		end if;
-	END PROCESS;
+--				end if;
+--			end if;
+--		end if;
+--	END PROCESS;
 		
 		--if count = 0 put in array 1 
 		--if count = 1 put in array 2 

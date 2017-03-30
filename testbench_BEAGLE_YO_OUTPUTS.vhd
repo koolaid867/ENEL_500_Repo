@@ -45,28 +45,205 @@ uut: SPI_OUTPUT
 --	PORT MAP(
 --		wb_dat_o => wb_dat_o);
 
-clk_proces: PROCESS
+clk_process: PROCESS
 	BEGIN
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period; --stall for 3 half cycles
+	 SPI_CLK <= '1'; -- start 8 bit transfer
+	 wait for clk_period/2;
 	 SPI_CLK <= '0';
 	 wait for clk_period/2;
 	 SPI_CLK <= '1';
 	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';     
+	 wait for clk_period/2;
+	 SPI_CLK <= '0'; --end 8 bit transfer
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period; --stall for 1 clock cycle
+	  SPI_CLK <= '1'; -- start 8 bit transfer
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';    
+	 wait for clk_period/2;
+	 SPI_CLK <= '0'; --end 8 bit transfer
+	 wait for clk_period*14;
+	  SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period; --stall for 3 half cycles
+	 SPI_CLK <= '1'; -- start 8 bit transfer
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period/2;
+	 SPI_CLK <= '1';     
+	 wait for clk_period/2;
+	 SPI_CLK <= '0'; --end 8 bit transfer
+	 wait for clk_period/2;
+	 SPI_CLK <= '0';
+	 wait for clk_period*5; --stall for 5 clock cycles
 END PROCESS;
 
 Slave_Select: PROCESS
 	BEGIN
-	SPI_SCSN <= '1';
-	wait for 16 us;
 	SPI_SCSN <= '0';
-	wait;
+	wait for clk_period/2;
+	SPI_SCSN <= '1';
+	wait for clk_period/2;
+	SPI_SCSN <= '0';
+	wait for clk_period*8;
+	SPI_SCSN <= '0';
+	wait for clk_period/2;
+	SPI_SCSN <= '1';
+	wait for clk_period/2;
+	SPI_SCSN <= '0';
+	wait for clk_period/2;
+	SPI_SCSN <= '0';
+	wait for clk_period*9;
+	SPI_SCSN <= '1';
+	wait for clk_period*13;
+	SPI_SCSN <= '1';
+	wait for clk_period/2;
+	SPI_SCSN <= '0';
+	wait for clk_period*8;
+	SPI_SCSN <= '1';
+	wait for clk_period*5;
+	
+
 END PROCESS;
 
 MOSI_proces: PROCESS
 begin
-	--first set 10000000 0x01
+	SPI_MOSI <= '0';
+	wait for clk_period/2;
+	SPI_MOSI <= '1';
+	wait for clk_period/2;
+	--first set 10000000 put in 0x40 (expecting 0x02 out)
+	SPI_MOSI <= '0';
+	wait for clk_period;
 	SPI_MOSI <= '1';
 	wait for clk_period;
 	SPI_MOSI <= '0';
+	wait for clk_period;
+	SPI_MOSI <= '0';
+	wait for clk_period;
+	SPI_MOSI <= '0';
+	wait for clk_period;
+	SPI_MOSI <= '0';
+	wait for clk_period;
+	SPI_MOSI <= '0';
+	wait for clk_period;
+	SPI_MOSI <= '0';
+	wait for clk_period;
+	SPI_MOSI <= '0';
+	wait for clk_period/2;
+	
+	SPI_MOSI <= '1';
+	wait for clk_period/2;
+	
+	
+	--second set 01010000 put in 0x50 expecting 0x0a
+	SPI_MOSI <= '0';
+	wait for clk_period;
+	SPI_MOSI <= '1';
+	wait for clk_period;
+	SPI_MOSI <= '0';
+	wait for clk_period;
+	SPI_MOSI <= '1';
+	wait for clk_period;
+	SPI_MOSI <= '0';
+	wait for clk_period;
+	SPI_MOSI <= '0';
+	wait for clk_period;
+	SPI_MOSI <= '0';
+	wait for clk_period;
+	SPI_MOSI <= '0';
+	wait for clk_period;
+	SPI_MOSI <= '0';
+	wait for clk_period/2;
+	
+	SPI_MOSI <= '1';
+	wait for clk_period*14;
+	SPI_MOSI <= '1';
+	wait for clk_period/2;
+	
+	--third set 01000000 0x40 expect 0x02
+	SPI_MOSI <= '0';
+	wait for clk_period;
+	SPI_MOSI <= '1';
 	wait for clk_period;
 	SPI_MOSI <= '0';
 	wait for clk_period;
@@ -81,43 +258,12 @@ begin
 	SPI_MOSI <= '0';
 	wait for clk_period;
 	
-	--second set 00111100 0x3c
-	SPI_MOSI <= '0';
-	wait for clk_period;
-	SPI_MOSI <= '0';
-	wait for clk_period;
 	SPI_MOSI <= '1';
-	wait for clk_period;
+	wait for clk_period*4;
 	SPI_MOSI <= '1';
-	wait for clk_period;
-	SPI_MOSI <= '1';
-	wait for clk_period;
-	SPI_MOSI <= '1';
-	wait for clk_period;
-	SPI_MOSI <= '0';
-	wait for clk_period;
-	SPI_MOSI <= '0';
-	wait for clk_period;
+	wait for clk_period/2;
 	
-	--third set 00000001 0x80
-	SPI_MOSI <= '0';
-	wait for clk_period;
-	SPI_MOSI <= '0';
-	wait for clk_period;
-	SPI_MOSI <= '0';
-	wait for clk_period;
-	SPI_MOSI <= '0';
-	wait for clk_period;
-	SPI_MOSI <= '0';
-	wait for clk_period;
-	SPI_MOSI <= '0';
-	wait for clk_period;
-	SPI_MOSI <= '0';
-	wait for clk_period;
-	SPI_MOSI <= '1';
-	wait for clk_period;
-	
-	--fourth set 01010101 0xaa
+	--fourth set 01000000 0x50 expect 0x0a
 	SPI_MOSI <= '0';
 	wait for clk_period;
 	SPI_MOSI <= '1';

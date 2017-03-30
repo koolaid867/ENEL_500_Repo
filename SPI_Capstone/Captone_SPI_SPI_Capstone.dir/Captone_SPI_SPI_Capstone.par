@@ -4,11 +4,12 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Mar 10 21:08:00 2017
+Thu Mar 30 15:24:54 2017
 
 C:/lscc/diamond/3.8_x64/ispfpga\bin\nt64\par -f Captone_SPI_SPI_Capstone.p2t
 Captone_SPI_SPI_Capstone_map.ncd Captone_SPI_SPI_Capstone.dir
-Captone_SPI_SPI_Capstone.prf -gui
+Captone_SPI_SPI_Capstone.prf -gui -msgset
+C:/Users/Michael Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/promote.xml
 
 
 Preference file: Captone_SPI_SPI_Capstone.prf.

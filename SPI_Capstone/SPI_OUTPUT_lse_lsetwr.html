@@ -9,7 +9,7 @@
 <PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Fri Mar 10 21:07:24 2017
+Thu Mar 30 14:09:49 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -32,90 +32,90 @@ Constraint: create_clock -period 1000.000000 -name clk0 [get_nets SPI_CLK_b_c]
 --------------------------------------------------------------------------------
 
 
-Passed:  The following path meets requirements by 994.372ns
+Passed:  The following path meets requirements by 994.406ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AX    CK             RECEIVE_DATA_BITS_32  (from SPI_CLK_b_c +)
-   Destination:    FD1P3AX    SP             ARRAY_INPUT_i0_i5  (to SPI_CLK_b_c +)
+   Source:         FD1S3AX    CK             RECEIVE_DATA_BITS_45  (from SPI_CLK_b_c +)
+   Destination:    FD1P3AX    SP             LEDS_i0_i2  (to SPI_CLK_b_c +)
 
-   Delay:                   5.343ns  (26.8% logic, 73.2% route), 3 logic levels.
-
- Constraint Details:
-
-      5.343ns data_path RECEIVE_DATA_BITS_32 to ARRAY_INPUT_i0_i5 meets
-    1000.000ns delay constraint less
-      0.285ns LCE_S requirement (totaling 999.715ns) by 994.372ns
-
- Path Details: RECEIVE_DATA_BITS_32 to ARRAY_INPUT_i0_i5
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              RECEIVE_DATA_BITS_32 (from SPI_CLK_b_c)
-Route         6   e 1.515                                  RECEIVE_DATA_BITS
-LUT4        ---     0.493              A to Z              i1_2_lut_rep_5
-Route         6   e 1.457                                  n351
-LUT4        ---     0.493              B to Z              i253_2_lut_3_lut_4_lut
-Route         1   e 0.941                                  SPI_CLK_b_c_enable_19
-                  --------
-                    5.343  (26.8% logic, 73.2% route), 3 logic levels.
-
-
-Passed:  The following path meets requirements by 994.372ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3AX    CK             RECEIVE_DATA_BITS_32  (from SPI_CLK_b_c +)
-   Destination:    FD1P3AX    SP             ARRAY_INPUT_i0_i1  (to SPI_CLK_b_c +)
-
-   Delay:                   5.343ns  (26.8% logic, 73.2% route), 3 logic levels.
+   Delay:                   5.309ns  (26.9% logic, 73.1% route), 3 logic levels.
 
  Constraint Details:
 
-      5.343ns data_path RECEIVE_DATA_BITS_32 to ARRAY_INPUT_i0_i1 meets
+      5.309ns data_path RECEIVE_DATA_BITS_45 to LEDS_i0_i2 meets
     1000.000ns delay constraint less
-      0.285ns LCE_S requirement (totaling 999.715ns) by 994.372ns
+      0.285ns LCE_S requirement (totaling 999.715ns) by 994.406ns
 
- Path Details: RECEIVE_DATA_BITS_32 to ARRAY_INPUT_i0_i1
+ Path Details: RECEIVE_DATA_BITS_45 to LEDS_i0_i2
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              RECEIVE_DATA_BITS_32 (from SPI_CLK_b_c)
-Route         6   e 1.515                                  RECEIVE_DATA_BITS
-LUT4        ---     0.493              A to Z              i1_2_lut_rep_5
-Route         6   e 1.457                                  n351
-LUT4        ---     0.493              B to Z              i244_2_lut_3_lut_4_lut
+L_CO        ---     0.444             CK to Q              RECEIVE_DATA_BITS_45 (from SPI_CLK_b_c)
+Route         8   e 1.598                                  RECEIVE_DATA_BITS
+LUT4        ---     0.493              B to Z              i227_2_lut_rep_3
+Route         4   e 1.340                                  n450
+LUT4        ---     0.493              B to Z              i316_2_lut_3_lut_4_lut
 Route         1   e 0.941                                  SPI_CLK_b_c_enable_10
                   --------
-                    5.343  (26.8% logic, 73.2% route), 3 logic levels.
+                    5.309  (26.9% logic, 73.1% route), 3 logic levels.
 
 
-Passed:  The following path meets requirements by 994.372ns
+Passed:  The following path meets requirements by 994.406ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AX    CK             RECEIVE_DATA_BITS_32  (from SPI_CLK_b_c +)
-   Destination:    FD1P3AX    SP             ARRAY_INPUT_i0_i2  (to SPI_CLK_b_c +)
+   Source:         FD1S3AX    CK             RECEIVE_DATA_BITS_45  (from SPI_CLK_b_c +)
+   Destination:    FD1P3AX    SP             LEDS_i0_i3  (to SPI_CLK_b_c +)
 
-   Delay:                   5.343ns  (26.8% logic, 73.2% route), 3 logic levels.
+   Delay:                   5.309ns  (26.9% logic, 73.1% route), 3 logic levels.
 
  Constraint Details:
 
-      5.343ns data_path RECEIVE_DATA_BITS_32 to ARRAY_INPUT_i0_i2 meets
+      5.309ns data_path RECEIVE_DATA_BITS_45 to LEDS_i0_i3 meets
     1000.000ns delay constraint less
-      0.285ns LCE_S requirement (totaling 999.715ns) by 994.372ns
+      0.285ns LCE_S requirement (totaling 999.715ns) by 994.406ns
 
- Path Details: RECEIVE_DATA_BITS_32 to ARRAY_INPUT_i0_i2
+ Path Details: RECEIVE_DATA_BITS_45 to LEDS_i0_i3
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              RECEIVE_DATA_BITS_32 (from SPI_CLK_b_c)
-Route         6   e 1.515                                  RECEIVE_DATA_BITS
-LUT4        ---     0.493              A to Z              i1_2_lut_rep_5
-Route         6   e 1.457                                  n351
-LUT4        ---     0.493              B to Z              i246_3_lut_4_lut
-Route         1   e 0.941                                  SPI_CLK_b_c_enable_8
+L_CO        ---     0.444             CK to Q              RECEIVE_DATA_BITS_45 (from SPI_CLK_b_c)
+Route         8   e 1.598                                  RECEIVE_DATA_BITS
+LUT4        ---     0.493              B to Z              i227_2_lut_rep_3
+Route         4   e 1.340                                  n450
+LUT4        ---     0.493              B to Z              i313_2_lut_3_lut_4_lut
+Route         1   e 0.941                                  SPI_CLK_b_c_enable_9
                   --------
-                    5.343  (26.8% logic, 73.2% route), 3 logic levels.
+                    5.309  (26.9% logic, 73.1% route), 3 logic levels.
 
-Report: 5.628 ns is the maximum delay for this constraint.
+
+Passed:  The following path meets requirements by 994.406ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             RECEIVE_DATA_BITS_45  (from SPI_CLK_b_c +)
+   Destination:    FD1P3AX    SP             LEDS_i0_i6  (to SPI_CLK_b_c +)
+
+   Delay:                   5.309ns  (26.9% logic, 73.1% route), 3 logic levels.
+
+ Constraint Details:
+
+      5.309ns data_path RECEIVE_DATA_BITS_45 to LEDS_i0_i6 meets
+    1000.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 999.715ns) by 994.406ns
+
+ Path Details: RECEIVE_DATA_BITS_45 to LEDS_i0_i6
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              RECEIVE_DATA_BITS_45 (from SPI_CLK_b_c)
+Route         8   e 1.598                                  RECEIVE_DATA_BITS
+LUT4        ---     0.493              B to Z              i227_2_lut_rep_3
+Route         4   e 1.340                                  n450
+LUT4        ---     0.493              B to Z              i308_2_lut_4_lut
+Route         1   e 0.941                                  SPI_CLK_b_c_enable_6
+                  --------
+                    5.309  (26.9% logic, 73.1% route), 3 logic levels.
+
+Report: 5.594 ns is the maximum delay for this constraint.
 
 
 <A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -125,7 +125,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets SPI_CLK_b_c]             |  1000.000 ns|     5.628 ns|     3  
+clk0 [get_nets SPI_CLK_b_c]             |  1000.000 ns|     5.594 ns|     3  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -139,10 +139,10 @@ All constraints were met.
 
 Timing errors: 0  Score: 0
 
-Constraints cover  61 paths, 30 nets, and 96 connections (78.7% coverage)
+Constraints cover  61 paths, 30 nets, and 95 connections (72.5% coverage)
 
 
-Peak memory: 77713408 bytes, TRCE: 1581056 bytes, DLYMAN: 0 bytes
+Peak memory: 77864960 bytes, TRCE: 1597440 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 
 
 

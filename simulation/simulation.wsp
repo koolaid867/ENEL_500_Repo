@@ -1,10 +1,10 @@
 [COMPILESTATUS|.\..\BEAGLE_TO_OUTPUTS.vhd]
-FileTimeLow=30579223
-Status=Compiled
+FileTimeLow=30583185
+Status=Modified
 
 [COMPILESTATUS|.\..\testbench_BEAGLE_YO_OUTPUTS.vhd]
-FileTimeLow=30579223
-Status=Modified
+FileTimeLow=30582958
+Status=Compiled
 
 [CACHEDOC|Aldec.Project.Generic.7|.\simulation.adf|]
 Path=/Test

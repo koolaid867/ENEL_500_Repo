@@ -19,12 +19,13 @@ Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
      C:/Users/Michael Hosanee/Documents/ENEL
      500/Git/ENEL_500_Repo/SPI_Capstone/Captone_SPI_SPI_Capstone.lpf -lpf
      C:/Users/Michael Hosanee/Documents/ENEL
-     500/Git/ENEL_500_Repo/Captone_SPI.lpf -c 0 -gui 
+     500/Git/ENEL_500_Repo/Captone_SPI.lpf -c 0 -gui -msgset C:/Users/Michael
+     Hosanee/Documents/ENEL 500/Git/ENEL_500_Repo/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.8.0.115.3
-Mapped on:  03/10/17  21:07:57
+Mapped on:  03/30/17  15:24:50
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
@@ -35,8 +36,8 @@ Mapped on:  03/10/17  21:07:57
       SLICEs as Logic/ROM:     15 out of  3432 (0%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:          0 out of  3432 (0%)
-   Number of LUT4s:         18 out of  6864 (0%)
-      Number used as logic LUTs:         18
+   Number of LUT4s:         12 out of  6864 (0%)
+      Number used as logic LUTs:         12
       Number used as distributed RAM:     0
       Number used as ripple logic:        0
       Number used as shift registers:     0
@@ -65,34 +66,34 @@ Mapped on:  03/10/17  21:07:57
      distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
-   Number of clocks:  1
-     Net SPI_CLK_b_c: 15 loads, 15 rising, 0 falling (Driver: PIO SPI_CLK_b )
+   Number of clocks:  2
 
-   Number of Clock Enables:  10
+     Net SPI_CLK_b_c: 14 loads, 14 rising, 0 falling (Driver: PIO SPI_CLK_b )
+     Net SPI_SCSN_b_c: 1 loads, 0 rising, 1 falling (Driver: PIO SPI_SCSN_b )
+   Number of Clock Enables:  9
      Net SPI_CLK_b_c_enable_1: 1 loads, 1 LSLICEs
-     Net SPI_CLK_b_c_enable_13: 4 loads, 4 LSLICEs
+     Net SPI_CLK_b_c_enable_16: 5 loads, 5 LSLICEs
      Net SPI_CLK_b_c_enable_3: 1 loads, 1 LSLICEs
+     Net SPI_CLK_b_c_enable_4: 1 loads, 1 LSLICEs
+     Net SPI_CLK_b_c_enable_6: 1 loads, 1 LSLICEs
      Net SPI_CLK_b_c_enable_7: 1 loads, 1 LSLICEs
-     Net SPI_CLK_b_c_enable_8: 1 loads, 1 LSLICEs
-     Net SPI_CLK_b_c_enable_10: 1 loads, 1 LSLICEs
      Net SPI_SCSN_b_c: 2 loads, 2 LSLICEs
-     Net SPI_CLK_b_c_enable_17: 1 loads, 1 LSLICEs
-     Net SPI_CLK_b_c_enable_14: 1 loads, 1 LSLICEs
-     Net SPI_CLK_b_c_enable_19: 1 loads, 1 LSLICEs
+     Net SPI_CLK_b_c_enable_9: 1 loads, 1 LSLICEs
+     Net SPI_CLK_b_c_enable_10: 1 loads, 1 LSLICEs
    Number of LSRs:  1
-     Net n257: 2 loads, 2 LSLICEs
+     Net SPI_CLK_b_c_enable_16: 2 loads, 2 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net Fill_Array_0: 11 loads
-     Net Fill_Array_1: 10 loads
-     Net Fill_Array_2: 9 loads
-     Net SPI_MOSI_b_c: 8 loads
-     Net SPI_SCSN_b_c: 8 loads
-     Net n351: 6 loads
-     Net RECEIVE_DATA_BITS: 6 loads
-     Net SPI_CLK_b_c_enable_13: 4 loads
-     Net n223: 2 loads
-     Net n257: 2 loads
+     Net Read_in_0: 11 loads
+     Net Read_in_1: 10 loads
+     Net Read_in_2: 9 loads
+     Net mosi_latch: 8 loads
+     Net SPI_CLK_b_c_enable_16: 7 loads
+     Net LEDS_c: 2 loads
+     Net n187: 2 loads
+     Net n188: 2 loads
+     Net n189: 2 loads
+     Net n190: 2 loads
 
 
 
@@ -118,30 +119,30 @@ Mapped on:  03/10/17  21:07:57
 +---------------------+-----------+-----------+------------+
 | SPI_MISO_b          | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| ARRAY_FINAL[0]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 | ARRAY_FINAL[4]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ARRAY_FINAL[0]      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | ARRAY_FINAL[1]      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | ARRAY_FINAL[2]      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| ARRAY_FINAL[3]      | OUTPUT    | LVCMOS25  |            |
 
+| ARRAY_FINAL[3]      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | LEDS[0]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+| ARRAY_FINAL[7]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 | ARRAY_FINAL[5]      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| LEDS[1]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 | ARRAY_FINAL[6]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDS[1]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | LEDS[2]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | LEDS[3]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| ARRAY_FINAL[7]      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | LEDS[4]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -164,9 +165,9 @@ Mapped on:  03/10/17  21:07:57
 
 Block i2 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
-Signal SPI_CLK_b_c_enable_18 was merged into signal SPI_SCSN_b_c
+Signal SPI_SCSN_b_N_45 was merged into signal SPI_SCSN_b_c
 Signal VCC_net undriven or does not drive anything - clipped.
-Block i59_1_lut_rep_3 was optimized away.
+Block i286 was optimized away.
 
 
 
@@ -184,7 +185,6 @@ Block i59_1_lut_rep_3 was optimized away.
    Total REAL Time: 0 secs  
    Peak Memory Usage: 58 MB
         
-
 
 
 

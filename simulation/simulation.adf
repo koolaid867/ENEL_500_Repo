@@ -39,3 +39,9 @@ Global=
 [Files.Data]
 .\..\BEAGLE_TO_OUTPUTS.vhd=VHDL Source Code
 .\..\testbench_BEAGLE_YO_OUTPUTS.vhd=VHDL Source Code
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=test|behavioural|0 
+ShowHide=ShowTopLevel
+Selected=
